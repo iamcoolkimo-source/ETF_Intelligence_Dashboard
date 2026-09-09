@@ -8,11 +8,7 @@
 
 <title>日本 ETF 分析網</title>
 
-<tyle.css
-
-</head>
-
-<body>
+<link rel="stylesheetbody>
 
 <div class="title">
 日本 ETF 分析網
@@ -20,12 +16,19 @@
 
 <div class="menu">
 
-<button class="menu-btn active">
+<button class="menu-btn active"
+onclick="filterETF('ACTIVE')">
 主動ETF
 </button>
 
-<button class="menu-btn">
+<button class="menu-btn"
+onclick="filterETF('PASSIVE')">
 被動ETF
+</button>
+
+<button class="menu-btn"
+onclick="filterETF('ALL')">
+全部ETF
 </button>
 
 <button class="menu-btn">
@@ -66,8 +69,6 @@ placeholder="搜尋 ETF Code 或 ETF Name">
 <th>ETF NAME</th>
 
 <th>ETF TYPE</th>
-
-<th>SOURCE</th>
 
 </tr>
 
