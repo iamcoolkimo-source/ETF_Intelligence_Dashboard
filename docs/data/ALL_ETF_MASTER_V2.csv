@@ -1,0 +1,409 @@
+﻿ETF_CODE,ETF_NAME,SOURCE
+1305,iFreeETF TOPIX (Yearly Dividend Type),SPG
+1306,TOPIX ETF,ICE
+1308,Listed Index Fund TOPIX,SPG
+1311,TOPIX Core 30 Exchange Traded,ICE
+1319,Nikkei 300,ICE
+1320,iFreeETF Nikkei225 (Yearly Dividend Type),SPG
+1321,Nikkei 225 Exchange Traded Fund,ICE
+1322,Listed Index Fund China A Share (Panda) E Fund CSI300,SPG
+1325,NEXT FUNDS Ibovespa Linked Exchange Traded Fund,ICE
+1328,NEXT FUNDS Gold Price Exchange Traded Fund,ICE
+1329,iShares Nikkei 225 ETF,ICE
+1330,Listed Index Fund 225,SPG
+133A,Global X Ultra Short-Term T-Bill ETF,SOLACTIVE
+1343,NEXT FUNDS REIT INDEX ETF,ICE
+1345,Listed Index Fund J-REIT (Tokyo Stock Exchange REIT Index) Bi-Monthly Dividend Payment Type,SPG
+1346,MAXIS NIKKEI225 ETF,ICE
+1348,MAXIS TOPIX ETF,ICE
+1356,TOPIX Bear -2x ETF,ICE
+1357,NEXT FUNDS Nikkei 225 Double Inverse Index Exchange Traded Fund,ICE
+1358,Listed Index Fund Nikkei Leveraged Index,SPG
+1360,Nikkei225 Bear -2x ETF,ICE
+1364,iShares JPX-Nikkei 400 ETF,ICE
+1365,iFreeETF Nikkei225 Leveraged Index,SPG
+1366,iFreeETF Nikkei225 Double Inverse Index,SPG
+1367,iFreeETF TOPIX Leveraged (2x) Index,SPG
+1368,iFreeETF TOPIX Double Inverse (-2x) Index,SPG
+1369,One ETF Nikkei225,ICE
+1397,SMAM NIKKEI225 ETF,ICE
+1398,SMAM REIT Index ETF,ICE
+1399,Listed Index Fund MSCI Japan Equity High Dividend Low Volatility,SPG
+140A,iFreeETF 10-Year U.S. Treasury Note Futures Inverse,SPG
+1456,iFreeETF Nikkei225 Inverse Index,SPG
+1457,iFreeETF TOPIX Inverse (-1x) Index,SPG
+1458,Rakuten ETF-Nikkei 225 Leveraged Index,ICE
+1459,Rakuten ETF-Nikkei 225 Double Inverse Index,ICE
+1466,iFreeETF JPX-Nikkei400 Double Inverse (-2x) Index,SPG
+1469,JPX-Nikkei 400 Bear -2x Double Inverse ETF,ICE
+1472,NEXT FUNDS JPX-Nikkei 400 Double Inverse Index Exchange Traded Fund,ICE
+1473,One ETF TOPIX,ICE
+1474,One ETF JPX-Nikkei400,ICE
+1475,iShares TOPIX ETF,ICE
+1476,iShares Japan REIT ETF,ICE
+1477,iShares MSCI Japan Minimum Volatility (ex-REITs) ETF,ICE
+1478,iShares MSCI Japan High Dividend ETF,ICE
+1479,iFreeETF MSCI Japan Human and Physical Investment Index,SPG
+1480,NEXT FUNDS Nomura Enterprise Value Allocation Index Exchange Traded Fund,ICE
+1481,Listed Index Fund Japanese Economy Contributor Stocks,SPG
+1482,iShares US Treasury Bond 7-10 Year JPY Hedged ETF,ICE
+1483,iShares JPX/S&P CAPEX & Human Capital ETF,ICE
+1484,One ETF JPX/S&P CAPEX & Human Capital Index,ICE
+1485,MAXIS JAPAN Proactive Investment in Physical and Human Capital 200 Index ETF,ICE
+1486,Listed Index Fund US Bond (No Currency Hedge),SPG
+1487,Listed Index Fund US Bond (Currency Hedge),SPG
+1488,iFreeETF Tokyo Stock Exchange REIT Index,SPG
+1489,NEXT FUNDS Nikkei 225 High Dividend Yield Stock 50 Index Exchange Traded Fund,ICE
+1490,Listed Index Fund MSCI Japan Equity High Dividend Low Volatility (Beta Hedged),SPG
+1493,One ETF JPX-Nikkei Mid Small,ICE
+1494,One ETF High Dividend Japan Equity,ICE
+1495,Listed Index Fund Asian REIT,SPG
+1498,One ETF ESG,ICE
+1499,MAXIS Japan Equity High Dividend 70 Market Neutral ETF,ICE
+1545,NEXT FUNDS NASDAQ-100,ICE
+1546,NEXT FUNDS Dow Jones Industrial Average Exchange Traded Fund,ICE
+1547,Listed Index Fund US Equity (S&P500),SPG
+1550,MAXIS Global Equity (MSCI Kokusai),ICE
+1551,TSE STANDARD TOP 20 ETF,ICE
+1554,Listed Index Fund World Equity (MSCI ACWI) ex Japan,SPG
+1555,Listed Index Fund Australian REIT (S&P/ASX200 A-REIT),SPG
+1559,NEXT FUNDS Thai Stock SET50 Exchange Traded Fund,ICE
+1560,NEXT FUNDS FTSE Bursa Malaysia KLCI Exchange Traded Fund,ICE
+1563,TSE Growth Core ETF,ICE
+1566,Listed Index Fund Emerging Bond,SPG
+1568,TOPIX Bull 2x ETF,ICE
+1569,TOPIX Bear -1x ETF,ICE
+1570,NEXT FUNDS Nikkei 225 Leveraged Index Exchange Traded Fund,ICE
+1571,NEXT FUNDS Nikkei 225 Inverse Index Exchange Traded Fund,ICE
+1572,China Bull 2x HSCEI ETF,ICE
+1573,China Bear -1x HSCEI ETF,ICE
+1577,NEXT FUNDS Nomura Japan Equity High Dividend 70 Exchange Traded Fund,ICE
+1578,Listed Index Fund Nikkei 225 (Mini),SPG
+1579,Nikkei 225 Bull 2x ETF,ICE
+1580,Nikkei 225 Bear -1x ETF,ICE
+1585,iFreeETF TOPIX Ex-Financials,SPG
+1586,Listed Index Fund TOPIX Ex-Financials,SPG
+1591,NEXT FUNDS JPX-Nikkei Index 400 Exchange Traded Fund,ICE
+1592,Listed Index Fund JPX-Nikkei Index 400,SPG
+1593,MAXIS JPX-Nikkei Index 400 ETF,ICE
+1595,NZAM ETF J-REIT Index,ICE
+1596,NZAM ETF TOPIX Ex-Financials,ICE
+1597,MAXIS J-REIT ETF,ICE
+1599,iFreeETF JPX-Nikkei400,SPG
+159A,NEXT FUNDS JPX Prime 150 Index Exchange Traded Fund,ICE
+1615,TOPIX Banks,ICE
+1617,NEXT FUNDS TOPIX-17 FOODS ETF,ICE
+1618,NEXT FUNDS TOPIX-17 ENERGY RESOURCES ETF,ICE
+1619,NEXT FUNDS TOPIX-17 CONSTRUCTION & MATERIALS ETF,ICE
+1620,NEXT FUNDS TOPIX-17 RAW MATERIALS & CHEMICALS ETF,ICE
+1621,NEXT FUNDS TOPIX-17 PHARMACEUTICAL ETF,ICE
+1622,NEXT FUNDS TOPIX-17 AUTOMOBILES & TRANSPORTATION EQUIPMENT ETF,ICE
+1623,NEXT FUNDS TOPIX-17 STEEL & NONFERROUS ETF,ICE
+1624,NEXT FUNDS TOPIX-17 MACHINERY ETF,ICE
+1625,NEXT FUNDS TOPIX-17 ELECTRIC APPLIANCES & PRECISION INSTRUMENTS ETF,ICE
+1626,NEXT FUNDS TOPIX-17 IT & SERVICES OTHERS ETF,ICE
+1627,NEXT FUNDS TOPIX-17 ELECTRIC POWER & GAS ETF,ICE
+1628,NEXT FUNDS TOPIX-17 TRANSPORTATION & LOGISTICS ETF,ICE
+1629,NEXT FUNDS TOPIX-17 COMMERCIAL & WHOLESALE TRADE ETF,ICE
+1630,NEXT FUNDS TOPIX-17 RETAIL TRADE ETF,ICE
+1631,NEXT FUNDS TOPIX-17 BANKS ETF,ICE
+1632,NEXT FUNDS TOPIX-17 FINANCIALS (EX BANKS) ETF,ICE
+1633,NEXT FUNDS TOPIX-17 REAL ESTATE ETF,ICE
+1651,iFreeETF TOPIX High Dividend Yield 40 Index,SPG
+1652,iFreeETF MSCI Japan Empowering Women Index (WIN),SPG
+1653,iFreeETF MSCI Japan ESG Select Leaders Index,SPG
+1654,iFreeETF FTSE JPX Blossom Japan Index,SPG
+1655,iShares S&P 500 ETF,ICE
+1656,iShares Core 7-10 Year US Treasury Bond ETF,ICE
+1657,iShares Core MSCI Kokusai ETF,ICE
+1658,iShares Core MSCI Emerging Markets IMI ETF,ICE
+1659,iShares US REIT ETF,ICE
+1660,MAXIS High Yield J-REIT ETF,ICE
+1677,Listed Index Fund International Bond (Citi WGBI) Monthly Dividend Payment Type,SPG
+1678,NEXT FUNDS Nifty Linked Exchange Traded Fund,ICE
+1680,Listed Index Fund International Developed Countries Equity (MSCI-KOKUSAI),SPG
+1681,Listed Index Fund International Emerging Countries Equity (MSCI EMERGING),SPG
+1698,Listed Index Fund Japan High Dividend (TSE Dividend Focus 100),SPG
+1699,NEXT FUNDS NOMURA Crude Oil Long Index Linked Exchange Traded Fund,ICE
+170A,SMT ETF Japan Equity Income Strategy Active,ICE
+178A,Global X Innovative Bluechip Top 10+ ETF,SOLACTIVE
+179A,Global X 25+ Year T-Bond ETF (JPY Hedged),ICE
+180A,Global X 25+ Year T-Bond ETF,ICE
+181A,MAXIS US Treasury Bond 1-3 Year ETF (Unhedged),ICE
+182A,MAXIS US Treasury Bond 20+ Year ETF (Unhedged),ICE
+183A,MAXIS US Treasury Bond 20+ Year ETF (JPY Hedged),ICE
+188A,Global X India Top 10+ ETF,SOLACTIVE
+200A,NEXT FUNDS Nikkei Semiconductor Stock Index Exchange Traded Fund,ICE
+2011,SMDAM Active ETF Japan High Dividend Equity,ICE
+2012,iShares 0-3 Month US Treasury Bond ETF,ICE
+2013,iShares US High Dividend ETF,ICE
+2014,iShares US Dividend Growth ETF,ICE
+2015,iFreeETF US Treasury 7-10 year (NON-HEDGE),SPG
+2016,iFreeETF US Treasury 7-10 year (JP HEDGE),SPG
+2017,iFreeETF JPX Prime 150,SPG
+2018,Global X US REIT Top 20 ETF,SOLACTIVE
+2019,Global X U.S. Preferred Security ETF (Bi-monthly dividend type),SOLACTIVE
+2080,PBR Improvement over 1x ETF,ICE
+2081,Strategic Shareholding Disposal Promotion ETF,ICE
+2082,Investor-Management Unite as One ETF,ICE
+2083,NEXT FUNDS Japan Growth Equity Active Exchange Traded Fund,ICE
+2084,NEXT FUNDS Japan High Dividend Equity Active Exchange Traded Fund,ICE
+2085,MAXIS High Dividend Japan Equity Actively Managed ETF,ICE
+2086,NZAM S&P 500 in TTM Rates JPY Hedged Index,SPG
+2087,NZAM NASDAQ-100 Notional Net Total Return Index,SPG
+2088,NZAM Dow Jones Industrial Average JPY Hedged (TTM) (Japan Calendar),SPG
+2089,NZAM DAX Index,SPG
+2090,NZAM Bloomberg US Treasury 7-10 year Index,SPG
+2091,NZAM Bloomberg German Treasury 7-10 year Index,SPG
+2092,NZAM Bloomberg France Treasury 7-10 year Index,SPG
+2093,Listed Tracers US Government Bond 0-2years Ladder (No Currency Hedge),SPG
+2094,TSE REIT Inverse ETF,ICE
+2095,Global X S&P 500 Dividend Aristocrats ETF (JPY Hedged),SOLACTIVE
+2096,Global X Office J-REIT ETF,SOLACTIVE
+2097,Global X Residential J-REIT ETF,SOLACTIVE
+2098,Global X Hotel & Retail J-REIT ETF,SOLACTIVE
+210A,iFreeETF Nikkei High Yield REIT Index,SPG
+213A,Listed Index Fund Nikkei Semiconductor Stock,SPG
+221A,MAXIS Nikkei Semiconductor Stock (Japan) ETF,ICE
+2235,Listed Index Fund US Equity (Dow Average) No Currency Hedge,SPG
+2236,Global X S&P 500 Dividend Aristocrats ETF,SOLACTIVE
+2237,iFreeETF S&P500 Leveraged (2x),SPG
+2238,iFreeETF S&P500 Inverse,SPG
+2239,Listed Index Fund S&P500 Futures Leveraged Two Times,SPG
+223A,Global X Artificial Intelligence & Technology ETF,SOLACTIVE
+2240,Listed Index Fund S&P500 Futures Inverse,SPG
+2241,MAXIS NY Dow Industrial Average ETF,ICE
+2242,MAXIS NY Dow Industrial Average ETF (JPY Hedged),ICE
+2243,Global X Semiconductor ETF,SOLACTIVE
+2244,Global X US Tech Top 20 ETF,SOLACTIVE
+2245,NEXT FUNDS Bloomberg Germany Treasury Bond (7-10 year) Index (Yen-Hedged) Exchange Traded Fund,ICE
+2247,iFreeETF S&P500 (NON HEDGED),SPG
+2248,iFreeETF S&P500 (JPY HEDGED),SPG
+2249,iFreeETF S&P500 Double Inverse (-2x),SPG
+224A,Global X Uranium ETF,SOLACTIVE
+2250,iShares MSCI Japan Climate Action ETF,ICE
+2251,NEXT FUNDS JPX JGB Futures Double Inverse Index Exchange Traded Fund,ICE
+2252,Global X Morningstar US Small Mid Moat ETF,SOLACTIVE
+2253,Global X SuperDividend U.S. ETF,SOLACTIVE
+2254,Global X China Electric Vehicle and Battery ETF,SOLACTIVE
+2255,iShares 20+ Year US Treasury Bond ETF,ICE
+2256,iShares US Aggregate Bond ETF,ICE
+2257,iShares USD Investment Grade Corporate Bond ETF,ICE
+2258,iShares USD High Yield Corporate Bond ETF,ICE
+2259,iShares 7-10 Year France Government Bond JPY Hedged ETF,ICE
+233A,iFreeETF Nifty50,SPG
+234A,Global X MSCI Japan Cash Flow Kings ETF,SOLACTIVE
+235A,Global X Japan High Dividend 30 ETF,SOLACTIVE
+236A,iShares 7-10 Year Japan Government Bond ETF,ICE
+237A,iShares 25+ Year US Treasury Bond Long Duration ETF,ICE
+238A,iShares 25+ Year US Treasury Bond Long Duration JPY Hedged ETF,ICE
+2510,NEXT FUNDS Japan Bond NOMURA-BPI Exchange Traded Fund,ICE
+2511,NEXT FUNDS International Bond FTSE World Government Bond Index (ex Japan Unhedged) Exchange Traded Fund,ICE
+2512,NEXT FUNDS International Bond FTSE World Government Bond Index (ex Japan Yen-Hedged) Exchange Traded Fund,ICE
+2513,NEXT FUNDS International Equity MSCI-KOKUSAI (Unhedged) Exchange Traded Fund,ICE
+2514,NEXT FUNDS International Equity MSCI-KOKUSAI (Yen-Hedged) Exchange Traded Fund,ICE
+2515,NEXT FUNDS International REIT S&P Developed REIT Index (ex Japan Unhedged) Exchange Traded Fund,ICE
+2516,TSE Mothers ETF,ICE
+2517,MAXIS J-REIT Core ETF,ICE
+2518,NEXT FUNDS MSCI Japan Empowering Women Select Index Exchange Traded Fund,ICE
+2519,NEXT FUNDS Emerging Market Bond J.P. Morgan EMBI Plus (Unhedged) Exchange Traded Fund,ICE
+2520,NEXT FUNDS Emerging Market Equity MSCI-EM (Unhedged) Exchange Traded Fund,ICE
+2521,Listed Index Fund US Equity (S&P500) Currency Hedge,SPG
+2522,iShares Automation & Robot ETF,ICE
+2523,MAXIS TOPIX Ex-Financials ETF,ICE
+2524,NZAM ETF TOPIX,ICE
+2525,NZAM ETF Nikkei 225,ICE
+2526,NZAM ETF JPX-Nikkei 400,ICE
+2527,NZAM ETF J-REIT Core Index,ICE
+2528,iFreeETF Tokyo Stock Exchange REIT Core Index,SPG
+2529,NEXT FUNDS Nomura Shareholder Yield 70 Exchange Traded Fund,ICE
+2552,Listed Index Fund J-REIT (Tokyo Stock Exchange REIT Index) Bi-Monthly Dividend Payment Type (Mini),SPG
+2553,One ETF Southern China A-Share CSI 500,ICE
+2554,NEXT FUNDS Bloomberg Barclays US Intermediate Corporate Index (JPY Hedged) Exchange Traded Fund,ICE
+2555,TSE REIT ETF,ICE
+2556,One ETF Tokyo Stock Exchange REIT Index,ICE
+2557,SMDAM TOPIX ETF,ICE
+2558,MAXIS S&P500 US Equity,ICE
+2559,MAXIS World Equity (MSCI ACWI),ICE
+2560,MAXIS Carbon Efficient Japan Equity ETF,ICE
+2561,iShares Core Japan Government Bond ETF,ICE
+2562,Listed Index Fund US Equity (Dow Average) Currency Hedge,SPG
+2563,iShares S&P 500 JPY Hedged ETF,ICE
+2564,Global X MSCI SuperDividend Japan ETF,SOLACTIVE
+2565,Global X Logistics J-REIT ETF,SOLACTIVE
+2566,Listed Index Fund Nikkei ESG-REIT,SPG
+2567,NZAM ETF S&P JPX Carbon Efficient Index,ICE
+2568,Listed Index Fund US Equity (NASDAQ100) No Currency Hedge,SPG
+2569,Listed Index Fund US Equity (NASDAQ100) Currency Hedge,SPG
+257A,SMT ETF Selected Japan Equity Active,ICE
+258A,SMT ETF Selected J-REIT Active,ICE
+2620,iShares 1-3 Year US Treasury Bond ETF,ICE
+2621,iShares 20+ Year US Treasury Bond JPY Hedged ETF,ICE
+2624,iFreeETF Nikkei225 (Quarterly Dividend Type),SPG
+2625,iFreeETF TOPIX (Quarterly Dividend Type),SPG
+2626,Global X Digital Innovation Japan ETF,SOLACTIVE
+2627,Global X E-Commerce Japan ETF,SOLACTIVE
+2628,iFreeETF STAR50 ETF,SPG
+2629,iFreeETF GBA100 ETF,SPG
+2630,MAXIS S&P500 US Equity (JPY Hedged),ICE
+2631,MAXIS NASDAQ100,ICE
+2632,MAXIS NASDAQ100 (JPY Hedged),ICE
+2633,NEXT FUNDS S&P 500 (Unhedged) Exchange Traded Fund,ICE
+2634,NEXT FUNDS S&P 500 (Yen-Hedged) Exchange Traded Fund,ICE
+2636,Global X MSCI Governance-Quality Japan ETF,SOLACTIVE
+2637,Global X CleanTech Japan ETF,SOLACTIVE
+2638,Global X Japan Robotics & AI ETF,SOLACTIVE
+2639,Global X Japan Bio & Med Tech ETF,SOLACTIVE
+2640,Global X Japan Games & Animation ETF,SOLACTIVE
+2641,Global X Japan Global Leaders ETF,SOLACTIVE
+2642,SMT ETF Carbon Efficient Index Japan Equity,ICE
+2643,NEXT FUNDS MSCI Japan Country Selection Index Exchange Traded Fund,ICE
+2644,Global X Japan Semiconductor ETF,SOLACTIVE
+2645,Global X Japan Leisure & Entertainment ETF,SOLACTIVE
+2646,Global X Japan Metal Business ETF,SOLACTIVE
+2647,NEXT FUNDS Bloomberg US Treasury Bond (7-10 year) Index (Unhedged) Exchange Traded Fund,ICE
+2648,NEXT FUNDS Bloomberg US Treasury Bond (7-10 year) Index (Yen-Hedged) Exchange Traded Fund,ICE
+2649,iShares Ginnie Mae MBS JPY Hedged ETF,ICE
+273A,SBI Saudi Arabia Equity Exchange Traded Fund,ICE
+282A,Global X Japan Semiconductor Top 10 ETF,SOLACTIVE
+2836,Global X Japan Fintech ETF,SOLACTIVE
+2837,Global X Japan Mid & Small Cap Leaders ETF,SOLACTIVE
+2838,MAXIS 7-10 Year US Treasury Bond ETF (Unhedged),ICE
+2839,MAXIS 7-10 Year US Treasury Bond ETF (Hedged),ICE
+283A,Global X US Tech Dividend Aristocrats ETF,SOLACTIVE
+2840,iFreeETF NASDAQ100 (NON HEDGED),SPG
+2841,iFreeETF NASDAQ100 (JPY HEDGED),SPG
+2842,iFreeETF NASDAQ100 Inverse,SPG
+2843,Listed Index Fund Australian Government Bond (Currency Hedge),SPG
+2844,Listed Index Fund Australian Government Bond (No Currency Hedge),SPG
+2845,NEXT FUNDS NASDAQ-100(R) (Yen-Hedged) Exchange Traded Fund,ICE
+2846,NEXT FUNDS DJIA (Yen-Hedged) Exchange Traded Fund,ICE
+2847,Global X Japan New Growth Infrastructure ETF,SOLACTIVE
+2848,Global X MSCI Japan Climate Change ETF,SOLACTIVE
+2849,Global X Morningstar Japan High Dividend ESG ETF,SOLACTIVE
+2851,iShares MSCI Japan SRI ETF,ICE
+2852,iShares Japan Green REIT ETF,ICE
+2853,iShares Climate Risk-Adjusted Global ex Japan Government Bond JPY Hedged ETF,ICE
+2854,Global X Japan Tech Top 20 ETF,SOLACTIVE
+2855,Global X Green J-REIT ETF,SOLACTIVE
+2856,iShares 3-7 Year US Treasury Bond JPY Hedged ETF,ICE
+2857,iShares Germany Government Bond JPY Hedged ETF,ICE
+2858,Global X Nikkei 225 Covered Call ETF (option premium reinvestment type),ICE
+2859,NEXT FUNDS EURO STOXX 50 (Yen-Hedged) Exchange Traded Fund,ICE
+2860,NEXT FUNDS German Equity DAX (Yen-Hedged) Exchange Traded Fund,ICE
+2861,Listed Index Fund France Government Bond (No Currency Hedge),SPG
+2862,Listed Index Fund France Government Bond (Currency Hedge),SPG
+2864,Global X Logistics REIT ETF,SOLACTIVE
+2865,Global X Nasdaq 100 Covered Call ETF,SOLACTIVE
+2866,Global X U.S. Preferred Security ETF,SOLACTIVE
+2867,Global X Autonomous & EV ETF,SOLACTIVE
+2868,Global X S&P 500 Covered Call ETF,SOLACTIVE
+2869,iFreeETF NASDAQ100 Leveraged (2x),SPG
+2870,iFreeETF NASDAQ100 Double Inverse (-2x),SPG
+294A,NEXT FUNDS MSCI Global Climate 500 Japan Selection Index Exchange Traded Fund,ICE
+295A,One ETF FTSE Saudi Arabia ETF,ICE
+313A,iShares S&P 500 Top 20 ETF,ICE
+314A,iShares Gold ETF,ICE
+315A,Global X Japan Bank High Dividend ETF,SOLACTIVE
+316A,iFreeETF FANG+ PCF,SPG
+328A,Global X Japan Pricing Power Leaders ETF,SOLACTIVE
+346A,NEXT FUNDS S&P 500 Semiconductors & Semiconductor Equipment (Industry Group) 35% Capped Index Exchange Traded Fund,ICE
+348A,MAXIS Yomiuri333 Japan Stock ETF,ICE
+349A,SMDAM Active ETF Japanese Gross Equities,ICE
+354A,iFreeETF Bloomberg Japan High Dividend 50 Index,SPG
+356A,Global X S&P 500 Cash Flow Top 100 ETF,SOLACTIVE
+360A,TSE REIT Core ETF,ICE
+363A,IFREEETF FTSE100 ETF,SPG
+364A,NEXT FUNDS S&P 500 Dividend Aristocrats Index Exchange Traded Fund,ICE
+376A,NEXT FUNDS Bloomberg US Treasury Bond (7-10 year) Index (75% Yen-Hedged) Exchange Traded Fund,ICE
+379A,Global X S&P 500 ETF (Dynamic Protection),SOLACTIVE
+380A,Global X China Tech ETF,ICE
+381A,IFREEETF US TREASURY BOND 3-5 YEAR (NON HEDGED),SPG
+382A,IFREEETF US TREASURY BOND 3-5 YEAR (JPY HEDGED),SPG
+383A,MAXIS S&P500 Equal Weight ETF,ICE
+392A,iShares Nasdaq Top 30 ETF,ICE
+394A,Sector Restructuring Select ETF TV,ICE
+395A,Sector Restructuring Select ETF Regional Banks,ICE
+396A,Sector Restructuring Select ETF Event-Driven REITs,ICE
+399A,Listed Index Fund Nikkei 225 High Dividend Yield Stock 50,SPG
+404A,Global X China Tech Top 10 ETF,ICE
+408A,iShares A.I. Global Innovation Active ETF,ICE
+412A,NEXT FUNDS TIP FactSet Taiwan Innovative Technology 50 Index Exchange Traded Fund,ICE
+413A,iFreeETF Cathay Taiwan Tech Leader Index,SPG
+424A,Global X Gold ETF (JPY Hedged),SOLACTIVE
+425A,Global X Gold ETF,SOLACTIVE
+426A,NISSAY ETF S&P 500 EQUAL WEIGHT,SPG
+435A,iFreeETF Japan Equity Dividend Rotation Strategy,SPG
+443A,iFreeETF Tokyo Stock Exchange REIT Index (Feb/May/Aug/Nov Dividend Type),SPG
+447A,State Street SPDR Gold ETF (JPY Unhedged),ICE
+448A,State Street SPDR Gold ETF (JPY Hedged),ICE
+449A,State Street SPDR S&P 500 ETF (JPY Unhedged),ICE
+450A,State Street SPDR S&P 500 ETF (JPY Hedged),ICE
+451A,State Street SPDR S&P 500 High Dividend ETF (JPY Unhedged),ICE
+452A,iShares S&P 500 Premium Income ETF,ICE
+453A,iShares 20+ Year US Treasury Bond Premium Income ETF,ICE
+459A,Nomura High-Yield J-REIT Index ETF,ICE
+461A,MAXIS Japan Equity High Dividend SMART 50 ETF,ICE
+465A,Global X Japan Nikkei225 Shareholder Return 40 ETF,SOLACTIVE
+466A,Global X Defense Tech ETF,SOLACTIVE
+467A,Global X USD Investment Grade Corporate Bond ETF (JPY Hedged),SOLACTIVE
+468A,Global X USD Investment Grade Corporate Bond ETF,SOLACTIVE
+473A,NISSAY ETF NIKKEI 225 INDEX ETF,SPG
+486A,NEXT FUNDS EURO STOXX 50 (Unhedged) Exchange Traded Fund,ICE
+487A,NEXT FUNDS German Equity DAX (Unhedged) Exchange Traded Fund,ICE
+488A,iShares Yen Appreciation Focus ETF,ICE
+489A,TSE REIT Logistics Focus ETF,ICE
+491A,iShares S&P 500 Ex-Financials JPY Hedged ETF,ICE
+492A,One ETF Japanese Government Bond High Coupon (Average Duration Below Ten Years),ICE
+493A,One ETF Japanese Government Bond 1-3 years,ICE
+494A,One ETF Japanese Government Bond 3-7 years,ICE
+495A,One ETF Japanese Government Bond 7-10 years,ICE
+496A,One ETF Japanese Government Bond 17-20 years,ICE
+502A,Global X JPY Ultra Short-Term Bond ETF,ICE
+512A,Global X Stablecoins & Tokenization ETF (ex-Japan),SOLACTIVE
+513A,Global X Japan Defense Tech ETF,SOLACTIVE
+515A,iShares JPY Investment Grade Corporate Bond Active ETF,ICE
+516A,iFreeETF US Dollar Bull (1x),SPG
+517A,iFreeETF US Dollar Bear (1x),SPG
+518A,NEXT FUNDS FTSE Japan ex-REITs High Income Cash Flow 50 Index Exchange Traded Fund,ICE
+521A,iFreeETF FANG+GOLD,SPG
+526A,JPX Startup100 ETF,ICE
+530A,NZAM ETF J-REIT Index (2 5 8 11),ICE
+531A,NZAM ETF Nikkei High Dividend 50,ICE
+532A,NZAM ETF TOPIX High Dividend 40,ICE
+533A,NZAM ETF S&P500 (UNHEDGED),SPG
+534A,NZAM ETF NASDAQ100 (UNHEDGED),SPG
+535A,	NZAM ETF DAX (UNHEDGED),SPG
+536A,	NZAM ETF MSCI-KOKUSAI (UNHEDGED),SPG
+537A,NZAM ETF MSCI ACWI (UNHEDGED),SPG
+538A,NZAM ETF US TREASURY 7-10Y (UNHEDGED),SPG
+539A,NZAM ETF FTSE WGBI EX JAPAN (UNHEDGED),SPG
+540A,Listed Index Fund Nikkei Bank Stock Top 10,SPG
+541A,One ETF Topix High Dividend Growth Index,ICE
+552A,MAXIS US AI Infrastructure Equity ETF,ICE
+563A,Global X Nasdaq 100 Daily Covered Call ETF,ICE
+564A,Global X S&P Developed Cash Flow Top 100 ETF,SOLACTIVE
+566A,iFreeETF Bloomberg Japan ex-Financials High Dividend 50 Index,SPG
+568A,iShares Silver ETF,ICE
+569A,iShares Platinum ETF,ICE
+570A,iShares 0-1 Year Japan Government Bond ETF,ICE
+571A,iShares 1-3 Year Japan Government Bond ETF,ICE
+572A,iShares 3-7 Year Japan Government Bond ETF,ICE
+573A,iShares 20+  Year Japan Government Bond ETF,ICE
+576A,Global X China Tech Covered Call ETF,ICE
+577A,Global X Silver ETF,SOLACTIVE
+578A,Global X Silver ETF (JPY Hedged),SOLACTIVE
+579A,Global X Silver Miners ETF,SOLACTIVE
+580A,Global X Copper Miners ETF,SOLACTIVE
+585A,NV Bottom Up Equity Investment Strategy Active ETF,ICE
+586A,NEXT FUNDS Nikkei Japan Entertainment Content Stock Index Exchange Traded Fund,ICE
+600A,Nissay ETF Russell 2000 ,SPG
+605A,NEXT FUNDS Japan Equity Policy Focus Exchange Traded Fund,ICE
+606A,Gold 2x Bull ETF,ICE
+608A,Listed Index Fund TSE REIT High Yield 30,SPG
+609A,Global X Japan Wholesale Trade & Resource Business ETF,SOLACTIVE
+610A,Global X Space Tech Top 10 ETF (ex-Japan),SOLACTIVE
+611A,One ETF Japanese Government Bond 27-30 years,ICE
+612A,One ETF JGB Futures Short Index,ICE
+613A,iFreeETF German Government 0-3 Month Bill,SPG
+626A,iFreeETF Gold Plus Income,SPG
