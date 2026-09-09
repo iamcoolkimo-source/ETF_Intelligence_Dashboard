@@ -7,7 +7,7 @@ body {
 
     margin: 30px;
 
-    background: #fafafa;
+    background-color: #f8f9fa;
 }
 
 .title {
@@ -16,18 +16,16 @@ body {
 
     font-weight: bold;
 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .menu {
 
     display: flex;
 
-    gap: 30px;
+    gap: 20px;
 
-    margin-top: 20px;
-
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .menu-btn {
@@ -36,69 +34,74 @@ body {
 
     height: 60px;
 
-    font-size: 28px;
+    border: 2px solid #19415d;
 
-    border: 2px solid #123c59;
+    font-size: 24px;
 
-    background: #dcefd8;
+    background: #dff0da;
 
     cursor: pointer;
 }
 
 .menu-btn.active {
 
-    background: #dceef7;
+    background: #dbeef7;
 }
 
-.toolbar {
+.search-box {
 
-    text-align: right;
-
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.compare-btn {
+.search-box input {
 
-    width: 170px;
+    width: 300px;
 
-    height: 60px;
+    height: 35px;
 
-    font-size: 24px;
+    font-size: 18px;
 
-    background: #dcefd8;
-
-    border: 2px solid #123c59;
+    padding-left: 10px;
 }
 
 table {
 
-    width: 100%;
-
     border-collapse: collapse;
 
-    font-size: 22px;
-}
-
-thead {
-
-    border-bottom:
-        2px solid #123c59;
+    width: 100%;
 }
 
 th {
+
+    background: #19415d;
+
+    color: white;
 
     padding: 10px;
 }
 
 td {
 
-    padding: 18px;
+    border: 1px solid #cccccc;
 
-    text-align: center;
+    padding: 8px;
 }
 
-tbody tr {
+tr:hover {
 
-    border-bottom:
-        1px solid #cccccc;
+    background: #f1f8ff;
+
+    cursor: pointer;
 }
+
+.detail-box {
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border: 2px solid #19415d;
+
+    background: white;
+}
+``
