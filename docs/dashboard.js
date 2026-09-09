@@ -3,7 +3,7 @@ let etfData = [];
 async function loadETFList() {
 
     const response =
-        await fetch("./data/ALL_ETF_MASTER_V2.csv");
+        await fetch("./data/WEB_ETF_MASTER.csv");
 
     const text =
         await response.text();
@@ -38,12 +38,15 @@ async function loadETFList() {
 
         etfData.push({
 
-            code: cols[0],
+          code: cols[0],
 
-            name: name,
+          name: cols[1],
 
-            type: etfType
-        });
+          type: cols[2],
+
+          provider: cols[3]
+
+});
 
     });
 
@@ -71,6 +74,7 @@ function renderTable(data) {
             <td>${etf.name}</td>
 
             <td>${etf.type}</td>
+            <td>${etf.provider}</td>
 
         `;
 
