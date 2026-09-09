@@ -1,7 +1,11 @@
-async function loadETF() {
+let etfData = [];
+
+async function loadETFList() {
 
     const response =
-        await fetch("./data/ALL_ETF_MASTER_V2.csv");
+        await fetch(
+            "./data/ALL_ETF_MASTER_V2.csv"
+        );
 
     const text =
         await response.text();
@@ -9,40 +13,102 @@ async function loadETF() {
     const rows =
         text.split("\n");
 
-    const tbody =
-        document.querySelector(
-            "#etf-table tbody"
-        );
-
-    document.getElementById(
-        "status"
-    ).innerText =
-        "Rows: " + (rows.length - 1);
+    etfData = [];
 
     rows.slice(1).forEach(row => {
 
         if (!row.trim())
             return;
 
-        const cols = row.split(",");
+        const cols =
+            row.split(",");
+
+        etfData.push({
+            code: cols[0],
+            name: cols[1],
+            source: cols[2]
+        });
+
+    });
+
+    renderTable(etfData);
+}
+
+function renderTable(data) {
+
+    const tbody =
+        document.querySelector(
+            "#etf-table tbody"
+        );
+
+    tbody.innerHTML = "";
+
+    data.forEach(etf => {
 
         const tr =
             document.createElement("tr");
 
-        cols.forEach(col => {
+        tr.innerHTML = `
+            <td>${etf.code}</td>
+            <td>${etf.name}</td>
+            <td>${etf.source}</td>
+        `;
 
-            const td =
-                document.createElement("td");
+        tr.onclick = () => {
 
-            td.textContent = col;
+            document.getElementById(
+                "detail-box"
+            ).innerHTML = `
 
-            tr.appendChild(td);
+                <h2>${etf.code}</h2>
 
-        });
+                <p>${etf.name}</p>
+
+                <p>Source: ${etf.source}</p>
+
+                <p>
+                ETF Detail Page
+                Coming Soon
+                </p>
+
+            `;
+        };
 
         tbody.appendChild(tr);
+
     });
 
 }
 
-loadETF();
+document
+.getElementById(
+    "searchInput"
+)
+.addEventListener(
+    "keyup",
+    function () {
+
+        const keyword =
+            this.value.toLowerCase();
+
+        const filtered =
+            etfData.filter(etf =>
+
+                etf.code
+                   .toLowerCase()
+                   .includes(keyword)
+
+                ||
+
+                etf.name
+                   .toLowerCase()
+                   .includes(keyword)
+
+            );
+
+        renderTable(filtered);
+
+    }
+);
+
+loadETFList();
