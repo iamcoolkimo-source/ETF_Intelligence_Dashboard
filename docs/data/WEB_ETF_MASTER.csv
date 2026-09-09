@@ -1,409 +1,409 @@
-﻿ETF_CODE,ETF_NAME_JP,ETF_TYPE,PROVIDER,NET_FLOW,TOP_BUY_STOCK,TOP_BUY_CHANGE,TOP_SELL_STOCK,TOP_SELL_CHANGE
-1305,iFreeETF TOPIX (Yearly Dividend Type),PASSIVE,iFree,0.0,0,0.0,0,0.0
-1306,TOPIX ETF,PASSIVE,Other,-3132200.0,0,0.0,ＮＴＴ,-408200.0
-1308,Listed Index Fund TOPIX,PASSIVE,Other,0.0,0,0.0,0,0.0
-1311,TOPIX Core 30 Exchange Traded,PASSIVE,Other,0.0,0,0.0,0,0.0
-1319,Nikkei 300,PASSIVE,Other,0.0,0,0.0,0,0.0
-1320,iFreeETF Nikkei225 (Yearly Dividend Type),PASSIVE,iFree,0.0,0,0.0,0,0.0
-1321,Nikkei 225 Exchange Traded Fund,PASSIVE,Other,0.0,0,0.0,0,0.0
-1322,Listed Index Fund China A Share (Panda) E Fund CSI300,PASSIVE,Other,0.0,0,0.0,0,0.0
-1325,NEXT FUNDS Ibovespa Linked Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1328,NEXT FUNDS Gold Price Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1329,iShares Nikkei 225 ETF,PASSIVE,iShares,366700.0,ソフトバンクグループ,24000.0,0,0.0
-1330,Listed Index Fund 225,PASSIVE,Other,0.0,0,0.0,0,0.0
-133A,Global X Ultra Short-Term T-Bill ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-1343,NEXT FUNDS REIT INDEX ETF,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1345,Listed Index Fund J-REIT (Tokyo Stock Exchange REIT Index) Bi-Monthly Dividend Payment Type,PASSIVE,Other,0.0,0,0.0,0,0.0
-1346,MAXIS NIKKEI225 ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-1348,MAXIS TOPIX ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-1356,TOPIX Bear -2x ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1357,NEXT FUNDS Nikkei 225 Double Inverse Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1358,Listed Index Fund Nikkei Leveraged Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-1360,Nikkei225 Bear -2x ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1364,iShares JPX-Nikkei 400 ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-1365,iFreeETF Nikkei225 Leveraged Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1366,iFreeETF Nikkei225 Double Inverse Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1367,iFreeETF TOPIX Leveraged (2x) Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1368,iFreeETF TOPIX Double Inverse (-2x) Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1369,One ETF Nikkei225,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-1397,SMAM NIKKEI225 ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1398,SMAM REIT Index ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1399,Listed Index Fund MSCI Japan Equity High Dividend Low Volatility,PASSIVE,Other,0.0,0,0.0,0,0.0
-140A,iFreeETF 10-Year U.S. Treasury Note Futures Inverse,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1456,iFreeETF Nikkei225 Inverse Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1457,iFreeETF TOPIX Inverse (-1x) Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1458,Rakuten ETF-Nikkei 225 Leveraged Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-1459,Rakuten ETF-Nikkei 225 Double Inverse Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-1466,iFreeETF JPX-Nikkei400 Double Inverse (-2x) Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1469,JPX-Nikkei 400 Bear -2x Double Inverse ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1472,NEXT FUNDS JPX-Nikkei 400 Double Inverse Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1473,One ETF TOPIX,PASSIVE,One ETF,7663000.0,ＮＴＴ,997500.0,0,0.0
-1474,One ETF JPX-Nikkei400,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-1475,iShares TOPIX ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-1476,iShares Japan REIT ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-1477,iShares MSCI Japan Minimum Volatility (ex-REITs) ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-1478,iShares MSCI Japan High Dividend ETF,PASSIVE,iShares,-1649600.0,0,0.0,ＮＴＴ,-552000.0
-1479,iFreeETF MSCI Japan Human and Physical Investment Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1480,NEXT FUNDS Nomura Enterprise Value Allocation Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1481,Listed Index Fund Japanese Economy Contributor Stocks,PASSIVE,Other,0.0,0,0.0,0,0.0
-1482,iShares US Treasury Bond 7-10 Year JPY Hedged ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-1483,iShares JPX/S&P CAPEX & Human Capital ETF,PASSIVE,iShares,14900.0,ＮＴＴ,4700.0,0,0.0
-1484,One ETF JPX/S&P CAPEX & Human Capital Index,PASSIVE,One ETF,-2000.0,0,0.0,ＮＴＴ,-600.0
-1485,MAXIS JAPAN Proactive Investment in Physical and Human Capital 200 Index ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-1486,Listed Index Fund US Bond (No Currency Hedge),PASSIVE,Other,0.0,0,0.0,0,0.0
-1487,Listed Index Fund US Bond (Currency Hedge),PASSIVE,Other,0.0,0,0.0,0,0.0
-1488,iFreeETF Tokyo Stock Exchange REIT Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1489,NEXT FUNDS Nikkei 225 High Dividend Yield Stock 50 Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,971600.0,ソフトバンク,233500.0,0,0.0
-1490,Listed Index Fund MSCI Japan Equity High Dividend Low Volatility (Beta Hedged),PASSIVE,Other,0.0,0,0.0,0,0.0
-1493,One ETF JPX-Nikkei Mid Small,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-1494,One ETF High Dividend Japan Equity,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-1495,Listed Index Fund Asian REIT,PASSIVE,Other,0.0,0,0.0,0,0.0
-1498,One ETF ESG,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-1499,MAXIS Japan Equity High Dividend 70 Market Neutral ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-1545,NEXT FUNDS NASDAQ-100,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1546,NEXT FUNDS Dow Jones Industrial Average Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1547,Listed Index Fund US Equity (S&P500),PASSIVE,Other,0.0,0,0.0,0,0.0
-1550,MAXIS Global Equity (MSCI Kokusai),PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-1551,TSE STANDARD TOP 20 ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1554,Listed Index Fund World Equity (MSCI ACWI) ex Japan,PASSIVE,Other,0.0,0,0.0,0,0.0
-1555,Listed Index Fund Australian REIT (S&P/ASX200 A-REIT),PASSIVE,Other,0.0,0,0.0,0,0.0
-1559,NEXT FUNDS Thai Stock SET50 Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1560,NEXT FUNDS FTSE Bursa Malaysia KLCI Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1563,TSE Growth Core ETF,PASSIVE,Other,-303200.0,0,0.0,ＧＥＮＤＡ,-44000.0
-1566,Listed Index Fund Emerging Bond,PASSIVE,Other,0.0,0,0.0,0,0.0
-1568,TOPIX Bull 2x ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1569,TOPIX Bear -1x ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1570,NEXT FUNDS Nikkei 225 Leveraged Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1571,NEXT FUNDS Nikkei 225 Inverse Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1572,China Bull 2x HSCEI ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1573,China Bear -1x HSCEI ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1577,NEXT FUNDS Nomura Japan Equity High Dividend 70 Exchange Traded Fund,PASSIVE,NEXT FUNDS,-389200.0,0,0.0,ＮＴＴ,-57100.0
-1578,Listed Index Fund Nikkei 225 (Mini),PASSIVE,Other,0.0,0,0.0,0,0.0
-1579,Nikkei 225 Bull 2x ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1580,Nikkei 225 Bear -1x ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-1585,iFreeETF TOPIX Ex-Financials,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1586,Listed Index Fund TOPIX Ex-Financials,PASSIVE,Other,0.0,0,0.0,0,0.0
-1591,NEXT FUNDS JPX-Nikkei Index 400 Exchange Traded Fund,PASSIVE,NEXT FUNDS,-2740300.0,0,0.0,ＮＴＴ,-513700.0
-1592,Listed Index Fund JPX-Nikkei Index 400,PASSIVE,Other,0.0,0,0.0,0,0.0
-1593,MAXIS JPX-Nikkei Index 400 ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-1595,NZAM ETF J-REIT Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-1596,NZAM ETF TOPIX Ex-Financials,PASSIVE,Other,0.0,0,0.0,0,0.0
-1597,MAXIS J-REIT ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-1599,iFreeETF JPX-Nikkei400,PASSIVE,iFree,0.0,0,0.0,0,0.0
-159A,NEXT FUNDS JPX Prime 150 Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1615,TOPIX Banks,PASSIVE,Other,-216800.0,0,0.0,三菱ＵＦＪフィナンシャル・グループ,-71500.0
-1617,NEXT FUNDS TOPIX-17 FOODS ETF,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1618,NEXT FUNDS TOPIX-17 ENERGY RESOURCES ETF,PASSIVE,NEXT FUNDS,-339600.0,0,0.0,ＥＮＥＯＳホールディングス,-184200.0
-1619,NEXT FUNDS TOPIX-17 CONSTRUCTION & MATERIALS ETF,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1620,NEXT FUNDS TOPIX-17 RAW MATERIALS & CHEMICALS ETF,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1621,NEXT FUNDS TOPIX-17 PHARMACEUTICAL ETF,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1622,NEXT FUNDS TOPIX-17 AUTOMOBILES & TRANSPORTATION EQUIPMENT ETF,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1623,NEXT FUNDS TOPIX-17 STEEL & NONFERROUS ETF,PASSIVE,NEXT FUNDS,1124900.0,日本製鉄,433500.0,0,0.0
-1624,NEXT FUNDS TOPIX-17 MACHINERY ETF,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1625,NEXT FUNDS TOPIX-17 ELECTRIC APPLIANCES & PRECISION INSTRUMENTS ETF,PASSIVE,NEXT FUNDS,-68200.0,0,0.0,ソニーグループ,-10200.0
-1626,NEXT FUNDS TOPIX-17 IT & SERVICES OTHERS ETF,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1627,NEXT FUNDS TOPIX-17 ELECTRIC POWER & GAS ETF,PASSIVE,NEXT FUNDS,326800.0,東京電力ホールディングス,83800.0,0,0.0
-1628,NEXT FUNDS TOPIX-17 TRANSPORTATION & LOGISTICS ETF,PASSIVE,NEXT FUNDS,210700.0,東日本旅客鉄道,22200.0,0,0.0
-1629,NEXT FUNDS TOPIX-17 COMMERCIAL & WHOLESALE TRADE ETF,PASSIVE,NEXT FUNDS,1200.0,伊藤忠商事,300.0,0,0.0
-1630,NEXT FUNDS TOPIX-17 RETAIL TRADE ETF,PASSIVE,NEXT FUNDS,-304200.0,0,0.0,イオン,-45000.0
-1631,NEXT FUNDS TOPIX-17 BANKS ETF,PASSIVE,NEXT FUNDS,-124900.0,0,0.0,三菱ＵＦＪフィナンシャル・グループ,-41000.0
-1632,NEXT FUNDS TOPIX-17 FINANCIALS (EX BANKS) ETF,PASSIVE,NEXT FUNDS,-822000.0,0,0.0,ソニーフィナンシャルグループ,-196600.0
-1633,NEXT FUNDS TOPIX-17 REAL ESTATE ETF,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1651,iFreeETF TOPIX High Dividend Yield 40 Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1652,iFreeETF MSCI Japan Empowering Women Index (WIN),PASSIVE,iFree,0.0,0,0.0,0,0.0
-1653,iFreeETF MSCI Japan ESG Select Leaders Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1654,iFreeETF FTSE JPX Blossom Japan Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-1655,iShares S&P 500 ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-1656,iShares Core 7-10 Year US Treasury Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-1657,iShares Core MSCI Kokusai ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-1658,iShares Core MSCI Emerging Markets IMI ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-1659,iShares US REIT ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-1660,MAXIS High Yield J-REIT ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-1677,Listed Index Fund International Bond (Citi WGBI) Monthly Dividend Payment Type,PASSIVE,Other,0.0,0,0.0,0,0.0
-1678,NEXT FUNDS Nifty Linked Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-1680,Listed Index Fund International Developed Countries Equity (MSCI-KOKUSAI),PASSIVE,Other,0.0,0,0.0,0,0.0
-1681,Listed Index Fund International Emerging Countries Equity (MSCI EMERGING),PASSIVE,Other,0.0,0,0.0,0,0.0
-1698,Listed Index Fund Japan High Dividend (TSE Dividend Focus 100),PASSIVE,Other,0.0,0,0.0,0,0.0
-1699,NEXT FUNDS NOMURA Crude Oil Long Index Linked Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-170A,SMT ETF Japan Equity Income Strategy Active,ACTIVE,Other,-534.6940439999987,0,0.0,ＮＴＴ,-118.05289900000209
-178A,Global X Innovative Bluechip Top 10+ ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-179A,Global X 25+ Year T-Bond ETF (JPY Hedged),PASSIVE,Global X,0.0,0,0.0,0,0.0
-180A,Global X 25+ Year T-Bond ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-181A,MAXIS US Treasury Bond 1-3 Year ETF (Unhedged),PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-182A,MAXIS US Treasury Bond 20+ Year ETF (Unhedged),PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-183A,MAXIS US Treasury Bond 20+ Year ETF (JPY Hedged),PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-188A,Global X India Top 10+ ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-200A,NEXT FUNDS Nikkei Semiconductor Stock Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,18200.0,ルネサスエレクトロニクス,4000.0,0,0.0
-2011,SMDAM Active ETF Japan High Dividend Equity,PASSIVE,Other,0.0,0,0.0,0,0.0
-2012,iShares 0-3 Month US Treasury Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2013,iShares US High Dividend ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2014,iShares US Dividend Growth ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2015,iFreeETF US Treasury 7-10 year (NON-HEDGE),PASSIVE,iFree,0.0,0,0.0,0,0.0
-2016,iFreeETF US Treasury 7-10 year (JP HEDGE),PASSIVE,iFree,0.0,0,0.0,0,0.0
-2017,iFreeETF JPX Prime 150,PASSIVE,iFree,0.0,0,0.0,0,0.0
-2018,Global X US REIT Top 20 ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2019,Global X U.S. Preferred Security ETF (Bi-monthly dividend type),PASSIVE,Global X,0.0,0,0.0,0,0.0
-2080,PBR Improvement over 1x ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-2081,Strategic Shareholding Disposal Promotion ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-2082,Investor-Management Unite as One ETF,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-2083,NEXT FUNDS Japan Growth Equity Active Exchange Traded Fund,ACTIVE,NEXT FUNDS,-2100.0,いすゞ自動車,3400.0,第一三共,-2900.0
-2084,NEXT FUNDS Japan High Dividend Equity Active Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2085,MAXIS High Dividend Japan Equity Actively Managed ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2086,NZAM S&P 500 in TTM Rates JPY Hedged Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-2087,NZAM NASDAQ-100 Notional Net Total Return Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-2088,NZAM Dow Jones Industrial Average JPY Hedged (TTM) (Japan Calendar),PASSIVE,Other,0.0,0,0.0,0,0.0
-2089,NZAM DAX Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-2090,NZAM Bloomberg US Treasury 7-10 year Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-2091,NZAM Bloomberg German Treasury 7-10 year Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-2092,NZAM Bloomberg France Treasury 7-10 year Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-2093,Listed Tracers US Government Bond 0-2years Ladder (No Currency Hedge),PASSIVE,Other,0.0,0,0.0,0,0.0
-2094,TSE REIT Inverse ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-2095,Global X S&P 500 Dividend Aristocrats ETF (JPY Hedged),PASSIVE,Global X,0.0,0,0.0,0,0.0
-2096,Global X Office J-REIT ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2097,Global X Residential J-REIT ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2098,Global X Hotel & Retail J-REIT ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-210A,iFreeETF Nikkei High Yield REIT Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-213A,Listed Index Fund Nikkei Semiconductor Stock,PASSIVE,Other,0.0,0,0.0,0,0.0
-221A,MAXIS Nikkei Semiconductor Stock (Japan) ETF,PASSIVE,MAXIS,949.8050410000278,ルネサスエレクトロニクス,210.08313000001365,0,0.0
-2235,Listed Index Fund US Equity (Dow Average) No Currency Hedge,PASSIVE,Other,0.0,0,0.0,0,0.0
-2236,Global X S&P 500 Dividend Aristocrats ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2237,iFreeETF S&P500 Leveraged (2x),PASSIVE,iFree,0.0,0,0.0,0,0.0
-2238,iFreeETF S&P500 Inverse,PASSIVE,iFree,0.0,0,0.0,0,0.0
-2239,Listed Index Fund S&P500 Futures Leveraged Two Times,PASSIVE,Other,0.0,0,0.0,0,0.0
-223A,Global X Artificial Intelligence & Technology ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2240,Listed Index Fund S&P500 Futures Inverse,PASSIVE,Other,0.0,0,0.0,0,0.0
-2241,MAXIS NY Dow Industrial Average ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2242,MAXIS NY Dow Industrial Average ETF (JPY Hedged),PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2243,Global X Semiconductor ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2244,Global X US Tech Top 20 ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2245,NEXT FUNDS Bloomberg Germany Treasury Bond (7-10 year) Index (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2247,iFreeETF S&P500 (NON HEDGED),PASSIVE,iFree,0.0,0,0.0,0,0.0
-2248,iFreeETF S&P500 (JPY HEDGED),PASSIVE,iFree,0.0,0,0.0,0,0.0
-2249,iFreeETF S&P500 Double Inverse (-2x),PASSIVE,iFree,0.0,0,0.0,0,0.0
-224A,Global X Uranium ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2250,iShares MSCI Japan Climate Action ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2251,NEXT FUNDS JPX JGB Futures Double Inverse Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2252,Global X Morningstar US Small Mid Moat ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2253,Global X SuperDividend U.S. ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2254,Global X China Electric Vehicle and Battery ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2255,iShares 20+ Year US Treasury Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2256,iShares US Aggregate Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2257,iShares USD Investment Grade Corporate Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2258,iShares USD High Yield Corporate Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2259,iShares 7-10 Year France Government Bond JPY Hedged ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-233A,iFreeETF Nifty50,PASSIVE,iFree,0.0,0,0.0,0,0.0
-234A,Global X MSCI Japan Cash Flow Kings ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-235A,Global X Japan High Dividend 30 ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-236A,iShares 7-10 Year Japan Government Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-237A,iShares 25+ Year US Treasury Bond Long Duration ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-238A,iShares 25+ Year US Treasury Bond Long Duration JPY Hedged ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2510,NEXT FUNDS Japan Bond NOMURA-BPI Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2511,NEXT FUNDS International Bond FTSE World Government Bond Index (ex Japan Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2512,NEXT FUNDS International Bond FTSE World Government Bond Index (ex Japan Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2513,NEXT FUNDS International Equity MSCI-KOKUSAI (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2514,NEXT FUNDS International Equity MSCI-KOKUSAI (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2515,NEXT FUNDS International REIT S&P Developed REIT Index (ex Japan Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2516,TSE Mothers ETF,PASSIVE,Other,4800.0,アンジェス,400.0,0,0.0
-2517,MAXIS J-REIT Core ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2518,NEXT FUNDS MSCI Japan Empowering Women Select Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2519,NEXT FUNDS Emerging Market Bond J.P. Morgan EMBI Plus (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2520,NEXT FUNDS Emerging Market Equity MSCI-EM (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2521,Listed Index Fund US Equity (S&P500) Currency Hedge,PASSIVE,Other,0.0,0,0.0,0,0.0
-2522,iShares Automation & Robot ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2523,MAXIS TOPIX Ex-Financials ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2524,NZAM ETF TOPIX,PASSIVE,Other,0.0,0,0.0,0,0.0
-2525,NZAM ETF Nikkei 225,PASSIVE,Other,0.0,0,0.0,0,0.0
-2526,NZAM ETF JPX-Nikkei 400,PASSIVE,Other,0.0,0,0.0,0,0.0
-2527,NZAM ETF J-REIT Core Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-2528,iFreeETF Tokyo Stock Exchange REIT Core Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-2529,NEXT FUNDS Nomura Shareholder Yield 70 Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2552,Listed Index Fund J-REIT (Tokyo Stock Exchange REIT Index) Bi-Monthly Dividend Payment Type (Mini),PASSIVE,Other,0.0,0,0.0,0,0.0
-2553,One ETF Southern China A-Share CSI 500,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-2554,NEXT FUNDS Bloomberg Barclays US Intermediate Corporate Index (JPY Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2555,TSE REIT ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-2556,One ETF Tokyo Stock Exchange REIT Index,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-2557,SMDAM TOPIX ETF,PASSIVE,Other,1000.0,ユー・エム・シー・エレクトロニクス,1000.0,0,0.0
-2558,MAXIS S&P500 US Equity,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2559,MAXIS World Equity (MSCI ACWI),PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2560,MAXIS Carbon Efficient Japan Equity ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2561,iShares Core Japan Government Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2562,Listed Index Fund US Equity (Dow Average) Currency Hedge,PASSIVE,Other,0.0,0,0.0,0,0.0
-2563,iShares S&P 500 JPY Hedged ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2564,Global X MSCI SuperDividend Japan ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2565,Global X Logistics J-REIT ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2566,Listed Index Fund Nikkei ESG-REIT,PASSIVE,Other,0.0,0,0.0,0,0.0
-2567,NZAM ETF S&P JPX Carbon Efficient Index,PASSIVE,Other,0.0,0,0.0,0,0.0
-2568,Listed Index Fund US Equity (NASDAQ100) No Currency Hedge,PASSIVE,Other,0.0,0,0.0,0,0.0
-2569,Listed Index Fund US Equity (NASDAQ100) Currency Hedge,PASSIVE,Other,0.0,0,0.0,0,0.0
-257A,SMT ETF Selected Japan Equity Active,ACTIVE,Other,3400.189229000001,ＮＴＴ,1034.907073000002,0,0.0
-258A,SMT ETF Selected J-REIT Active,PASSIVE,Other,0.0,0,0.0,0,0.0
-2620,iShares 1-3 Year US Treasury Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2621,iShares 20+ Year US Treasury Bond JPY Hedged ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2624,iFreeETF Nikkei225 (Quarterly Dividend Type),PASSIVE,iFree,0.0,0,0.0,0,0.0
-2625,iFreeETF TOPIX (Quarterly Dividend Type),PASSIVE,iFree,0.0,0,0.0,0,0.0
-2626,Global X Digital Innovation Japan ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2627,Global X E-Commerce Japan ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2628,iFreeETF STAR50 ETF,PASSIVE,iFree,0.0,0,0.0,0,0.0
-2629,iFreeETF GBA100 ETF,PASSIVE,iFree,0.0,0,0.0,0,0.0
-2630,MAXIS S&P500 US Equity (JPY Hedged),PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2631,MAXIS NASDAQ100,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2632,MAXIS NASDAQ100 (JPY Hedged),PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2633,NEXT FUNDS S&P 500 (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2634,NEXT FUNDS S&P 500 (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2636,Global X MSCI Governance-Quality Japan ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2637,Global X CleanTech Japan ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2638,Global X Japan Robotics & AI ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2639,Global X Japan Bio & Med Tech ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2640,Global X Japan Games & Animation ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2641,Global X Japan Global Leaders ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2642,SMT ETF Carbon Efficient Index Japan Equity,PASSIVE,Other,0.0,0,0.0,0,0.0
-2643,NEXT FUNDS MSCI Japan Country Selection Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2644,Global X Japan Semiconductor ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2645,Global X Japan Leisure & Entertainment ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2646,Global X Japan Metal Business ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2647,NEXT FUNDS Bloomberg US Treasury Bond (7-10 year) Index (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2648,NEXT FUNDS Bloomberg US Treasury Bond (7-10 year) Index (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2649,iShares Ginnie Mae MBS JPY Hedged ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-273A,SBI Saudi Arabia Equity Exchange Traded Fund,PASSIVE,Other,0.0,0,0.0,0,0.0
-282A,Global X Japan Semiconductor Top 10 ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2836,Global X Japan Fintech ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2837,Global X Japan Mid & Small Cap Leaders ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2838,MAXIS 7-10 Year US Treasury Bond ETF (Unhedged),PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-2839,MAXIS 7-10 Year US Treasury Bond ETF (Hedged),PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-283A,Global X US Tech Dividend Aristocrats ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2840,iFreeETF NASDAQ100 (NON HEDGED),PASSIVE,iFree,0.0,0,0.0,0,0.0
-2841,iFreeETF NASDAQ100 (JPY HEDGED),PASSIVE,iFree,0.0,0,0.0,0,0.0
-2842,iFreeETF NASDAQ100 Inverse,PASSIVE,iFree,0.0,0,0.0,0,0.0
-2843,Listed Index Fund Australian Government Bond (Currency Hedge),PASSIVE,Other,0.0,0,0.0,0,0.0
-2844,Listed Index Fund Australian Government Bond (No Currency Hedge),PASSIVE,Other,0.0,0,0.0,0,0.0
-2845,NEXT FUNDS NASDAQ-100(R) (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2846,NEXT FUNDS DJIA (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2847,Global X Japan New Growth Infrastructure ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2848,Global X MSCI Japan Climate Change ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2849,Global X Morningstar Japan High Dividend ESG ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2851,iShares MSCI Japan SRI ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2852,iShares Japan Green REIT ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2853,iShares Climate Risk-Adjusted Global ex Japan Government Bond JPY Hedged ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2854,Global X Japan Tech Top 20 ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2855,Global X Green J-REIT ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2856,iShares 3-7 Year US Treasury Bond JPY Hedged ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2857,iShares Germany Government Bond JPY Hedged ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-2858,Global X Nikkei 225 Covered Call ETF (option premium reinvestment type),PASSIVE,Global X,0.0,0,0.0,0,0.0
-2859,NEXT FUNDS EURO STOXX 50 (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2860,NEXT FUNDS German Equity DAX (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-2861,Listed Index Fund France Government Bond (No Currency Hedge),PASSIVE,Other,0.0,0,0.0,0,0.0
-2862,Listed Index Fund France Government Bond (Currency Hedge),PASSIVE,Other,0.0,0,0.0,0,0.0
-2864,Global X Logistics REIT ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2865,Global X Nasdaq 100 Covered Call ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2866,Global X U.S. Preferred Security ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2867,Global X Autonomous & EV ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2868,Global X S&P 500 Covered Call ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-2869,iFreeETF NASDAQ100 Leveraged (2x),PASSIVE,iFree,0.0,0,0.0,0,0.0
-2870,iFreeETF NASDAQ100 Double Inverse (-2x),PASSIVE,iFree,0.0,0,0.0,0,0.0
-294A,NEXT FUNDS MSCI Global Climate 500 Japan Selection Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-295A,One ETF FTSE Saudi Arabia ETF,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-313A,iShares S&P 500 Top 20 ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-314A,iShares Gold ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-315A,Global X Japan Bank High Dividend ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-316A,iFreeETF FANG+ PCF,PASSIVE,iFree,0.0,0,0.0,0,0.0
-328A,Global X Japan Pricing Power Leaders ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-346A,NEXT FUNDS S&P 500 Semiconductors & Semiconductor Equipment (Industry Group) 35% Capped Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-348A,MAXIS Yomiuri333 Japan Stock ETF,ACTIVE,MAXIS,28.111963999995965,ＨＯＹＡ,10.791774999999989,王子ホールディングス,-5.864194000000225
-349A,SMDAM Active ETF Japanese Gross Equities,ACTIVE,Other,3200.0,日清紡ホールディングス,1400.0,ルネサスエレクトロニクス,-700.0
-354A,iFreeETF Bloomberg Japan High Dividend 50 Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-356A,Global X S&P 500 Cash Flow Top 100 ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-360A,TSE REIT Core ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-363A,IFREEETF FTSE100 ETF,PASSIVE,iFree,0.0,0,0.0,0,0.0
-364A,NEXT FUNDS S&P 500 Dividend Aristocrats Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-376A,NEXT FUNDS Bloomberg US Treasury Bond (7-10 year) Index (75% Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-379A,Global X S&P 500 ETF (Dynamic Protection),PASSIVE,Global X,0.0,0,0.0,0,0.0
-380A,Global X China Tech ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-381A,IFREEETF US TREASURY BOND 3-5 YEAR (NON HEDGED),PASSIVE,iFree,0.0,0,0.0,0,0.0
-382A,IFREEETF US TREASURY BOND 3-5 YEAR (JPY HEDGED),PASSIVE,iFree,0.0,0,0.0,0,0.0
-383A,MAXIS S&P500 Equal Weight ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-392A,iShares Nasdaq Top 30 ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-394A,Sector Restructuring Select ETF TV,PASSIVE,Other,0.0,0,0.0,0,0.0
-395A,Sector Restructuring Select ETF Regional Banks,PASSIVE,Other,0.0,0,0.0,0,0.0
-396A,Sector Restructuring Select ETF Event-Driven REITs,PASSIVE,Other,0.0,0,0.0,0,0.0
-399A,Listed Index Fund Nikkei 225 High Dividend Yield Stock 50,PASSIVE,Other,0.0,0,0.0,0,0.0
-404A,Global X China Tech Top 10 ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-408A,iShares A.I. Global Innovation Active ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-412A,NEXT FUNDS TIP FactSet Taiwan Innovative Technology 50 Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-413A,iFreeETF Cathay Taiwan Tech Leader Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-424A,Global X Gold ETF (JPY Hedged),PASSIVE,Global X,0.0,0,0.0,0,0.0
-425A,Global X Gold ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-426A,NISSAY ETF S&P 500 EQUAL WEIGHT,PASSIVE,Other,0.0,0,0.0,0,0.0
-435A,iFreeETF Japan Equity Dividend Rotation Strategy,PASSIVE,iFree,0.0,0,0.0,0,0.0
-443A,iFreeETF Tokyo Stock Exchange REIT Index (Feb/May/Aug/Nov Dividend Type),PASSIVE,iFree,0.0,0,0.0,0,0.0
-447A,State Street SPDR Gold ETF (JPY Unhedged),PASSIVE,Other,0.0,0,0.0,0,0.0
-448A,State Street SPDR Gold ETF (JPY Hedged),PASSIVE,Other,0.0,0,0.0,0,0.0
-449A,State Street SPDR S&P 500 ETF (JPY Unhedged),PASSIVE,Other,0.0,0,0.0,0,0.0
-450A,State Street SPDR S&P 500 ETF (JPY Hedged),PASSIVE,Other,0.0,0,0.0,0,0.0
-451A,State Street SPDR S&P 500 High Dividend ETF (JPY Unhedged),PASSIVE,Other,0.0,0,0.0,0,0.0
-452A,iShares S&P 500 Premium Income ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-453A,iShares 20+ Year US Treasury Bond Premium Income ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-459A,Nomura High-Yield J-REIT Index ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-461A,MAXIS Japan Equity High Dividend SMART 50 ETF,ACTIVE,MAXIS,0.6455800000126127,ソニーフィナンシャルグループ,0.1357430000207387,0,0.0
-465A,Global X Japan Nikkei225 Shareholder Return 40 ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-466A,Global X Defense Tech ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-467A,Global X USD Investment Grade Corporate Bond ETF (JPY Hedged),PASSIVE,Global X,0.0,0,0.0,0,0.0
-468A,Global X USD Investment Grade Corporate Bond ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-473A,NISSAY ETF NIKKEI 225 INDEX ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-486A,NEXT FUNDS EURO STOXX 50 (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-487A,NEXT FUNDS German Equity DAX (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-488A,iShares Yen Appreciation Focus ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-489A,TSE REIT Logistics Focus ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-491A,iShares S&P 500 Ex-Financials JPY Hedged ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-492A,One ETF Japanese Government Bond High Coupon (Average Duration Below Ten Years),PASSIVE,One ETF,0.0,0,0.0,0,0.0
-493A,One ETF Japanese Government Bond 1-3 years,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-494A,One ETF Japanese Government Bond 3-7 years,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-495A,One ETF Japanese Government Bond 7-10 years,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-496A,One ETF Japanese Government Bond 17-20 years,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-502A,Global X JPY Ultra Short-Term Bond ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-512A,Global X Stablecoins & Tokenization ETF (ex-Japan),PASSIVE,Global X,0.0,0,0.0,0,0.0
-513A,Global X Japan Defense Tech ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-515A,iShares JPY Investment Grade Corporate Bond Active ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-516A,iFreeETF US Dollar Bull (1x),PASSIVE,iFree,0.0,0,0.0,0,0.0
-517A,iFreeETF US Dollar Bear (1x),PASSIVE,iFree,0.0,0,0.0,0,0.0
-518A,NEXT FUNDS FTSE Japan ex-REITs High Income Cash Flow 50 Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-521A,iFreeETF FANG+GOLD,PASSIVE,iFree,0.0,0,0.0,0,0.0
-526A,JPX Startup100 ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-530A,NZAM ETF J-REIT Index (2 5 8 11),PASSIVE,Other,0.0,0,0.0,0,0.0
-531A,NZAM ETF Nikkei High Dividend 50,PASSIVE,Other,0.0,0,0.0,0,0.0
-532A,NZAM ETF TOPIX High Dividend 40,PASSIVE,Other,0.0,0,0.0,0,0.0
-533A,NZAM ETF S&P500 (UNHEDGED),PASSIVE,Other,0.0,0,0.0,0,0.0
-534A,NZAM ETF NASDAQ100 (UNHEDGED),PASSIVE,Other,0.0,0,0.0,0,0.0
-535A,	NZAM ETF DAX (UNHEDGED),PASSIVE,Other,0.0,0,0.0,0,0.0
-536A,	NZAM ETF MSCI-KOKUSAI (UNHEDGED),PASSIVE,Other,0.0,0,0.0,0,0.0
-537A,NZAM ETF MSCI ACWI (UNHEDGED),PASSIVE,Other,0.0,0,0.0,0,0.0
-538A,NZAM ETF US TREASURY 7-10Y (UNHEDGED),PASSIVE,Other,0.0,0,0.0,0,0.0
-539A,NZAM ETF FTSE WGBI EX JAPAN (UNHEDGED),PASSIVE,Other,0.0,0,0.0,0,0.0
-540A,Listed Index Fund Nikkei Bank Stock Top 10,PASSIVE,Other,0.0,0,0.0,0,0.0
-541A,One ETF Topix High Dividend Growth Index,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-552A,MAXIS US AI Infrastructure Equity ETF,PASSIVE,MAXIS,0.0,0,0.0,0,0.0
-563A,Global X Nasdaq 100 Daily Covered Call ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-564A,Global X S&P Developed Cash Flow Top 100 ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-566A,iFreeETF Bloomberg Japan ex-Financials High Dividend 50 Index,PASSIVE,iFree,0.0,0,0.0,0,0.0
-568A,iShares Silver ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-569A,iShares Platinum ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-570A,iShares 0-1 Year Japan Government Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-571A,iShares 1-3 Year Japan Government Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-572A,iShares 3-7 Year Japan Government Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-573A,iShares 20+  Year Japan Government Bond ETF,PASSIVE,iShares,0.0,0,0.0,0,0.0
-576A,Global X China Tech Covered Call ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-577A,Global X Silver ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-578A,Global X Silver ETF (JPY Hedged),PASSIVE,Global X,0.0,0,0.0,0,0.0
-579A,Global X Silver Miners ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-580A,Global X Copper Miners ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-585A,NV Bottom Up Equity Investment Strategy Active ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-586A,NEXT FUNDS Nikkei Japan Entertainment Content Stock Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,40700.0,サンリオ,8000.0,0,0.0
-600A,Nissay ETF Russell 2000 ,PASSIVE,Other,0.0,0,0.0,0,0.0
-605A,NEXT FUNDS Japan Equity Policy Focus Exchange Traded Fund,PASSIVE,NEXT FUNDS,0.0,0,0.0,0,0.0
-606A,Gold 2x Bull ETF,PASSIVE,Other,0.0,0,0.0,0,0.0
-608A,Listed Index Fund TSE REIT High Yield 30,PASSIVE,Other,0.0,0,0.0,0,0.0
-609A,Global X Japan Wholesale Trade & Resource Business ETF,PASSIVE,Global X,0.0,0,0.0,0,0.0
-610A,Global X Space Tech Top 10 ETF (ex-Japan),PASSIVE,Global X,0.0,0,0.0,0,0.0
-611A,One ETF Japanese Government Bond 27-30 years,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-612A,One ETF JGB Futures Short Index,PASSIVE,One ETF,0.0,0,0.0,0,0.0
-613A,iFreeETF German Government 0-3 Month Bill,PASSIVE,iFree,0.0,0,0.0,0,0.0
-626A,iFreeETF Gold Plus Income,PASSIVE,iFree,0.0,0,0.0,0,0.0
+﻿ETF_CODE,ETF_NAME_JP,ETF_TYPE,PROVIDER,TOP_BUY_STOCK,NET_FLOW
+1305,iFreeETF TOPIX (Yearly Dividend Type),PASSIVE,iFree,,0.0
+1306,ＮＥＸＴ ＦＵＮＤＳ ＴＯＰＩＸ連動型上場投信,PASSIVE,Other,,-3132200.0
+1308,Listed Index Fund TOPIX,PASSIVE,Other,,0.0
+1311,TOPIX Core 30 Exchange Traded,PASSIVE,Other,,0.0
+1319,Nikkei 300,PASSIVE,Other,,0.0
+1320,iFreeETF Nikkei225 (Yearly Dividend Type),PASSIVE,iFree,,0.0
+1321,ＮＥＸＴ ＦＵＮＤＳ 日経２２５連動型上場投信,PASSIVE,Other,,0.0
+1322,Listed Index Fund China A Share (Panda) E Fund CSI300,PASSIVE,Other,,0.0
+1325,NEXT FUNDS Ibovespa Linked Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+1328,NEXT FUNDS Gold Price Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+1329,iShares Nikkei 225 ETF,PASSIVE,iShares,ソフトバンクグループ,366700.0
+1330,Listed Index Fund 225,PASSIVE,Other,,0.0
+133A,Global X Ultra Short-Term T-Bill ETF,PASSIVE,Global X,,0.0
+1343,NEXT FUNDS REIT INDEX ETF,REIT,NEXT FUNDS,,0.0
+1345,Listed Index Fund J-REIT (Tokyo Stock Exchange REIT Index) Bi-Monthly Dividend Payment Type,REIT,Other,,0.0
+1346,MAXIS NIKKEI225 ETF,PASSIVE,MAXIS,,0.0
+1348,MAXIS TOPIX ETF,PASSIVE,MAXIS,,0.0
+1356,TOPIX Bear -2x ETF,LEVERAGED_INVERSE,Other,,0.0
+1357,NEXT FUNDS Nikkei 225 Double Inverse Index Exchange Traded Fund,LEVERAGED_INVERSE,NEXT FUNDS,,0.0
+1358,Listed Index Fund Nikkei Leveraged Index,LEVERAGED_INVERSE,Other,,0.0
+1360,Nikkei225 Bear -2x ETF,LEVERAGED_INVERSE,Other,,0.0
+1364,iShares JPX-Nikkei 400 ETF,PASSIVE,iShares,,0.0
+1365,iFreeETF Nikkei225 Leveraged Index,LEVERAGED_INVERSE,iFree,,0.0
+1366,iFreeETF Nikkei225 Double Inverse Index,LEVERAGED_INVERSE,iFree,,0.0
+1367,iFreeETF TOPIX Leveraged (2x) Index,LEVERAGED_INVERSE,iFree,,0.0
+1368,iFreeETF TOPIX Double Inverse (-2x) Index,LEVERAGED_INVERSE,iFree,,0.0
+1369,One ETF Nikkei225,PASSIVE,One ETF,,0.0
+1397,SMAM NIKKEI225 ETF,PASSIVE,Other,,0.0
+1398,SMAM REIT Index ETF,REIT,Other,,0.0
+1399,Listed Index Fund MSCI Japan Equity High Dividend Low Volatility,PASSIVE,Other,,0.0
+140A,iFreeETF 10-Year U.S. Treasury Note Futures Inverse,BOND,iFree,,0.0
+1456,iFreeETF Nikkei225 Inverse Index,LEVERAGED_INVERSE,iFree,,0.0
+1457,iFreeETF TOPIX Inverse (-1x) Index,LEVERAGED_INVERSE,iFree,,0.0
+1458,Rakuten ETF-Nikkei 225 Leveraged Index,LEVERAGED_INVERSE,Other,,0.0
+1459,Rakuten ETF-Nikkei 225 Double Inverse Index,LEVERAGED_INVERSE,Other,,0.0
+1466,iFreeETF JPX-Nikkei400 Double Inverse (-2x) Index,LEVERAGED_INVERSE,iFree,,0.0
+1469,JPX-Nikkei 400 Bear -2x Double Inverse ETF,LEVERAGED_INVERSE,Other,,0.0
+1472,NEXT FUNDS JPX-Nikkei 400 Double Inverse Index Exchange Traded Fund,LEVERAGED_INVERSE,NEXT FUNDS,,0.0
+1473,Ｏｎｅ ＥＴＦ ＴＯＰＩＸ,PASSIVE,One ETF,ＮＴＴ,7663000.0
+1474,One ETF JPX-Nikkei400,PASSIVE,One ETF,,0.0
+1475,iShares TOPIX ETF,PASSIVE,iShares,,0.0
+1476,iShares Japan REIT ETF,REIT,iShares,,0.0
+1477,iShares MSCI Japan Minimum Volatility (ex-REITs) ETF,REIT,iShares,,0.0
+1478,iShares MSCI Japan High Dividend ETF,PASSIVE,iShares,,-1649600.0
+1479,iFreeETF MSCI Japan Human and Physical Investment Index,PASSIVE,iFree,,0.0
+1480,NEXT FUNDS Nomura Enterprise Value Allocation Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+1481,Listed Index Fund Japanese Economy Contributor Stocks,PASSIVE,Other,,0.0
+1482,iShares US Treasury Bond 7-10 Year JPY Hedged ETF,BOND,iShares,,0.0
+1483,iShares JPX/S&P CAPEX & Human Capital ETF,PASSIVE,iShares,ＮＴＴ,14900.0
+1484,One ETF JPX/S&P CAPEX & Human Capital Index,PASSIVE,One ETF,,-2000.0
+1485,MAXIS JAPAN Proactive Investment in Physical and Human Capital 200 Index ETF,ACTIVE,MAXIS,,0.0
+1486,Listed Index Fund US Bond (No Currency Hedge),BOND,Other,,0.0
+1487,Listed Index Fund US Bond (Currency Hedge),BOND,Other,,0.0
+1488,iFreeETF Tokyo Stock Exchange REIT Index,REIT,iFree,,0.0
+1489,NEXT FUNDS Nikkei 225 High Dividend Yield Stock 50 Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,ソフトバンク,971600.0
+1490,Listed Index Fund MSCI Japan Equity High Dividend Low Volatility (Beta Hedged),PASSIVE,Other,,0.0
+1493,One ETF JPX-Nikkei Mid Small,PASSIVE,One ETF,,0.0
+1494,One ETF High Dividend Japan Equity,PASSIVE,One ETF,,0.0
+1495,Listed Index Fund Asian REIT,REIT,Other,,0.0
+1498,One ETF ESG,PASSIVE,One ETF,,0.0
+1499,MAXIS Japan Equity High Dividend 70 Market Neutral ETF,PASSIVE,MAXIS,,0.0
+1545,NEXT FUNDS NASDAQ-100,PASSIVE,NEXT FUNDS,,0.0
+1546,NEXT FUNDS Dow Jones Industrial Average Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+1547,Listed Index Fund US Equity (S&P500),PASSIVE,Other,,0.0
+1550,MAXIS Global Equity (MSCI Kokusai),PASSIVE,MAXIS,,0.0
+1551,TSE STANDARD TOP 20 ETF,PASSIVE,Other,,0.0
+1554,Listed Index Fund World Equity (MSCI ACWI) ex Japan,PASSIVE,Other,,0.0
+1555,Listed Index Fund Australian REIT (S&P/ASX200 A-REIT),REIT,Other,,0.0
+1559,NEXT FUNDS Thai Stock SET50 Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+1560,NEXT FUNDS FTSE Bursa Malaysia KLCI Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+1563,TSE Growth Core ETF,PASSIVE,Other,,-303200.0
+1566,Listed Index Fund Emerging Bond,BOND,Other,,0.0
+1568,TOPIX Bull 2x ETF,LEVERAGED_INVERSE,Other,,0.0
+1569,TOPIX Bear -1x ETF,LEVERAGED_INVERSE,Other,,0.0
+1570,NEXT FUNDS Nikkei 225 Leveraged Index Exchange Traded Fund,LEVERAGED_INVERSE,NEXT FUNDS,,0.0
+1571,NEXT FUNDS Nikkei 225 Inverse Index Exchange Traded Fund,LEVERAGED_INVERSE,NEXT FUNDS,,0.0
+1572,China Bull 2x HSCEI ETF,LEVERAGED_INVERSE,Other,,0.0
+1573,China Bear -1x HSCEI ETF,LEVERAGED_INVERSE,Other,,0.0
+1577,NEXT FUNDS Nomura Japan Equity High Dividend 70 Exchange Traded Fund,PASSIVE,NEXT FUNDS,,-389200.0
+1578,Listed Index Fund Nikkei 225 (Mini),PASSIVE,Other,,0.0
+1579,Nikkei 225 Bull 2x ETF,LEVERAGED_INVERSE,Other,,0.0
+1580,Nikkei 225 Bear -1x ETF,LEVERAGED_INVERSE,Other,,0.0
+1585,iFreeETF TOPIX Ex-Financials,PASSIVE,iFree,,0.0
+1586,Listed Index Fund TOPIX Ex-Financials,PASSIVE,Other,,0.0
+1591,NEXT FUNDS JPX-Nikkei Index 400 Exchange Traded Fund,PASSIVE,NEXT FUNDS,,-2740300.0
+1592,Listed Index Fund JPX-Nikkei Index 400,PASSIVE,Other,,0.0
+1593,MAXIS JPX-Nikkei Index 400 ETF,PASSIVE,MAXIS,,0.0
+1595,NZAM ETF J-REIT Index,REIT,Other,,0.0
+1596,NZAM ETF TOPIX Ex-Financials,PASSIVE,Other,,0.0
+1597,MAXIS J-REIT ETF,REIT,MAXIS,,0.0
+1599,iFreeETF JPX-Nikkei400,PASSIVE,iFree,,0.0
+159A,NEXT FUNDS JPX Prime 150 Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+1615,TOPIX Banks,PASSIVE,Other,,-216800.0
+1617,NEXT FUNDS TOPIX-17 FOODS ETF,PASSIVE,NEXT FUNDS,,0.0
+1618,NEXT FUNDS TOPIX-17 ENERGY RESOURCES ETF,PASSIVE,NEXT FUNDS,,-339600.0
+1619,NEXT FUNDS TOPIX-17 CONSTRUCTION & MATERIALS ETF,PASSIVE,NEXT FUNDS,,0.0
+1620,NEXT FUNDS TOPIX-17 RAW MATERIALS & CHEMICALS ETF,PASSIVE,NEXT FUNDS,,0.0
+1621,NEXT FUNDS TOPIX-17 PHARMACEUTICAL ETF,PASSIVE,NEXT FUNDS,,0.0
+1622,NEXT FUNDS TOPIX-17 AUTOMOBILES & TRANSPORTATION EQUIPMENT ETF,PASSIVE,NEXT FUNDS,,0.0
+1623,ＮＥＸＴ ＦＵＮＤＳ ＴＯＰＩＸ−１７ 鉄鋼・非鉄ETF,PASSIVE,NEXT FUNDS,日本製鉄,1124900.0
+1624,NEXT FUNDS TOPIX-17 MACHINERY ETF,PASSIVE,NEXT FUNDS,,0.0
+1625,NEXT FUNDS TOPIX-17 ELECTRIC APPLIANCES & PRECISION INSTRUMENTS ETF,PASSIVE,NEXT FUNDS,,-68200.0
+1626,NEXT FUNDS TOPIX-17 IT & SERVICES OTHERS ETF,PASSIVE,NEXT FUNDS,,0.0
+1627,ＮＥＸＴ ＦＵＮＤＳ ＴＯＰＩＸ−１７ 電力・ガスETF,PASSIVE,NEXT FUNDS,東京電力ホールディングス,326800.0
+1628,NEXT FUNDS TOPIX-17 TRANSPORTATION & LOGISTICS ETF,PASSIVE,NEXT FUNDS,東日本旅客鉄道,210700.0
+1629,NEXT FUNDS TOPIX-17 COMMERCIAL & WHOLESALE TRADE ETF,PASSIVE,NEXT FUNDS,伊藤忠商事,1200.0
+1630,NEXT FUNDS TOPIX-17 RETAIL TRADE ETF,PASSIVE,NEXT FUNDS,,-304200.0
+1631,NEXT FUNDS TOPIX-17 BANKS ETF,PASSIVE,NEXT FUNDS,,-124900.0
+1632,NEXT FUNDS TOPIX-17 FINANCIALS (EX BANKS) ETF,PASSIVE,NEXT FUNDS,,-822000.0
+1633,NEXT FUNDS TOPIX-17 REAL ESTATE ETF,PASSIVE,NEXT FUNDS,,0.0
+1651,iFreeETF TOPIX High Dividend Yield 40 Index,PASSIVE,iFree,,0.0
+1652,iFreeETF MSCI Japan Empowering Women Index (WIN),PASSIVE,iFree,,0.0
+1653,iFreeETF MSCI Japan ESG Select Leaders Index,PASSIVE,iFree,,0.0
+1654,iFreeETF FTSE JPX Blossom Japan Index,PASSIVE,iFree,,0.0
+1655,iShares S&P 500 ETF,PASSIVE,iShares,,0.0
+1656,iShares Core 7-10 Year US Treasury Bond ETF,BOND,iShares,,0.0
+1657,iShares Core MSCI Kokusai ETF,PASSIVE,iShares,,0.0
+1658,iShares Core MSCI Emerging Markets IMI ETF,PASSIVE,iShares,,0.0
+1659,iShares US REIT ETF,REIT,iShares,,0.0
+1660,MAXIS High Yield J-REIT ETF,REIT,MAXIS,,0.0
+1677,Listed Index Fund International Bond (Citi WGBI) Monthly Dividend Payment Type,BOND,Other,,0.0
+1678,NEXT FUNDS Nifty Linked Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+1680,Listed Index Fund International Developed Countries Equity (MSCI-KOKUSAI),PASSIVE,Other,,0.0
+1681,Listed Index Fund International Emerging Countries Equity (MSCI EMERGING),PASSIVE,Other,,0.0
+1698,Listed Index Fund Japan High Dividend (TSE Dividend Focus 100),PASSIVE,Other,,0.0
+1699,NEXT FUNDS NOMURA Crude Oil Long Index Linked Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+170A,SMT ETF Japan Equity Income Strategy Active,ACTIVE,Other,,-534.6940439999987
+178A,Global X Innovative Bluechip Top 10+ ETF,PASSIVE,Global X,,0.0
+179A,Global X 25+ Year T-Bond ETF (JPY Hedged),BOND,Global X,,0.0
+180A,Global X 25+ Year T-Bond ETF,BOND,Global X,,0.0
+181A,MAXIS US Treasury Bond 1-3 Year ETF (Unhedged),BOND,MAXIS,,0.0
+182A,MAXIS US Treasury Bond 20+ Year ETF (Unhedged),BOND,MAXIS,,0.0
+183A,MAXIS US Treasury Bond 20+ Year ETF (JPY Hedged),BOND,MAXIS,,0.0
+188A,Global X India Top 10+ ETF,PASSIVE,Global X,,0.0
+200A,NEXT FUNDS Nikkei Semiconductor Stock Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,ルネサスエレクトロニクス,18200.0
+2011,SMDAM Active ETF Japan High Dividend Equity,ACTIVE,Other,,0.0
+2012,iShares 0-3 Month US Treasury Bond ETF,BOND,iShares,,0.0
+2013,iShares US High Dividend ETF,PASSIVE,iShares,,0.0
+2014,iShares US Dividend Growth ETF,PASSIVE,iShares,,0.0
+2015,iFreeETF US Treasury 7-10 year (NON-HEDGE),BOND,iFree,,0.0
+2016,iFreeETF US Treasury 7-10 year (JP HEDGE),BOND,iFree,,0.0
+2017,iFreeETF JPX Prime 150,PASSIVE,iFree,,0.0
+2018,Global X US REIT Top 20 ETF,REIT,Global X,,0.0
+2019,Global X U.S. Preferred Security ETF (Bi-monthly dividend type),PASSIVE,Global X,,0.0
+2080,PBR Improvement over 1x ETF,PASSIVE,Other,,0.0
+2081,Strategic Shareholding Disposal Promotion ETF,PASSIVE,Other,,0.0
+2082,Investor-Management Unite as One ETF,PASSIVE,One ETF,,0.0
+2083,ＮＥＸＴ ＦＵＮＤＳ 日本成長株アクティブETF,ACTIVE,NEXT FUNDS,いすゞ自動車,-2100.0
+2084,ＮＥＸＴ ＦＵＮＤＳ 日本高配当株アクティブETF,ACTIVE,NEXT FUNDS,,0.0
+2085,MAXIS High Dividend Japan Equity Actively Managed ETF,ACTIVE,MAXIS,,0.0
+2086,NZAM S&P 500 in TTM Rates JPY Hedged Index,PASSIVE,Other,,0.0
+2087,NZAM NASDAQ-100 Notional Net Total Return Index,PASSIVE,Other,,0.0
+2088,NZAM Dow Jones Industrial Average JPY Hedged (TTM) (Japan Calendar),PASSIVE,Other,,0.0
+2089,NZAM DAX Index,PASSIVE,Other,,0.0
+2090,NZAM Bloomberg US Treasury 7-10 year Index,BOND,Other,,0.0
+2091,NZAM Bloomberg German Treasury 7-10 year Index,BOND,Other,,0.0
+2092,NZAM Bloomberg France Treasury 7-10 year Index,BOND,Other,,0.0
+2093,Listed Tracers US Government Bond 0-2years Ladder (No Currency Hedge),BOND,Other,,0.0
+2094,TSE REIT Inverse ETF,REIT,Other,,0.0
+2095,Global X S&P 500 Dividend Aristocrats ETF (JPY Hedged),PASSIVE,Global X,,0.0
+2096,Global X Office J-REIT ETF,REIT,Global X,,0.0
+2097,Global X Residential J-REIT ETF,REIT,Global X,,0.0
+2098,Global X Hotel & Retail J-REIT ETF,REIT,Global X,,0.0
+210A,iFreeETF Nikkei High Yield REIT Index,REIT,iFree,,0.0
+213A,Listed Index Fund Nikkei Semiconductor Stock,PASSIVE,Other,,0.0
+221A,MAXIS Nikkei Semiconductor Stock (Japan) ETF,PASSIVE,MAXIS,ルネサスエレクトロニクス,949.8050410000278
+2235,Listed Index Fund US Equity (Dow Average) No Currency Hedge,PASSIVE,Other,,0.0
+2236,Global X S&P 500 Dividend Aristocrats ETF,PASSIVE,Global X,,0.0
+2237,iFreeETF S&P500 Leveraged (2x),LEVERAGED_INVERSE,iFree,,0.0
+2238,iFreeETF S&P500 Inverse,LEVERAGED_INVERSE,iFree,,0.0
+2239,Listed Index Fund S&P500 Futures Leveraged Two Times,LEVERAGED_INVERSE,Other,,0.0
+223A,Global X Artificial Intelligence & Technology ETF,PASSIVE,Global X,,0.0
+2240,Listed Index Fund S&P500 Futures Inverse,LEVERAGED_INVERSE,Other,,0.0
+2241,MAXIS NY Dow Industrial Average ETF,PASSIVE,MAXIS,,0.0
+2242,MAXIS NY Dow Industrial Average ETF (JPY Hedged),PASSIVE,MAXIS,,0.0
+2243,Global X Semiconductor ETF,PASSIVE,Global X,,0.0
+2244,Global X US Tech Top 20 ETF,PASSIVE,Global X,,0.0
+2245,NEXT FUNDS Bloomberg Germany Treasury Bond (7-10 year) Index (Yen-Hedged) Exchange Traded Fund,BOND,NEXT FUNDS,,0.0
+2247,iFreeETF S&P500 (NON HEDGED),PASSIVE,iFree,,0.0
+2248,iFreeETF S&P500 (JPY HEDGED),PASSIVE,iFree,,0.0
+2249,iFreeETF S&P500 Double Inverse (-2x),LEVERAGED_INVERSE,iFree,,0.0
+224A,Global X Uranium ETF,PASSIVE,Global X,,0.0
+2250,iShares MSCI Japan Climate Action ETF,PASSIVE,iShares,,0.0
+2251,NEXT FUNDS JPX JGB Futures Double Inverse Index Exchange Traded Fund,BOND,NEXT FUNDS,,0.0
+2252,Global X Morningstar US Small Mid Moat ETF,PASSIVE,Global X,,0.0
+2253,Global X SuperDividend U.S. ETF,PASSIVE,Global X,,0.0
+2254,Global X China Electric Vehicle and Battery ETF,PASSIVE,Global X,,0.0
+2255,iShares 20+ Year US Treasury Bond ETF,BOND,iShares,,0.0
+2256,iShares US Aggregate Bond ETF,BOND,iShares,,0.0
+2257,iShares USD Investment Grade Corporate Bond ETF,BOND,iShares,,0.0
+2258,iShares USD High Yield Corporate Bond ETF,BOND,iShares,,0.0
+2259,iShares 7-10 Year France Government Bond JPY Hedged ETF,BOND,iShares,,0.0
+233A,iFreeETF Nifty50,PASSIVE,iFree,,0.0
+234A,Global X MSCI Japan Cash Flow Kings ETF,PASSIVE,Global X,,0.0
+235A,Global X Japan High Dividend 30 ETF,PASSIVE,Global X,,0.0
+236A,iShares 7-10 Year Japan Government Bond ETF,BOND,iShares,,0.0
+237A,iShares 25+ Year US Treasury Bond Long Duration ETF,BOND,iShares,,0.0
+238A,iShares 25+ Year US Treasury Bond Long Duration JPY Hedged ETF,BOND,iShares,,0.0
+2510,NEXT FUNDS Japan Bond NOMURA-BPI Exchange Traded Fund,BOND,NEXT FUNDS,,0.0
+2511,NEXT FUNDS International Bond FTSE World Government Bond Index (ex Japan Unhedged) Exchange Traded Fund,BOND,NEXT FUNDS,,0.0
+2512,NEXT FUNDS International Bond FTSE World Government Bond Index (ex Japan Yen-Hedged) Exchange Traded Fund,BOND,NEXT FUNDS,,0.0
+2513,NEXT FUNDS International Equity MSCI-KOKUSAI (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2514,NEXT FUNDS International Equity MSCI-KOKUSAI (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2515,NEXT FUNDS International REIT S&P Developed REIT Index (ex Japan Unhedged) Exchange Traded Fund,REIT,NEXT FUNDS,,0.0
+2516,TSE Mothers ETF,PASSIVE,Other,アンジェス,4800.0
+2517,MAXIS J-REIT Core ETF,REIT,MAXIS,,0.0
+2518,NEXT FUNDS MSCI Japan Empowering Women Select Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2519,NEXT FUNDS Emerging Market Bond J.P. Morgan EMBI Plus (Unhedged) Exchange Traded Fund,BOND,NEXT FUNDS,,0.0
+2520,NEXT FUNDS Emerging Market Equity MSCI-EM (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2521,Listed Index Fund US Equity (S&P500) Currency Hedge,PASSIVE,Other,,0.0
+2522,iShares Automation & Robot ETF,PASSIVE,iShares,,0.0
+2523,MAXIS TOPIX Ex-Financials ETF,PASSIVE,MAXIS,,0.0
+2524,NZAM ETF TOPIX,PASSIVE,Other,,0.0
+2525,NZAM ETF Nikkei 225,PASSIVE,Other,,0.0
+2526,NZAM ETF JPX-Nikkei 400,PASSIVE,Other,,0.0
+2527,NZAM ETF J-REIT Core Index,REIT,Other,,0.0
+2528,iFreeETF Tokyo Stock Exchange REIT Core Index,REIT,iFree,,0.0
+2529,NEXT FUNDS Nomura Shareholder Yield 70 Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2552,Listed Index Fund J-REIT (Tokyo Stock Exchange REIT Index) Bi-Monthly Dividend Payment Type (Mini),REIT,Other,,0.0
+2553,One ETF Southern China A-Share CSI 500,PASSIVE,One ETF,,0.0
+2554,NEXT FUNDS Bloomberg Barclays US Intermediate Corporate Index (JPY Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2555,TSE REIT ETF,REIT,Other,,0.0
+2556,One ETF Tokyo Stock Exchange REIT Index,REIT,One ETF,,0.0
+2557,SMDAM TOPIX ETF,PASSIVE,Other,ユー・エム・シー・エレクトロニクス,1000.0
+2558,MAXIS S&P500 US Equity,PASSIVE,MAXIS,,0.0
+2559,MAXIS World Equity (MSCI ACWI),PASSIVE,MAXIS,,0.0
+2560,MAXIS Carbon Efficient Japan Equity ETF,PASSIVE,MAXIS,,0.0
+2561,iShares Core Japan Government Bond ETF,BOND,iShares,,0.0
+2562,Listed Index Fund US Equity (Dow Average) Currency Hedge,PASSIVE,Other,,0.0
+2563,iShares S&P 500 JPY Hedged ETF,PASSIVE,iShares,,0.0
+2564,Global X MSCI SuperDividend Japan ETF,PASSIVE,Global X,,0.0
+2565,Global X Logistics J-REIT ETF,REIT,Global X,,0.0
+2566,Listed Index Fund Nikkei ESG-REIT,REIT,Other,,0.0
+2567,NZAM ETF S&P JPX Carbon Efficient Index,PASSIVE,Other,,0.0
+2568,Listed Index Fund US Equity (NASDAQ100) No Currency Hedge,PASSIVE,Other,,0.0
+2569,Listed Index Fund US Equity (NASDAQ100) Currency Hedge,PASSIVE,Other,,0.0
+257A,SMT ETF Selected Japan Equity Active,ACTIVE,Other,ＮＴＴ,3400.189229000001
+258A,SMT ETF Selected J-REIT Active,ACTIVE,Other,,0.0
+2620,iShares 1-3 Year US Treasury Bond ETF,BOND,iShares,,0.0
+2621,iShares 20+ Year US Treasury Bond JPY Hedged ETF,BOND,iShares,,0.0
+2624,iFreeETF Nikkei225 (Quarterly Dividend Type),PASSIVE,iFree,,0.0
+2625,iFreeETF TOPIX (Quarterly Dividend Type),PASSIVE,iFree,,0.0
+2626,Global X Digital Innovation Japan ETF,PASSIVE,Global X,,0.0
+2627,Global X E-Commerce Japan ETF,PASSIVE,Global X,,0.0
+2628,iFreeETF STAR50 ETF,PASSIVE,iFree,,0.0
+2629,iFreeETF GBA100 ETF,PASSIVE,iFree,,0.0
+2630,MAXIS S&P500 US Equity (JPY Hedged),PASSIVE,MAXIS,,0.0
+2631,MAXIS NASDAQ100,PASSIVE,MAXIS,,0.0
+2632,MAXIS NASDAQ100 (JPY Hedged),PASSIVE,MAXIS,,0.0
+2633,NEXT FUNDS S&P 500 (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2634,NEXT FUNDS S&P 500 (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2636,Global X MSCI Governance-Quality Japan ETF,PASSIVE,Global X,,0.0
+2637,Global X CleanTech Japan ETF,PASSIVE,Global X,,0.0
+2638,Global X Japan Robotics & AI ETF,PASSIVE,Global X,,0.0
+2639,Global X Japan Bio & Med Tech ETF,PASSIVE,Global X,,0.0
+2640,Global X Japan Games & Animation ETF,PASSIVE,Global X,,0.0
+2641,Global X Japan Global Leaders ETF,PASSIVE,Global X,,0.0
+2642,SMT ETF Carbon Efficient Index Japan Equity,PASSIVE,Other,,0.0
+2643,NEXT FUNDS MSCI Japan Country Selection Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2644,Global X Japan Semiconductor ETF,PASSIVE,Global X,,0.0
+2645,Global X Japan Leisure & Entertainment ETF,PASSIVE,Global X,,0.0
+2646,Global X Japan Metal Business ETF,PASSIVE,Global X,,0.0
+2647,NEXT FUNDS Bloomberg US Treasury Bond (7-10 year) Index (Unhedged) Exchange Traded Fund,BOND,NEXT FUNDS,,0.0
+2648,NEXT FUNDS Bloomberg US Treasury Bond (7-10 year) Index (Yen-Hedged) Exchange Traded Fund,BOND,NEXT FUNDS,,0.0
+2649,iShares Ginnie Mae MBS JPY Hedged ETF,PASSIVE,iShares,,0.0
+273A,SBI Saudi Arabia Equity Exchange Traded Fund,PASSIVE,Other,,0.0
+282A,Global X Japan Semiconductor Top 10 ETF,PASSIVE,Global X,,0.0
+2836,Global X Japan Fintech ETF,PASSIVE,Global X,,0.0
+2837,Global X Japan Mid & Small Cap Leaders ETF,PASSIVE,Global X,,0.0
+2838,MAXIS 7-10 Year US Treasury Bond ETF (Unhedged),BOND,MAXIS,,0.0
+2839,MAXIS 7-10 Year US Treasury Bond ETF (Hedged),BOND,MAXIS,,0.0
+283A,Global X US Tech Dividend Aristocrats ETF,PASSIVE,Global X,,0.0
+2840,iFreeETF NASDAQ100 (NON HEDGED),PASSIVE,iFree,,0.0
+2841,iFreeETF NASDAQ100 (JPY HEDGED),PASSIVE,iFree,,0.0
+2842,iFreeETF NASDAQ100 Inverse,LEVERAGED_INVERSE,iFree,,0.0
+2843,Listed Index Fund Australian Government Bond (Currency Hedge),BOND,Other,,0.0
+2844,Listed Index Fund Australian Government Bond (No Currency Hedge),BOND,Other,,0.0
+2845,NEXT FUNDS NASDAQ-100(R) (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2846,NEXT FUNDS DJIA (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2847,Global X Japan New Growth Infrastructure ETF,PASSIVE,Global X,,0.0
+2848,Global X MSCI Japan Climate Change ETF,PASSIVE,Global X,,0.0
+2849,Global X Morningstar Japan High Dividend ESG ETF,PASSIVE,Global X,,0.0
+2851,iShares MSCI Japan SRI ETF,PASSIVE,iShares,,0.0
+2852,iShares Japan Green REIT ETF,REIT,iShares,,0.0
+2853,iShares Climate Risk-Adjusted Global ex Japan Government Bond JPY Hedged ETF,BOND,iShares,,0.0
+2854,Global X Japan Tech Top 20 ETF,PASSIVE,Global X,,0.0
+2855,Global X Green J-REIT ETF,REIT,Global X,,0.0
+2856,iShares 3-7 Year US Treasury Bond JPY Hedged ETF,BOND,iShares,,0.0
+2857,iShares Germany Government Bond JPY Hedged ETF,BOND,iShares,,0.0
+2858,Global X Nikkei 225 Covered Call ETF (option premium reinvestment type),PASSIVE,Global X,,0.0
+2859,NEXT FUNDS EURO STOXX 50 (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2860,NEXT FUNDS German Equity DAX (Yen-Hedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+2861,Listed Index Fund France Government Bond (No Currency Hedge),BOND,Other,,0.0
+2862,Listed Index Fund France Government Bond (Currency Hedge),BOND,Other,,0.0
+2864,Global X Logistics REIT ETF,REIT,Global X,,0.0
+2865,Global X Nasdaq 100 Covered Call ETF,PASSIVE,Global X,,0.0
+2866,Global X U.S. Preferred Security ETF,PASSIVE,Global X,,0.0
+2867,Global X Autonomous & EV ETF,PASSIVE,Global X,,0.0
+2868,Global X S&P 500 Covered Call ETF,PASSIVE,Global X,,0.0
+2869,iFreeETF NASDAQ100 Leveraged (2x),LEVERAGED_INVERSE,iFree,,0.0
+2870,iFreeETF NASDAQ100 Double Inverse (-2x),LEVERAGED_INVERSE,iFree,,0.0
+294A,NEXT FUNDS MSCI Global Climate 500 Japan Selection Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+295A,One ETF FTSE Saudi Arabia ETF,PASSIVE,One ETF,,0.0
+313A,iShares S&P 500 Top 20 ETF,PASSIVE,iShares,,0.0
+314A,iShares Gold ETF,PASSIVE,iShares,,0.0
+315A,Global X Japan Bank High Dividend ETF,PASSIVE,Global X,,0.0
+316A,iFreeETF FANG+ PCF,PASSIVE,iFree,,0.0
+328A,Global X Japan Pricing Power Leaders ETF,PASSIVE,Global X,,0.0
+346A,NEXT FUNDS S&P 500 Semiconductors & Semiconductor Equipment (Industry Group) 35% Capped Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+348A,MAXIS Yomiuri333 Japan Stock ETF,PASSIVE,MAXIS,ＨＯＹＡ,28.111963999995965
+349A,SMDAM Active ETF Japanese Gross Equities,ACTIVE,Other,日清紡ホールディングス,3200.0
+354A,iFreeETF Bloomberg Japan High Dividend 50 Index,PASSIVE,iFree,,0.0
+356A,Global X S&P 500 Cash Flow Top 100 ETF,PASSIVE,Global X,,0.0
+360A,TSE REIT Core ETF,REIT,Other,,0.0
+363A,IFREEETF FTSE100 ETF,PASSIVE,iFree,,0.0
+364A,NEXT FUNDS S&P 500 Dividend Aristocrats Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+376A,NEXT FUNDS Bloomberg US Treasury Bond (7-10 year) Index (75% Yen-Hedged) Exchange Traded Fund,BOND,NEXT FUNDS,,0.0
+379A,Global X S&P 500 ETF (Dynamic Protection),PASSIVE,Global X,,0.0
+380A,Global X China Tech ETF,PASSIVE,Global X,,0.0
+381A,IFREEETF US TREASURY BOND 3-5 YEAR (NON HEDGED),BOND,iFree,,0.0
+382A,IFREEETF US TREASURY BOND 3-5 YEAR (JPY HEDGED),BOND,iFree,,0.0
+383A,MAXIS S&P500 Equal Weight ETF,PASSIVE,MAXIS,,0.0
+392A,iShares Nasdaq Top 30 ETF,PASSIVE,iShares,,0.0
+394A,Sector Restructuring Select ETF TV,PASSIVE,Other,,0.0
+395A,Sector Restructuring Select ETF Regional Banks,PASSIVE,Other,,0.0
+396A,Sector Restructuring Select ETF Event-Driven REITs,REIT,Other,,0.0
+399A,Listed Index Fund Nikkei 225 High Dividend Yield Stock 50,PASSIVE,Other,,0.0
+404A,Global X China Tech Top 10 ETF,PASSIVE,Global X,,0.0
+408A,iShares A.I. Global Innovation Active ETF,ACTIVE,iShares,,0.0
+412A,NEXT FUNDS TIP FactSet Taiwan Innovative Technology 50 Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+413A,iFreeETF Cathay Taiwan Tech Leader Index,PASSIVE,iFree,,0.0
+424A,Global X Gold ETF (JPY Hedged),PASSIVE,Global X,,0.0
+425A,Global X Gold ETF,PASSIVE,Global X,,0.0
+426A,NISSAY ETF S&P 500 EQUAL WEIGHT,PASSIVE,Other,,0.0
+435A,iFreeETF Japan Equity Dividend Rotation Strategy,PASSIVE,iFree,,0.0
+443A,iFreeETF Tokyo Stock Exchange REIT Index (Feb/May/Aug/Nov Dividend Type),REIT,iFree,,0.0
+447A,State Street SPDR Gold ETF (JPY Unhedged),PASSIVE,Other,,0.0
+448A,State Street SPDR Gold ETF (JPY Hedged),PASSIVE,Other,,0.0
+449A,State Street SPDR S&P 500 ETF (JPY Unhedged),PASSIVE,Other,,0.0
+450A,State Street SPDR S&P 500 ETF (JPY Hedged),PASSIVE,Other,,0.0
+451A,State Street SPDR S&P 500 High Dividend ETF (JPY Unhedged),PASSIVE,Other,,0.0
+452A,iShares S&P 500 Premium Income ETF,PASSIVE,iShares,,0.0
+453A,iShares 20+ Year US Treasury Bond Premium Income ETF,BOND,iShares,,0.0
+459A,Nomura High-Yield J-REIT Index ETF,REIT,Other,,0.0
+461A,MAXIS Japan Equity High Dividend SMART 50 ETF,PASSIVE,MAXIS,ソニーフィナンシャルグループ,0.6455800000126127
+465A,Global X Japan Nikkei225 Shareholder Return 40 ETF,PASSIVE,Global X,,0.0
+466A,Global X Defense Tech ETF,PASSIVE,Global X,,0.0
+467A,Global X USD Investment Grade Corporate Bond ETF (JPY Hedged),BOND,Global X,,0.0
+468A,Global X USD Investment Grade Corporate Bond ETF,BOND,Global X,,0.0
+473A,NISSAY ETF NIKKEI 225 INDEX ETF,PASSIVE,Other,,0.0
+486A,NEXT FUNDS EURO STOXX 50 (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+487A,NEXT FUNDS German Equity DAX (Unhedged) Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+488A,iShares Yen Appreciation Focus ETF,PASSIVE,iShares,,0.0
+489A,TSE REIT Logistics Focus ETF,REIT,Other,,0.0
+491A,iShares S&P 500 Ex-Financials JPY Hedged ETF,PASSIVE,iShares,,0.0
+492A,One ETF Japanese Government Bond High Coupon (Average Duration Below Ten Years),BOND,One ETF,,0.0
+493A,One ETF Japanese Government Bond 1-3 years,BOND,One ETF,,0.0
+494A,One ETF Japanese Government Bond 3-7 years,BOND,One ETF,,0.0
+495A,One ETF Japanese Government Bond 7-10 years,BOND,One ETF,,0.0
+496A,One ETF Japanese Government Bond 17-20 years,BOND,One ETF,,0.0
+502A,Global X JPY Ultra Short-Term Bond ETF,BOND,Global X,,0.0
+512A,Global X Stablecoins & Tokenization ETF (ex-Japan),PASSIVE,Global X,,0.0
+513A,Global X Japan Defense Tech ETF,PASSIVE,Global X,,0.0
+515A,iShares JPY Investment Grade Corporate Bond Active ETF,ACTIVE,iShares,,0.0
+516A,iFreeETF US Dollar Bull (1x),LEVERAGED_INVERSE,iFree,,0.0
+517A,iFreeETF US Dollar Bear (1x),LEVERAGED_INVERSE,iFree,,0.0
+518A,NEXT FUNDS FTSE Japan ex-REITs High Income Cash Flow 50 Index Exchange Traded Fund,REIT,NEXT FUNDS,,0.0
+521A,iFreeETF FANG+GOLD,PASSIVE,iFree,,0.0
+526A,JPX Startup100 ETF,PASSIVE,Other,,0.0
+530A,NZAM ETF J-REIT Index (2 5 8 11),REIT,Other,,0.0
+531A,NZAM ETF Nikkei High Dividend 50,PASSIVE,Other,,0.0
+532A,NZAM ETF TOPIX High Dividend 40,PASSIVE,Other,,0.0
+533A,NZAM ETF S&P500 (UNHEDGED),PASSIVE,Other,,0.0
+534A,NZAM ETF NASDAQ100 (UNHEDGED),PASSIVE,Other,,0.0
+535A,	NZAM ETF DAX (UNHEDGED),PASSIVE,Other,,0.0
+536A,	NZAM ETF MSCI-KOKUSAI (UNHEDGED),PASSIVE,Other,,0.0
+537A,NZAM ETF MSCI ACWI (UNHEDGED),PASSIVE,Other,,0.0
+538A,NZAM ETF US TREASURY 7-10Y (UNHEDGED),BOND,Other,,0.0
+539A,NZAM ETF FTSE WGBI EX JAPAN (UNHEDGED),PASSIVE,Other,,0.0
+540A,Listed Index Fund Nikkei Bank Stock Top 10,PASSIVE,Other,,0.0
+541A,One ETF Topix High Dividend Growth Index,PASSIVE,One ETF,,0.0
+552A,MAXIS US AI Infrastructure Equity ETF,PASSIVE,MAXIS,,0.0
+563A,Global X Nasdaq 100 Daily Covered Call ETF,PASSIVE,Global X,,0.0
+564A,Global X S&P Developed Cash Flow Top 100 ETF,PASSIVE,Global X,,0.0
+566A,iFreeETF Bloomberg Japan ex-Financials High Dividend 50 Index,PASSIVE,iFree,,0.0
+568A,iShares Silver ETF,PASSIVE,iShares,,0.0
+569A,iShares Platinum ETF,PASSIVE,iShares,,0.0
+570A,iShares 0-1 Year Japan Government Bond ETF,BOND,iShares,,0.0
+571A,iShares 1-3 Year Japan Government Bond ETF,BOND,iShares,,0.0
+572A,iShares 3-7 Year Japan Government Bond ETF,BOND,iShares,,0.0
+573A,iShares 20+  Year Japan Government Bond ETF,BOND,iShares,,0.0
+576A,Global X China Tech Covered Call ETF,PASSIVE,Global X,,0.0
+577A,Global X Silver ETF,PASSIVE,Global X,,0.0
+578A,Global X Silver ETF (JPY Hedged),PASSIVE,Global X,,0.0
+579A,Global X Silver Miners ETF,PASSIVE,Global X,,0.0
+580A,Global X Copper Miners ETF,PASSIVE,Global X,,0.0
+585A,NV Bottom Up Equity Investment Strategy Active ETF,ACTIVE,Other,,0.0
+586A,NEXT FUNDS Nikkei Japan Entertainment Content Stock Index Exchange Traded Fund,PASSIVE,NEXT FUNDS,サンリオ,40700.0
+600A,Nissay ETF Russell 2000 ,PASSIVE,Other,,0.0
+605A,NEXT FUNDS Japan Equity Policy Focus Exchange Traded Fund,PASSIVE,NEXT FUNDS,,0.0
+606A,Gold 2x Bull ETF,LEVERAGED_INVERSE,Other,,0.0
+608A,Listed Index Fund TSE REIT High Yield 30,REIT,Other,,0.0
+609A,Global X Japan Wholesale Trade & Resource Business ETF,PASSIVE,Global X,,0.0
+610A,Global X Space Tech Top 10 ETF (ex-Japan),PASSIVE,Global X,,0.0
+611A,One ETF Japanese Government Bond 27-30 years,BOND,One ETF,,0.0
+612A,One ETF JGB Futures Short Index,BOND,One ETF,,0.0
+613A,iFreeETF German Government 0-3 Month Bill,PASSIVE,iFree,,0.0
+626A,iFreeETF Gold Plus Income,PASSIVE,iFree,,0.0
