@@ -69,14 +69,15 @@ function renderTable(data) {
 
         tr.innerHTML = `
 
-            <td>${etf.code}</td>
+          <td>${etf.code}</td>
 
-            <td>${etf.name}</td>
+          <td>${etf.name}</td>
 
-            <td>${etf.type}</td>
-            <td>${etf.provider}</td>
+          <td>${etf.type}</td>
 
-        `;
+          <td>${etf.provider}</td>
+
+      `;
 
         tr.onclick = () => {
 
