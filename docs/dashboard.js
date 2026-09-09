@@ -9,7 +9,7 @@ async function loadETFList() {
         await response.text();
 
     const rows =
-        text.split("\n");
+        text.split("\n");FF
 
     etfData = [];
 
@@ -38,13 +38,13 @@ async function loadETFList() {
 
         etfData.push({
 
-          code: cols[0],
+    code: cols[0],
 
-          name: cols[1],
+    name: cols[1],
 
-          type: cols[2],
+    type: cols[2],
 
-          provider: cols[3]
+    provider: cols[3]
 
 });
 
