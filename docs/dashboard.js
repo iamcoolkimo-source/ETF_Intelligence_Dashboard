@@ -23,13 +23,21 @@ async function loadETFList() {
         etfData.push({
 
             code: cols[0] || "",
+
             name: cols[1] || "",
+
             type: cols[2] || "",
+
             provider: cols[3] || "",
+
             netflow: cols[4] || "",
+
             topbuy: cols[5] || "",
+
             topbuychange: cols[6] || "",
+
             topsell: cols[7] || "",
+
             topsellchange: cols[8] || ""
 
         });
@@ -42,7 +50,9 @@ async function loadETFList() {
 function renderTable(data) {
 
     const tbody =
-        document.querySelector("#etf-table tbody");
+        document.querySelector(
+            "#etf-table tbody"
+        );
 
     if (!tbody) return;
 
@@ -55,110 +65,99 @@ function renderTable(data) {
 
         tr.innerHTML = `
 
-<td>
-<input type="checkbox">
-</td>
+            <td>
+                <input type="checkbox">
+            </td>
 
-<td>${etf.code}</td>
+            <td>${etf.code}</td>
 
-<td>${etf.name}</td>
+            <td>${etf.name}</td>
 
-<td>${etf.type}</td>
+            <td>${etf.type}</td>
 
-<td>${etf.provider}</td>
+            <td>${etf.provider}</td>
 
-<td>${etf.topbuy}</td>
-
-<td>${etf.netflow}</td>
-
-`;
+        `;
 
         tr.onclick = () => {
 
-            const detail =
-                document.getElementById(
-    "detail-box"
-).innerHTML = `
+            document.getElementById(
+                "detail-box"
+            ).innerHTML = `
 
-<h2>${etf.code}</h2>
-
-<h3>${etf.name}</h3>
-
-<hr>
-
-<p>
-<strong>ETF Type</strong><br>
-${etf.type}
-</p>
-
-<p>
-<strong>Provider</strong><br>
-${etf.provider}
-</p>
-
-<p>
-<strong>Net Flow</strong><br>
-${etf.netflow}
-</p>
-
-<hr>
-
-<p>
-<strong>Top Buy Stock</strong><br>
-${etf.topbuy}
-</p>
-
-<p>
-<strong>Top Buy Change</strong><br>
-${etf.topbuychange}
-</p>
-
-<p>
-<strong>Top Sell Stock</strong><br>
-${etf.topsell}
-</p>
-
-<p>
-<strong>Top Sell Change</strong><br>
-${etf.topsellchange}
-</p>
-`;
-``
-
-            if (!detail) return;
-
-            detail.innerHTML = `
                 <h2>${etf.code}</h2>
 
                 <h3>${etf.name}</h3>
 
-                <p><b>ETF Type</b><br>
-                ${etf.type}</p>
+                <hr>
 
-                <p><b>Provider</b><br>
-                ${etf.provider}</p>
+                <table border="1"
+                       width="100%"
+                       cellpadding="8">
 
-                <p><b>Net Flow</b><br>
-                ${etf.netflow}</p>
+                    <tr>
+                        <td><b>ETF Type</b></td>
+                        <td>${etf.type}</td>
+                    </tr>
 
-                <p><b>Top Buy Stock</b><br>
-                ${etf.topbuy}</p>
+                    <tr>
+                        <td><b>Provider</b></td>
+                        <td>${etf.provider}</td>
+                    </tr>
 
-                <p><b>Top Buy Change</b><br>
-                ${etf.topbuychange}</p>
+                    <tr>
+                        <td><b>Net Flow</b></td>
+                        <td>${etf.netflow || "-"}</td>
+                    </tr>
 
-                <p><b>Top Sell Stock</b><br>
-                ${etf.topsell}</p>
+                </table>
 
-                <p><b>Top Sell Change</b><br>
-                ${etf.topsellchange}</p>
+                <br>
+
+                <h3>Top Buy Stock</h3>
+
+                <table border="1"
+                       width="100%"
+                       cellpadding="8">
+
+                    <tr>
+                        <td><b>Stock</b></td>
+                        <td>${etf.topbuy || "-"}</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Buy Change</b></td>
+                        <td>${etf.topbuychange || "-"}</td>
+                    </tr>
+
+                </table>
+
+                <br>
+
+                <h3>Top Sell Stock</h3>
+
+                <table border="1"
+                       width="100%"
+                       cellpadding="8">
+
+                    <tr>
+                        <td><b>Stock</b></td>
+                        <td>${etf.topsell || "-"}</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Sell Change</b></td>
+                        <td>${etf.topsellchange || "-"}</td>
+                    </tr>
+
+                </table>
+
             `;
         };
 
         tbody.appendChild(tr);
 
     });
-
 }
 
 function filterETF(type) {
@@ -166,6 +165,7 @@ function filterETF(type) {
     if (type === "ALL") {
 
         renderTable(etfData);
+
         return;
     }
 
@@ -177,14 +177,14 @@ function filterETF(type) {
     renderTable(filtered);
 }
 
-const search =
+const searchInput =
     document.getElementById(
         "searchInput"
     );
 
-if (search) {
+if (searchInput) {
 
-    search.addEventListener(
+    searchInput.addEventListener(
         "keyup",
         function () {
 
