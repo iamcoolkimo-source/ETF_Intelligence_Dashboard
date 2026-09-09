@@ -3,7 +3,7 @@ let etfData = [];
 async function loadETFList() {
 
     const response =
-        await fetch("./data/WEB_ETF_MASTER.csv");
+        await fetch("./data/WEB_ETF_MASTER_V3.csv");
 
     const text =
         await response.text();
@@ -30,15 +30,9 @@ async function loadETFList() {
 
             provider: cols[3] || "",
 
-            netflow: cols[4] || "",
+            topbuy: cols[4] || "",
 
-            topbuy: cols[5] || "",
-
-            topbuychange: cols[6] || "",
-
-            topsell: cols[7] || "",
-
-            topsellchange: cols[8] || ""
+            netflow: cols[5] || ""
 
         });
 
@@ -54,8 +48,6 @@ function renderTable(data) {
             "#etf-table tbody"
         );
 
-    if (!tbody) return;
-
     tbody.innerHTML = "";
 
     data.forEach(etf => {
@@ -65,17 +57,21 @@ function renderTable(data) {
 
         tr.innerHTML = `
 
-            <td>
-                <input type="checkbox">
-            </td>
+        <td>
+            <input type="checkbox">
+        </td>
 
-            <td>${etf.code}</td>
+        <td>${etf.code}</td>
 
-            <td>${etf.name}</td>
+        <td>${etf.name}</td>
 
-            <td>${etf.type}</td>
+        <td>${etf.type}</td>
 
-            <td>${etf.provider}</td>
+        <td>${etf.provider}</td>
+
+        <td>${etf.topbuy}</td>
+
+        <td>${etf.netflow}</td>
 
         `;
 
@@ -89,74 +85,30 @@ function renderTable(data) {
 
                 <h3>${etf.name}</h3>
 
-                <hr>
+                <p>
+                    ETF Type :
+                    ${etf.type}
+                </p>
 
-                <table border="1"
-                       width="100%"
-                       cellpadding="8">
+                <p>
+                    Provider :
+                    ${etf.provider}
+                </p>
 
-                    <tr>
-                        <td><b>ETF Type</b></td>
-                        <td>${etf.type}</td>
-                    </tr>
+                <p>
+                    Top Buy :
+                    ${etf.topbuy}
+                </p>
 
-                    <tr>
-                        <td><b>Provider</b></td>
-                        <td>${etf.provider}</td>
-                    </tr>
-
-                    <tr>
-                        <td><b>Net Flow</b></td>
-                        <td>${etf.netflow || "-"}</td>
-                    </tr>
-
-                </table>
-
-                <br>
-
-                <h3>Top Buy Stock</h3>
-
-                <table border="1"
-                       width="100%"
-                       cellpadding="8">
-
-                    <tr>
-                        <td><b>Stock</b></td>
-                        <td>${etf.topbuy || "-"}</td>
-                    </tr>
-
-                    <tr>
-                        <td><b>Buy Change</b></td>
-                        <td>${etf.topbuychange || "-"}</td>
-                    </tr>
-
-                </table>
-
-                <br>
-
-                <h3>Top Sell Stock</h3>
-
-                <table border="1"
-                       width="100%"
-                       cellpadding="8">
-
-                    <tr>
-                        <td><b>Stock</b></td>
-                        <td>${etf.topsell || "-"}</td>
-                    </tr>
-
-                    <tr>
-                        <td><b>Sell Change</b></td>
-                        <td>${etf.topsellchange || "-"}</td>
-                    </tr>
-
-                </table>
+                <p>
+                    Net Flow :
+                    ${etf.netflow}
+                </p>
 
             `;
         };
 
         tbody.appendChild(tr);
-
     });
 }
 
@@ -171,56 +123,51 @@ function filterETF(type) {
 
     const filtered =
         etfData.filter(
-            etf => etf.type === type
+            x =>
+                x.type
+                    .toUpperCase()
+                    .trim()
+                ===
+                type
         );
 
     renderTable(filtered);
 }
 
-const searchInput =
-    document.getElementById(
-        "searchInput"
-    );
+document
+.getElementById(
+    "searchInput"
+)
+.addEventListener(
+    "keyup",
+    function () {
 
-if (searchInput) {
+        const keyword =
+            this.value.toLowerCase();
 
-    searchInput.addEventListener(
-        "keyup",
-        function () {
+        const filtered =
+            etfData.filter(etf =>
 
-            const keyword =
-                this.value.toLowerCase();
+                etf.code
+                   .toLowerCase()
+                   .includes(keyword)
 
-            const filtered =
-                etfData.filter(etf =>
+                ||
 
-                    etf.code
-                        .toLowerCase()
-                        .includes(keyword)
+                etf.name
+                   .toLowerCase()
+                   .includes(keyword)
 
-                    ||
+                ||
 
-                    etf.name
-                        .toLowerCase()
-                        .includes(keyword)
+                etf.provider
+                   .toLowerCase()
+                   .includes(keyword)
 
-                    ||
+            );
 
-                    etf.provider
-                        .toLowerCase()
-                        .includes(keyword)
-
-                    ||
-
-                    etf.type
-                        .toLowerCase()
-                        .includes(keyword)
-
-                );
-
-            renderTable(filtered);
-        }
-    );
-}
+        renderTable(filtered);
+    }
+);
 
 loadETFList();
