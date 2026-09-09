@@ -9,7 +9,7 @@ async function loadETFList() {
         await response.text();
 
     const rows =
-        text.split("\n");FF
+        text.split("\n");
 
     etfData = [];
 
@@ -20,33 +20,27 @@ async function loadETFList() {
 
         const cols = row.split(",");
 
-        const name = cols[1] || "";
-
-        const upperName =
-            name.toUpperCase();
-
-        let etfType =
-            "PASSIVE";
-
-        if (
-            upperName.includes("ACTIVE")
-        ) {
-
-            etfType =
-                "ACTIVE";
-        }
-
         etfData.push({
 
-    code: cols[0],
+            code: cols[0] || "",
 
-    name: cols[1],
+            name: cols[1] || "",
 
-    type: cols[2],
+            type: cols[2] || "",
 
-    provider: cols[3]
+            provider: cols[3] || "",
 
-});
+            netflow: cols[4] || "",
+
+            topbuy: cols[5] || "",
+
+            topbuychange: cols[6] || "",
+
+            topsell: cols[7] || "",
+
+            topsellchange: cols[8] || ""
+
+        });
 
     });
 
@@ -69,15 +63,19 @@ function renderTable(data) {
 
         tr.innerHTML = `
 
-          <td>${etf.code}</td>
+            <td>
+                <input type="checkbox">
+            </td>
 
-          <td>${etf.name}</td>
+            <td>${etf.code}</td>
 
-          <td>${etf.type}</td>
+            <td>${etf.name}</td>
 
-          <td>${etf.provider}</td>
+            <td>${etf.type}</td>
 
-      `;
+            <td>${etf.provider}</td>
+
+        `;
 
         tr.onclick = () => {
 
@@ -87,87 +85,25 @@ function renderTable(data) {
 
                 <h2>${etf.code}</h2>
 
-                <p>
-                <b>ETF Name</b><br>
-                ${etf.name}
-                </p>
+                <h3>${etf.name}</h3>
+
+                <hr>
 
                 <p>
                 <b>ETF Type</b><br>
                 ${etf.type}
                 </p>
 
-                <hr>
-
                 <p>
-                ETF Detail Page<br>
-                Coming Soon
+                <b>Provider</b><br>
+                ${etf.provider}
                 </p>
 
-            `;
-        };
+                <p>
+                <b>Net Flow</b><br>
+                ${etf.netflow || "-"}
+                </p>
 
-        tbody.appendChild(tr);
+                <hr>
 
-    });
-}
-
-function filterETF(type) {
-
-    if (type === "ALL") {
-
-        renderTable(
-            etfData
-        );
-
-        return;
-    }
-
-    const filtered =
-        etfData.filter(
-            x => x.type === type
-        );
-
-    renderTable(
-        filtered
-    );
-}
-
-document
-.getElementById(
-    "searchInput"
-)
-.addEventListener(
-    "keyup",
-    function () {
-
-        const keyword =
-            this.value.toLowerCase();
-
-        const filtered =
-            etfData.filter(etf =>
-
-                etf.code
-                   .toLowerCase()
-                   .includes(keyword)
-
-                ||
-
-                etf.name
-                   .toLowerCase()
-                   .includes(keyword)
-
-                ||
-
-                etf.type
-                   .toLowerCase()
-                   .includes(keyword)
-
-            );
-
-        renderTable(filtered);
-
-    }
-);
-
-loadETFList();
+                <h3>Top Buy Stock</h3>
