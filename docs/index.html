@@ -2,34 +2,86 @@
 <html lang="zh-Hant">
 
 <head>
-    <meta charset="UTF-8">
-    <title>ETF Dashboard</title>
 
-    style.css
-</head>
+<meta charset="UTF-8">
+
+<title>日本 ETF 分析網</title>
+
+<link rel="</head>
 
 <body>
 
-    <h1>日本 ETF 分析網</h1>
+<div class="title">
+日本 ETF 分析網
+</div>
 
-    <p id="status">載入中...</p>
+<div class="menu">
 
-    <table id="etf-table" border="1">
+<button class="menu-btn active">
+主動ETF
+</button>
 
-        <thead>
-            <tr>
-                <th>ETF CODE</th>
-                <th>ETF NAME</th>
-                <th>SOURCE</th>
-            </tr>
-        </thead>
+<button class="menu-btn">
+被動ETF
+</button>
 
-        <tbody>
-        </tbody>
+<button class="menu-btn">
+REIT ETF
+</button>
 
-    </table>
+<button class="menu-btn">
+債券ETF
+</button>
 
-    <script src="dashboard.js"></script>
+<button class="menu-btn">
+ETF配息表
+</button>
+
+<button class="menu-btn">
+個股查詢
+</button>
+
+</div>
+
+<div class="search-box">
+
+<input
+    type="text"
+    id="searchInput"
+    placeholder="搜尋 ETF Code 或 ETF Name">
+
+</div>
+
+<table id="etf-table">
+
+<thead>
+
+<tr>
+
+<th>ETF CODE</th>
+
+<th>ETF NAME</th>
+
+<th>SOURCE</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+</tbody>
+
+</table>
+
+<div
+    id="detail-box"
+    class="detail-box">
+
+    點選 ETF 顯示詳細資料
+
+</div>
+
+<script src="dashboard.js"></script>
 
 </body>
 
