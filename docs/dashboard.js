@@ -1,4 +1,3 @@
-
 async function loadETFList() {
 
     const response = await fetch(
