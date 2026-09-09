@@ -3,9 +3,7 @@ let etfData = [];
 async function loadETFList() {
 
     const response =
-        await fetch(
-            "./data/ALL_ETF_MASTER_V2.csv"
-        );
+        await fetch("./data/ALL_ETF_MASTER_V2.csv");
 
     const text =
         await response.text();
@@ -20,13 +18,23 @@ async function loadETFList() {
         if (!row.trim())
             return;
 
-        const cols =
-            row.split(",");
+        const cols = row.split(",");
+
+        const etfType =
+            cols[1].toUpperCase().includes("ACTIVE")
+            ? "ACTIVE"
+            : "PASSIVE";
 
         etfData.push({
+
             code: cols[0],
+
             name: cols[1],
-            source: cols[2]
+
+            source: cols[2],
+
+            etf_type: etfType
+
         });
 
     });
@@ -49,9 +57,15 @@ function renderTable(data) {
             document.createElement("tr");
 
         tr.innerHTML = `
+
             <td>${etf.code}</td>
+
             <td>${etf.name}</td>
+
+            <td>${etf.etf_type}</td>
+
             <td>${etf.source}</td>
+
         `;
 
         tr.onclick = () => {
@@ -62,13 +76,26 @@ function renderTable(data) {
 
                 <h2>${etf.code}</h2>
 
-                <p>${etf.name}</p>
-
-                <p>Source: ${etf.source}</p>
+                <p>
+                    <b>ETF Name</b><br>
+                    ${etf.name}
+                </p>
 
                 <p>
-                ETF Detail Page
-                Coming Soon
+                    <b>ETF Type</b><br>
+                    ${etf.etf_type}
+                </p>
+
+                <p>
+                    <b>Source</b><br>
+                    ${etf.source}
+                </p>
+
+                <hr>
+
+                <p>
+                    ETF Detail Page<br>
+                    Coming Soon
                 </p>
 
             `;
@@ -77,7 +104,6 @@ function renderTable(data) {
         tbody.appendChild(tr);
 
     });
-
 }
 
 document
@@ -101,6 +127,18 @@ document
                 ||
 
                 etf.name
+                   .toLowerCase()
+                   .includes(keyword)
+
+                ||
+
+                etf.source
+                   .toLowerCase()
+                   .includes(keyword)
+
+                ||
+
+                etf.etf_type
                    .toLowerCase()
                    .includes(keyword)
 
