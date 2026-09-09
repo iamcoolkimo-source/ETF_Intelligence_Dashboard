@@ -1,42 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 
 <head>
-    <meta charset="utf-8">
-    <title>ETF Intelligence Dashboard</title>
 
-    style.css
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>日本 ETF 分析網</title>
+
+<link rel="stylesheet"
+      href="style.css">
+
 </head>
 
 <body>
 
-    <h1>ETF Intelligence Dashboard</h1>
+<div classr>
 
-    <div id="last-update">
-        Loading...
-    </div>
+<div class="menu">
 
-    <hr>
+    <button class="menu-btn active">
+        主動ETF
+    </button>
 
-    <h2>ETF Daily Report</h2>
+    <button class="menu-btn">
+        被動ETF
+    </button>
 
-    <table id="report-table">
-        <thead>
-            <tr>
-                <th>SECTION</th>
-                <th>RANK</th>
-                <th>ITEM</th>
-                <th>VALUE</th>
-                <th>NOTE</th>
-            </tr>
-        </thead>
+    <button class="menu-btn">
+        REIT ETF
+    </button>
 
-        <tbody>
-        </tbody>
+    <button class="menu-btn">
+        債券 ETF
+    </button>
 
-    </table>
+    <button class="menu-btn">
+        ETF 配息表
+    </button>
 
-    dashboard.jsscript>
+    <button class="menu-btn">
+        個股查詢
+    </button>
+
+</div>
+
+<div class="toolbar">
+
+    <button class="compare-btn">
+        ETF 組成比較
+    </button>
+
+</div>
+
+<table id="etf-table">
+
+    <thead>
+
+    <tr>
+
+        <th>比較</th>
+
+        <th>Code</th>
+
+        <th>ETF名稱</th>
+
+        <th>發行商</th>
+
+        <th>價格<br>(前日終值)</th>
+
+        <th>買賣單位</th>
+
+        <th>年配息率</th>
+
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    <tr>
+
+        <td>
+            <input type="checkbox">
+        </td>
+
+        <td>2083</td>
+
+        <td>
+            NF・日本成長株<br>
+            アクティブETF
+        </td>
+
+        <td>
+            Next<br>
+            Funds
+        </td>
+
+        <td>4046</td>
+
+        <td>1口</td>
+
+        <td>0.87%</td>
+
+    </tr>
+
+    <tr>
+
+        <td>
+            <input type="checkbox">
+        </td>
+
+        <td>2084</td>
+
+        <td>
+            NF・日本高配当株<br>
+            アクティブETF
+        </td>
+
+        <td>
+            Next<br>
+            Funds
+        </td>
+
+        <td>3908</td>
+
+        <td>1口</td>
+
+        <td>2.18%</td>
+
+    </tr>
+
+    <tr>
+
+        <td>
+            <input type="checkbox">
+        </td>
+
+        <td>605A</td>
+
+        <td>
+            NF・政策フォーカスETF
+        </td>
+
+        <td>
+            Next<br>
+            Funds
+        </td>
+
+        <td>201.4</td>
+
+        <td>10口</td>
+
+        <td>0%</td>
+
+    </tr>
+
+    </tbody>
+
+</table>
+
+dashboard.js</script>
 
 </body>
 
