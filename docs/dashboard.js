@@ -54,18 +54,76 @@ function renderTable(data) {
             document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${etf.code}</td>
-            <td>${etf.name}</td>
-            <td>${etf.type}</td>
-            <td>${etf.provider}</td>
-        `;
+
+<td>
+<input type="checkbox">
+</td>
+
+<td>${etf.code}</td>
+
+<td>${etf.name}</td>
+
+<td>${etf.type}</td>
+
+<td>${etf.provider}</td>
+
+<td>${etf.topbuy}</td>
+
+<td>${etf.netflow}</td>
+
+`;
 
         tr.onclick = () => {
 
             const detail =
                 document.getElementById(
-                    "detail-box"
-                );
+    "detail-box"
+).innerHTML = `
+
+<h2>${etf.code}</h2>
+
+<h3>${etf.name}</h3>
+
+<hr>
+
+<p>
+<strong>ETF Type</strong><br>
+${etf.type}
+</p>
+
+<p>
+<strong>Provider</strong><br>
+${etf.provider}
+</p>
+
+<p>
+<strong>Net Flow</strong><br>
+${etf.netflow}
+</p>
+
+<hr>
+
+<p>
+<strong>Top Buy Stock</strong><br>
+${etf.topbuy}
+</p>
+
+<p>
+<strong>Top Buy Change</strong><br>
+${etf.topbuychange}
+</p>
+
+<p>
+<strong>Top Sell Stock</strong><br>
+${etf.topsell}
+</p>
+
+<p>
+<strong>Top Sell Change</strong><br>
+${etf.topsellchange}
+</p>
+`;
+``
 
             if (!detail) return;
 
