@@ -20,21 +20,29 @@ async function loadETFList() {
 
         const cols = row.split(",");
 
-        const etfType =
-            cols[1].toUpperCase().includes("ACTIVE")
-            ? "ACTIVE"
-            : "PASSIVE";
+        const name = cols[1] || "";
+
+        const upperName =
+            name.toUpperCase();
+
+        let etfType =
+            "PASSIVE";
+
+        if (
+            upperName.includes("ACTIVE")
+        ) {
+
+            etfType =
+                "ACTIVE";
+        }
 
         etfData.push({
 
             code: cols[0],
 
-            name: cols[1],
+            name: name,
 
-            source: cols[2],
-
-            etf_type: etfType
-
+            type: etfType
         });
 
     });
@@ -62,9 +70,7 @@ function renderTable(data) {
 
             <td>${etf.name}</td>
 
-            <td>${etf.etf_type}</td>
-
-            <td>${etf.source}</td>
+            <td>${etf.type}</td>
 
         `;
 
@@ -77,25 +83,20 @@ function renderTable(data) {
                 <h2>${etf.code}</h2>
 
                 <p>
-                    <b>ETF Name</b><br>
-                    ${etf.name}
+                <b>ETF Name</b><br>
+                ${etf.name}
                 </p>
 
                 <p>
-                    <b>ETF Type</b><br>
-                    ${etf.etf_type}
-                </p>
-
-                <p>
-                    <b>Source</b><br>
-                    ${etf.source}
+                <b>ETF Type</b><br>
+                ${etf.type}
                 </p>
 
                 <hr>
 
                 <p>
-                    ETF Detail Page<br>
-                    Coming Soon
+                ETF Detail Page<br>
+                Coming Soon
                 </p>
 
             `;
@@ -104,6 +105,27 @@ function renderTable(data) {
         tbody.appendChild(tr);
 
     });
+}
+
+function filterETF(type) {
+
+    if (type === "ALL") {
+
+        renderTable(
+            etfData
+        );
+
+        return;
+    }
+
+    const filtered =
+        etfData.filter(
+            x => x.type === type
+        );
+
+    renderTable(
+        filtered
+    );
 }
 
 document
@@ -132,13 +154,7 @@ document
 
                 ||
 
-                etf.source
-                   .toLowerCase()
-                   .includes(keyword)
-
-                ||
-
-                etf.etf_type
+                etf.type
                    .toLowerCase()
                    .includes(keyword)
 
