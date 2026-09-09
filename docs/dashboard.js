@@ -1,19 +1,23 @@
-async function loadETFList() {
+async function loadETF() {
 
-    const response = await fetch(
-        "./data/ALL_ETF_MASTER_V2.csv"
-    );
+    const response =
+        await fetch("./data/ALL_ETF_MASTER_V2.csv");
 
-    const text = await response.text();
+    const text =
+        await response.text();
 
-    const rows = text.split("\n");
+    const rows =
+        text.split("\n");
 
     const tbody =
         document.querySelector(
             "#etf-table tbody"
         );
 
-    tbody.innerHTML = "";
+    document.getElementById(
+        "status"
+    ).innerText =
+        "Rows: " + (rows.length - 1);
 
     rows.slice(1).forEach(row => {
 
@@ -25,25 +29,20 @@ async function loadETFList() {
         const tr =
             document.createElement("tr");
 
-        tr.innerHTML = `
-            <td>
-                <input type="checkbox">
-            </td>
+        cols.forEach(col => {
 
-            <td>${cols[0]}</td>
+            const td =
+                document.createElement("td");
 
-            <td>${cols[1]}</td>
+            td.textContent = col;
 
-            <td>${cols[2]}</td>
+            tr.appendChild(td);
 
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        `;
+        });
 
         tbody.appendChild(tr);
-
     });
+
 }
 
-loadETFList();
+loadETF();
