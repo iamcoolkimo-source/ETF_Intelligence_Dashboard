@@ -55,9 +55,9 @@ body {
 
 .search-box input {
 
-    width: 300px;
+    width: 320px;
 
-    height: 35px;
+    height: 40px;
 
     font-size: 18px;
 
@@ -104,4 +104,3 @@ tr:hover {
 
     background: white;
 }
-``
