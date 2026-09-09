@@ -26,6 +26,8 @@ body {
     gap: 20px;
 
     margin-bottom: 30px;
+
+    flex-wrap: wrap;
 }
 
 .menu-btn {
@@ -43,7 +45,7 @@ body {
     cursor: pointer;
 }
 
-.menu-btn.active {
+.menu-btn:hover {
 
     background: #dbeef7;
 }
@@ -55,7 +57,7 @@ body {
 
 .search-box input {
 
-    width: 320px;
+    width: 350px;
 
     height: 40px;
 
@@ -103,4 +105,6 @@ tr:hover {
     border: 2px solid #19415d;
 
     background: white;
+
+    min-height: 150px;
 }
