@@ -21,27 +21,23 @@ async function loadETFList() {
 
         etfData.push({
 
-            code: cols[0] || "",
+    code: cols[0] || "",
 
-            name: cols[1] || "",
+    name: cols[1] || "",
 
-            type: cols[2] || "",
+    type: cols[2] || "",
 
-            provider: cols[3] || "",
+    price: "",
 
-            listdate: cols[4] || "",
+    listdate: cols[4] || "",
 
-            lotsize: cols[5] || "",
+    lotsize: cols[5] || "",
 
-            sector: cols[6] || "",
+    topbuy: cols[8] || "",
 
-            assetclass: cols[7] || "",
+    netflow: cols[9] || ""
 
-            topbuy: cols[8] || "",
-
-            netflow: cols[9] || ""
-
-        });
+});
 
     });
 
@@ -62,30 +58,29 @@ function renderTable(data) {
         const tr =
             document.createElement("tr");
 
-       tr.innerHTML = `
+  tr.innerHTML = `
 
-    <td>
-        <input type="checkbox">
-    </td>
+<td>
+<input type="checkbox">
+</td>
 
-    <td>${etf.code}</td>
+<td>${etf.code}</td>
 
-    <td>${etf.name}</td>
+<td>${etf.name}</td>
 
-    <td>${etf.type}</td>
+<td>${etf.type}</td>
 
-    <td>${etf.provider}</td>
+<td>${etf.price}</td>
 
-    <td>${etf.listdate}</td>
+<td>${etf.listdate}</td>
 
-    <td>${etf.lotsize}</td>
+<td>${etf.lotsize}</td>
 
-    <td>${etf.topbuy}</td>
+<td>${etf.topbuy}</td>
 
-    <td>${Number(etf.netflow).toLocaleString()}</td>
+<td>${Number(etf.netflow).toLocaleString()}</td>
 
 `;
-
         tr.onclick = () => {
 
             document.getElementById(
@@ -104,7 +99,7 @@ function renderTable(data) {
 </tr>
 
 <tr>
-<td>発行会社</td>
+<td>股價</td>
 <td>${etf.provider}</td>
 </tr>
 
