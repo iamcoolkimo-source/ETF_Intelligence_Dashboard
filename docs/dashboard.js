@@ -62,27 +62,29 @@ function renderTable(data) {
         const tr =
             document.createElement("tr");
 
-        tr.innerHTML = `
+       tr.innerHTML = `
 
-            <td>
-                <input type="checkbox">
-            </td>
+    <td>
+        <input type="checkbox">
+    </td>
 
-            <td>${etf.code}</td>
+    <td>${etf.code}</td>
 
-            <td>${etf.name}</td>
+    <td>${etf.name}</td>
 
-            <td>${etf.type}</td>
+    <td>${etf.type}</td>
 
-            <td>${etf.provider}</td>
+    <td>${etf.provider}</td>
 
-            <td>${etf.lotsize}</td>
+    <td>${etf.listdate}</td>
 
-            <td>${etf.topbuy}</td>
+    <td>${etf.lotsize}</td>
 
-            <td>${etf.netflow}</td>
+    <td>${etf.topbuy}</td>
 
-        `;
+    <td>${Number(etf.netflow).toLocaleString()}</td>
+
+`;
 
         tr.onclick = () => {
 
