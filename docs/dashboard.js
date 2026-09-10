@@ -100,7 +100,7 @@ function renderTable(data) {
 
 <tr>
 <td>股價</td>
-<td>${etf.provider}</td>
+<td>${etf.}</td>
 </tr>
 
 <tr>
