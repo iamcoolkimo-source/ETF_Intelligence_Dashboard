@@ -89,63 +89,59 @@ function renderTable(data) {
         tr.onclick = () => {
 
             document.getElementById(
-                "detail-box"
-            ).innerHTML = `
+    "detail-box"
+).innerHTML = `
 
-                <h2>${etf.code}</h2>
+<h2>${etf.code}</h2>
 
-                <h3>${etf.name}</h3>
+<h3>${etf.name}</h3>
 
-                <hr>
+<table border="1" width="100%" cellpadding="8">
 
-                <table border="1"
-                       width="100%"
-                       cellpadding="8">
+<tr>
+<td>ETF種類</td>
+<td>${etf.type}</td>
+</tr>
 
-                    <tr>
-                        <td><b>ETF Type</b></td>
-                        <td>${etf.type}</td>
-                    </tr>
+<tr>
+<td>発行会社</td>
+<td>${etf.provider}</td>
+</tr>
 
-                    <tr>
-                        <td><b>Provider</b></td>
-                        <td>${etf.provider}</td>
-                    </tr>
+<tr>
+<td>上場日</td>
+<td>${etf.listdate}</td>
+</tr>
 
-                    <tr>
-                        <td><b>List Date</b></td>
-                        <td>${etf.listdate}</td>
-                    </tr>
+<tr>
+<td>売買単位</td>
+<td>${etf.lotsize}</td>
+</tr>
 
-                    <tr>
-                        <td><b>Lot Size</b></td>
-                        <td>${etf.lotsize}</td>
-                    </tr>
+<tr>
+<td>Sector</td>
+<td>${etf.sector}</td>
+</tr>
 
-                    <tr>
-                        <td><b>Sector</b></td>
-                        <td>${etf.sector}</td>
-                    </tr>
+<tr>
+<td>Asset Class</td>
+<td>${etf.assetclass}</td>
+</tr>
 
-                    <tr>
-                        <td><b>Asset Class</b></td>
-                        <td>${etf.assetclass}</td>
-                    </tr>
+<tr>
+<td>Net Flow</td>
+<td>${Number(etf.netflow).toLocaleString()}</td>
+</tr>
 
-                    <tr>
-                        <td><b>Net Flow</b></td>
-                        <td>${etf.netflow}</td>
-                    </tr>
+</table>
 
-                </table>
+<br>
 
-                <br>
+<h3>主力買進股票</h3>
 
-                <h3>Top Buy Stock</h3>
+<p>${etf.topbuy}</p>
 
-                <p>${etf.topbuy}</p>
-
-            `;
+`;
         };
 
         tbody.appendChild(tr);
