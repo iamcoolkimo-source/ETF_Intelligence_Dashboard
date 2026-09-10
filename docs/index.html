@@ -1,68 +1,132 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 
-<tr>
+<head>
 
-<th>比較</th>
+<meta charset="UTF-8">
 
-<th>CODE</th>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-<th>ETF名稱</th>
+<title>日本 ETF 分析網</title>
 
-<th>類型</th>
+<link rel="stylesheet"
+      href="style.csse">
 
-<th>股價</th>
+    日本 ETF 分析網
 
-<th>上場日</th>
+</div>
 
-<th>売買單位</th>
+<hr>
 
-<th>主力買進股票</th>
+<div class="menu">
 
-<th>Net Flow</th>
+    <button
+        class="menu-btn"
+        onclick="filterETF('ACTIVE')">
 
-</tr>
+        主動ETF
 
-<tr>
+    </button>
 
-<th>比較</th>
+    <button
+        class="menu-btn"
+        onclick="filterETF('PASSIVE')">
 
-<th>CODE</th>
+        被動ETF
 
-<th>ETF名稱</th>
+    </button>
 
-<th>類型</th>
+    <button
+        class="menu-btn"
+        onclick="filterETF('REIT')">
 
-<th>股價</th>
+        REIT ETF
 
-<th>上場日</th>
+    </button>
 
-<th>売買單位</th>
+    <button
+        class="menu-btn"
+        onclick="filterETF('BOND')">
 
-<th>主力買進股票</th>
+        債券 ETF
 
-<th>Net Flow</th>
+    </button>
 
-</tr>
+    <button
+        class="menu-btn"
+        onclick="filterETF('LEVERAGED_INVERSE')">
 
-</thead>
+        レバインバ
 
-<tbody>
+    </button>
 
-</tbody>
+    <button
+        class="menu-btn"
+        onclick="filterETF('ALL')">
+
+        全部ETF
+
+    </button>
+
+</div>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="搜尋 ETF Code 或 ETF 名稱">
+
+</div>
+
+<table id="etf-table">
+
+    <thead>
+
+        <tr>
+
+            <th>比較</th>
+
+            <th>CODE</th>
+
+            <th>ETF名稱</th>
+
+            <th>類型</th>
+
+            <th>股價</th>
+
+            <th>上場日</th>
+
+            <th>売買單位</th>
+
+            <th>主力買進股票</th>
+
+            <th>Net Flow</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+    </tbody>
 
 </table>
 
 <br>
 
-<div id="detail-box"
-     class="detail-box">
+<div
+    id="detail-box"
+    class="detail-box">
 
-<h2>ETF Detail</h2>
+    <h2>ETF Detail</h2>
 
-<p>
-點選 ETF 顯示詳細資料
-</p>
+    <p>
+
+        點選 ETF 顯示詳細資料
+
+    </p>
 
 </div>
 
@@ -71,4 +135,3 @@
 </body>
 
 </html>
-``
