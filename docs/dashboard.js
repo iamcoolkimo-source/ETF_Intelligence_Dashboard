@@ -8,8 +8,7 @@ async function loadETFList() {
     const text =
         await response.text();
 
-    const rows =
-        text.split("\n");
+    const rows = text.split("\n");
 
     etfData = [];
 
@@ -21,27 +20,32 @@ async function loadETFList() {
 
         etfData.push({
 
-    code: cols[0] || "",
+            code: cols[0] || "",
 
-    name: cols[1] || "",
+            name: cols[1] || "",
 
-    type: cols[2] || "",
+            type: cols[2] || "",
 
-    price: "",
+            provider: cols[3] || "",
 
-    listdate: cols[4] || "",
+            listdate: cols[4] || "",
 
-    lotsize: cols[5] || "",
+            lotsize: cols[5] || "",
 
-    topbuy: cols[8] || "",
+            sector: cols[6] || "",
 
-    netflow: cols[9] || ""
+            assetclass: cols[7] || "",
 
-});
+            topbuy: cols[8] || "",
+
+            netflow: cols[9] || ""
+
+        });
 
     });
 
     renderTable(etfData);
+
 }
 
 function renderTable(data) {
@@ -58,85 +62,85 @@ function renderTable(data) {
         const tr =
             document.createElement("tr");
 
-  tr.innerHTML = `
+        tr.innerHTML = `
 
-<td>
-<input type="checkbox">
-</td>
+        <td>
+            <input type="checkbox">
+        </td>
 
-<td>${etf.code}</td>
+        <td>${etf.code}</td>
 
-<td>${etf.name}</td>
+        <td>${etf.name}</td>
 
-<td>${etf.type}</td>
+        <td>${etf.type}</td>
 
-<td>${etf.price}</td>
+        <td></td>
 
-<td>${etf.listdate}</td>
+        <td>${etf.listdate}</td>
 
-<td>${etf.lotsize}</td>
+        <td>${etf.lotsize}</td>
 
-<td>${etf.topbuy}</td>
+        <td>${etf.topbuy}</td>
 
-<td>${Number(etf.netflow).toLocaleString()}</td>
+        <td>${Number(etf.netflow).toLocaleString()}</td>
 
-`;
+        `;
+
         tr.onclick = () => {
 
             document.getElementById(
-    "detail-box"
-).innerHTML = `
+                "detail-box"
+            ).innerHTML = `
 
-<h2>${etf.code}</h2>
+                <h2>${etf.code}</h2>
 
-<h3>${etf.name}</h3>
+                <h3>${etf.name}</h3>
 
-<table border="1" width="100%" cellpadding="8">
+                <hr>
 
-<tr>
-<td>ETF種類</td>
-<td>${etf.type}</td>
-</tr>
+                <table border="1"
+                       width="100%"
+                       cellpadding="8">
 
-<tr>
-<td>股價</td>
-<td>${etf.}</td>
-</tr>
+                    <tr>
+                        <td>ETF種類</td>
+                        <td>${etf.type}</td>
+                    </tr>
 
-<tr>
-<td>上場日</td>
-<td>${etf.listdate}</td>
-</tr>
+                    <tr>
+                        <td>上場日</td>
+                        <td>${etf.listdate}</td>
+                    </tr>
 
-<tr>
-<td>売買単位</td>
-<td>${etf.lotsize}</td>
-</tr>
+                    <tr>
+                        <td>売買単位</td>
+                        <td>${etf.lotsize}</td>
+                    </tr>
 
-<tr>
-<td>Sector</td>
-<td>${etf.sector}</td>
-</tr>
+                    <tr>
+                        <td>Sector</td>
+                        <td>${etf.sector}</td>
+                    </tr>
 
-<tr>
-<td>Asset Class</td>
-<td>${etf.assetclass}</td>
-</tr>
+                    <tr>
+                        <td>Asset Class</td>
+                        <td>${etf.assetclass}</td>
+                    </tr>
 
-<tr>
-<td>Net Flow</td>
-<td>${Number(etf.netflow).toLocaleString()}</td>
-</tr>
+                    <tr>
+                        <td>Net Flow</td>
+                        <td>${Number(etf.netflow).toLocaleString()}</td>
+                    </tr>
 
-</table>
+                </table>
 
-<br>
+                <br>
 
-<h3>主力買進股票</h3>
+                <h3>主力買進股票</h3>
 
-<p>${etf.topbuy}</p>
+                <p>${etf.topbuy}</p>
 
-`;
+            `;
         };
 
         tbody.appendChild(tr);
@@ -152,15 +156,14 @@ function filterETF(type) {
         return;
     }
 
-    const filtered =
-        etfData.filter(
-            etf =>
-                String(etf.type)
-                    .toUpperCase()
-                    .trim()
-                ===
-                type
-        );
+    const filtered = etfData.filter(
+        x =>
+            String(x.type)
+            .trim()
+            .toUpperCase()
+            ===
+            type
+    );
 
     renderTable(filtered);
 }
@@ -184,18 +187,6 @@ document
                 ||
 
                 etf.name
-                    .toLowerCase()
-                    .includes(keyword)
-
-                ||
-
-                etf.provider
-                    .toLowerCase()
-                    .includes(keyword)
-
-                ||
-
-                etf.type
                     .toLowerCase()
                     .includes(keyword)
 
