@@ -235,50 +235,64 @@ function filterETF(type) {
 
 function showYesterdayHot() {
 
-    alert("昨日熱門ETF");
+    const detail =
+        document.getElementById(
+            "detail-content"
+        );
 
+    if (!detail) return;
+
+    detail.innerHTML = `
+
+    <h2>昨日熱門 ETF</h2>
+
+    <table border="1" width="100%">
+
+        <tr>
+
+            <th>分類</th>
+
+            <th>熱門股票</th>
+
+            <th>熱門產業</th>
+
+        </tr>
+
+        <tr>
+
+            <td>全部ETF</td>
+
+            <td>日本製鉄</td>
+
+            <td>鉄鋼</td>
+
+        </tr>
+
+        <tr>
+
+            <td>主動ETF</td>
+
+            <td>いすゞ自動車</td>
+
+            <td>輸送用機器</td>
+
+        </tr>
+
+        <tr>
+
+            <td>被動ETF</td>
+
+            <td>日本製鉄</td>
+
+            <td>鉄鋼</td>
+
+        </tr>
+
+    </table>
+
+    `;
 }
 
-const searchInput =
-    document.getElementById(
-        "searchInput"
-    );
-
-if (searchInput) {
-
-    searchInput.addEventListener(
-        "keyup",
-        function () {
-
-            const keyword =
-                this.value.toLowerCase();
-
-            const filtered =
-                etfData.filter(etf =>
-
-                    etf.code
-                        .toLowerCase()
-                        .includes(keyword)
-
-                    ||
-
-                    etf.name
-                        .toLowerCase()
-                        .includes(keyword)
-
-                    ||
-
-                    etf.type
-                        .toLowerCase()
-                        .includes(keyword)
-
-                );
-
-            renderTable(filtered);
-
-        }
-    );
-}
 
 loadETFList();
 function showYesterdayHot() {
