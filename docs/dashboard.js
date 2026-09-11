@@ -1,3 +1,4 @@
+alert("dashboard loaded");
 let etfData = [];
 
 async function loadETFList() {
