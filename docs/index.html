@@ -3,144 +3,146 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<title>日本 ETF 分析網</title>
+    <title>日本 ETF 分析網</title>
 
-<link rel="stylesheet"
-      href="style.css">
+    <link rel="stylesheet"
+          href="style.css">
 
 </head>
 
 <body>
 
-<h1 class="title">
+    <h1 class="title">
 
-    日本 ETF 分析網
+        日本 ETF 分析網
 
-</h1>
+    </h1>
 
-<div class="menu">
+    <div class="menu">
 
-    <button
-        class="menu-btn"
-        onclick="filterETF('ACTIVE')">
+        <button
+            class="menu-btn"
+            onclick="filterETF('ACTIVE')">
 
-        主動ETF
+            主動ETF
 
-    </button>
+        </button>
 
-    <button
-        class="menu-btn"
-        onclick="filterETF('PASSIVE')">
+        <button
+            class="menu-btn"
+            onclick="filterETF('PASSIVE')">
 
-        被動ETF
+            被動ETF
 
-    </button>
+        </button>
 
-    <button
-        class="menu-btn"
-        onclick="filterETF('REIT')">
+        <button
+            class="menu-btn"
+            onclick="filterETF('REIT')">
 
-        REIT ETF
+            REIT ETF
 
-    </button>
+        </button>
 
-    <button
-        class="menu-btn"
-        onclick="filterETF('BOND')">
+        <button
+            class="menu-btn"
+            onclick="filterETF('BOND')">
 
-        債券 ETF
+            債券 ETF
 
-    </button>
+        </button>
 
-    <button
-        class="menu-btn"
-        onclick="filterETF('LEVERAGED_INVERSE')">
+        <button
+            class="menu-btn"
+            onclick="filterETF('LEVERAGED_INVERSE')">
 
-        レバインバ
+            レバインバ
 
-    </button>
+        </button>
 
-    <button
-        class="menu-btn"
-        onclick="filterETF('ALL')">
+        <button
+            class="menu-btn"
+            onclick="filterETF('ALL')">
 
-        全部ETF
+            全部ETF
 
-    </button>
+        </button>
 
-    <button
-        class="menu-btn"
-        onclick="showCompare()">
+        <button
+            class="menu-btn"
+            onclick="showCompare()">
 
-        ETF Compare
+            ETF Compare
 
-    </button>
-
-</div>
-
-<div class="search">
-
-    <input
-        id="searchInput"
-        type="text"
-        placeholder="搜尋 ETF Code 或 ETF 名稱">
-
-</div>
-
-<div class="container">
-
-    <div class="left">
-
-        <table id="etf-table">
-
-            <thead>
-
-                <tr>
-
-                    <th>比較</th>
-
-                    <th>CODE</th>
-
-                    <th>ETF名稱</th>
-
-                    <th>類型</th>
-
-                    <th>股價</th>
-
-                    <th>上場日</th>
-
-                    <th>売買單位</th>
-
-                    <th>主力買進股票</th>
-
-                    <th>Net Flow</th>
-
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-            </tbody>
-
-        </table>
+        </button>
 
     </div>
 
-    <div class="right">
+    <div class="search">
 
-        <div class="detail-box">
+        <input
+            id="searchInput"
+            type="text"
+            placeholder="搜尋 ETF Code 或 ETF 名稱">
 
-            <h2>ETF Detail</h2>
+    </div>
 
-            <div id="detail-content">
+    <div class="container">
 
-                請選擇 ETF
+        <div class="left">
+
+            <table id="etf-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>比較</th>
+
+                        <th>CODE</th>
+
+                        <th>ETF名稱</th>
+
+                        <th>類型</th>
+
+                        <th>股價</th>
+
+                        <th>上場日</th>
+
+                        <th>売買單位</th>
+
+                        <th>主力買進股票</th>
+
+                        <th>Net Flow</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="right">
+
+            <div class="detail-box">
+
+                <h2>ETF Detail</h2>
+
+                <div id="detail-content">
+
+                    請選擇 ETF
+
+                </div>
 
             </div>
 
@@ -148,9 +150,7 @@
 
     </div>
 
-</div>
-
-<script src="dashboard.js"></script>
+    <script src="dashboard.js"></script>
 
 </body>
 
