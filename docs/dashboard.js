@@ -146,4 +146,144 @@ function showETFDetail(etf) {
             <tr>
                 <td class="detail-label">
                     売買単位
- 
+                </td>
+
+                <td>
+                    ${etf.lotsize}
+                </td>
+            </tr>
+
+            <tr>
+                <td class="detail-label">
+                    Sector
+                </td>
+
+                <td>
+                    ${etf.sector}
+                </td>
+            </tr>
+
+            <tr>
+                <td class="detail-label">
+                    Asset Class
+                </td>
+
+                <td>
+                    ${etf.assetclass}
+                </td>
+            </tr>
+
+            <tr>
+                <td class="detail-label">
+                    Net Flow
+                </td>
+
+                <td>
+                    ${formatNumber(etf.netflow)}
+                </td>
+            </tr>
+
+            <tr>
+                <td class="detail-label">
+                    主力買進股票
+                </td>
+
+                <td>
+                    ${etf.topbuy}
+                </td>
+            </tr>
+
+        </table>
+
+    `;
+}
+
+function formatNumber(value) {
+
+    const num = Number(value);
+
+    if (isNaN(num))
+        return value;
+
+    return num.toLocaleString();
+}
+
+function filterETF(type) {
+
+    if (type === "ALL") {
+
+        renderTable(etfData);
+
+        return;
+    }
+
+    const filtered =
+        etfData.filter(
+            etf =>
+                String(etf.type)
+                    .trim()
+                    .toUpperCase()
+                ===
+                type
+        );
+
+    renderTable(filtered);
+}
+
+function showYesterdayHot() {
+
+    document.getElementById(
+        "detail-content"
+    ).innerHTML = `
+
+        <h2>昨日熱門 ETF</h2>
+
+        <p>
+        昨日熱門 ETF 功能建置中
+        </p>
+
+    `;
+}
+
+const searchInput =
+    document.getElementById(
+        "searchInput"
+    );
+
+if (searchInput) {
+
+    searchInput.addEventListener(
+        "keyup",
+        function () {
+
+            const keyword =
+                this.value.toLowerCase();
+
+            const filtered =
+                etfData.filter(etf =>
+
+                    etf.code
+                        .toLowerCase()
+                        .includes(keyword)
+
+                    ||
+
+                    etf.name
+                        .toLowerCase()
+                        .includes(keyword)
+
+                    ||
+
+                    etf.type
+                        .toLowerCase()
+                        .includes(keyword)
+
+                );
+
+            renderTable(filtered);
+
+        }
+    );
+}
+
+loadETFList();
