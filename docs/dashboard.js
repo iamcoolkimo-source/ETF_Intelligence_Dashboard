@@ -1,61 +1,39 @@
-alert("dashboard loaded");
 let etfData = [];
 
 async function loadETFList() {
 
-    try {
+    const response =
+        await fetch("./data/WEB_ETF_MASTER_V5.csv");
 
-        const response =
-            await fetch("./data/WEB_ETF_MASTER_V5.csv");
+    const text =
+        await response.text();
 
-        const text =
-            await response.text();
+    const rows =
+        text.trim().split("\n");
 
-        const rows =
-            text.split("\n");
+    etfData = [];
 
-        etfData = [];
+    rows.slice(1).forEach(row => {
 
-        rows.slice(1).forEach(row => {
+        const cols = row.split(",");
 
-            if (!row.trim()) return;
+        etfData.push({
 
-            const cols = row.split(",");
-
-            etfData.push({
-
-                code: cols[0] || "",
-
-                name: cols[1] || "",
-
-                type: cols[2] || "",
-
-                provider: cols[3] || "",
-
-                listdate: cols[4] || "",
-
-                lotsize: cols[5] || "",
-
-                sector: cols[6] || "",
-
-                assetclass: cols[7] || "",
-
-                topbuy: cols[8] || "",
-
-                netflow: cols[9] || ""
-
-            });
+            code: cols[0] || "",
+            name: cols[1] || "",
+            type: cols[2] || "",
+            listdate: cols[3] || "",
+            lotsize: cols[4] || "",
+            sector: cols[5] || "",
+            assetclass: cols[6] || "",
+            topbuy: cols[7] || "",
+            netflow: cols[8] || ""
 
         });
 
-        renderTable(etfData);
+    });
 
-    }
-    catch (err) {
-
-        console.error(err);
-
-    }
+    renderTable(etfData);
 }
 
 function renderTable(data) {
@@ -65,8 +43,6 @@ function renderTable(data) {
             "#etf-table tbody"
         );
 
-    if (!tbody) return;
-
     tbody.innerHTML = "";
 
     data.forEach(etf => {
@@ -75,13 +51,30 @@ function renderTable(data) {
             document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${etf.code}</td>
-            <td>${etf.name}</td>
-            <td>${etf.type}</td>
-            <td>${etf.listdate}</td>
+
+        <td>
+        <input type="checkbox">
+        </td>
+
+        <td>${etf.code}</td>
+
+        <td>${etf.name}</td>
+
+        <td>${etf.type}</td>
+
+        <td></td>
+
+        <td>${etf.listdate}</td>
+
+        <td>${etf.lotsize}</td>
+
+        <td>${etf.topbuy}</td>
+
+        <td>${formatNumber(etf.netflow)}</td>
+
         `;
 
-        tr.onclick = function () {
+        tr.onclick = () => {
 
             showETFDetail(etf);
 
@@ -94,30 +87,64 @@ function renderTable(data) {
 
 function showETFDetail(etf) {
 
-    const detail =
-        document.getElementById(
-            "detail-content"
-        );
+    document.getElementById(
+        "detail-content"
+    ).innerHTML = `
 
-    if (!detail) return;
+    <h2>${etf.code}</h2>
 
-    detail.innerHTML = `
+    <h3>${etf.name}</h3>
 
-        <h2>${etf.code}</h2>
+    <table class="detail-table">
 
-        <p>${etf.name}</p>
+        <tr>
+            <td>ETF種類</td>
+            <td>${etf.type}</td>
+        </tr>
 
-        <p>類型：${etf.type}</p>
+        <tr>
+            <td>上場日</td>
+            <td>${etf.listdate}</td>
+        </tr>
 
-        <p>上場日：${etf.listdate}</p>
+        <tr>
+            <td>売買單位</td>
+            <td>${etf.lotsize}</td>
+        </tr>
 
-        <p>売買單位：${etf.lotsize}</p>
+        <tr>
+            <td>Sector</td>
+            <td>${etf.sector}</td>
+        </tr>
 
-        <p>主力買進股票：${etf.topbuy}</p>
+        <tr>
+            <td>Asset Class</td>
+            <td>${etf.assetclass}</td>
+        </tr>
 
-        <p>Net Flow：${etf.netflow}</p>
+        <tr>
+            <td>主力買進股票</td>
+            <td>${etf.topbuy}</td>
+        </tr>
+
+        <tr>
+            <td>Net Flow</td>
+            <td>${formatNumber(etf.netflow)}</td>
+        </tr>
+
+    </table>
 
     `;
+}
+
+function formatNumber(value) {
+
+    const num = Number(value);
+
+    if (isNaN(num))
+        return value;
+
+    return num.toLocaleString();
 }
 
 function filterETF(type) {
@@ -125,18 +152,17 @@ function filterETF(type) {
     if (type === "ALL") {
 
         renderTable(etfData);
-
         return;
     }
 
     const filtered =
+
         etfData.filter(
             etf =>
                 String(etf.type)
-                    .trim()
-                    .toUpperCase()
-                ===
-                type
+                .toUpperCase()
+                .trim()
+                === type
         );
 
     renderTable(filtered);
@@ -144,25 +170,71 @@ function filterETF(type) {
 
 function showYesterdayHot() {
 
-    const detail =
-        document.getElementById(
-            "detail-content"
-        );
+    document.getElementById(
+        "detail-content"
+    ).innerHTML = `
 
-    if (!detail) return;
+    <h2>昨日熱門 ETF</h2>
 
-    detail.innerHTML = `
+    <table class="detail-table">
 
-        <h2>昨日熱門ETF</h2>
+        <tr>
+            <th>分類</th>
+            <th>熱門股票</th>
+            <th>熱門產業</th>
+        </tr>
 
-        <p>全部ETF：日本製鉄</p>
+        <tr>
+            <td>全部ETF</td>
+            <td>日本製鉄</td>
+            <td>鉄鋼</td>
+        </tr>
 
-        <p>主動ETF：いすゞ自動車</p>
+        <tr>
+            <td>主動ETF</td>
+            <td>いすゞ自動車</td>
+            <td>輸送用機器</td>
+        </tr>
 
-        <p>被動ETF：日本製鉄</p>
+        <tr>
+            <td>被動ETF</td>
+            <td>日本製鉄</td>
+            <td>鉄鋼</td>
+        </tr>
+
+    </table>
 
     `;
 }
+
+document
+.getElementById("searchInput")
+.addEventListener(
+    "keyup",
+    function () {
+
+        const keyword =
+            this.value.toLowerCase();
+
+        const filtered =
+            etfData.filter(etf =>
+
+                etf.code
+                    .toLowerCase()
+                    .includes(keyword)
+
+                ||
+
+                etf.name
+                    .toLowerCase()
+                    .includes(keyword)
+
+            );
+
+        renderTable(filtered);
+
+    }
+);
 
 loadETFList();
 
