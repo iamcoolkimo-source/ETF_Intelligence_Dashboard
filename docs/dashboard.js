@@ -232,17 +232,8 @@ function filterETF(type) {
 
 function showYesterdayHot() {
 
-    document.getElementById(
-        "detail-content"
-    ).innerHTML = `
+    alert("昨日熱門ETF");
 
-        <h2>昨日熱門 ETF</h2>
-
-        <p>
-        昨日熱門 ETF 功能建置中
-        </p>
-
-    `;
 }
 
 const searchInput =
