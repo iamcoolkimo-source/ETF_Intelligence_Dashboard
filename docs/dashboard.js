@@ -287,3 +287,19 @@ if (searchInput) {
 }
 
 loadETFList();
+function showYesterdayHot() {
+
+    console.log("showYesterdayHot");
+
+    document.getElementById(
+        "detail-content"
+    ).innerHTML = `
+
+        <h2>昨日熱門 ETF</h2>
+
+        <p>
+        昨日熱門 ETF 功能建置中
+        </p>
+
+    `;
+}
