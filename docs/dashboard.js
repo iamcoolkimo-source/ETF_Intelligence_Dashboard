@@ -1,5 +1,5 @@
-let etfData = [];
 
+alert("dashboard loaded");
 async function loadETFList() {
 
     try {
