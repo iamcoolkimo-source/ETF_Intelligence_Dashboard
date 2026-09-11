@@ -1,80 +1,91 @@
 let etfData = [];
 
+let holdingData = [];
+
 let selectedETFs = [];
 
 async function loadETFList() {
 
-    try {
+    const response =
+        await fetch("./data/WEB_ETF_MASTER_V5.csv");
 
-        const response =
-            await fetch("./data/WEB_ETF_MASTER_V5.csv");
+    const text =
+        await response.text();
 
-        const text =
-            await response.text();
+    const rows =
+        text.trim().split("\n");
 
-        const rows =
-            text.trim().split("\n");
+    etfData = [];
 
-        etfData = [];
+    rows.slice(1).forEach(row => {
 
-        rows.slice(1).forEach(row => {
+        const c = row.split(",");
 
-            if (!row.trim()) return;
+        etfData.push({
 
-            const cols = row.split(",");
+            code: c[0] || "",
 
-            etfData.push({
+            name: c[1] || "",
 
-                code: cols[0] || "",
+            type: c[2] || "",
 
-                name: cols[1] || "",
+            listdate: c[3] || "",
 
-                type: cols[2] || "",
+            lotsize: c[4] || "",
 
-                listdate: cols[3] || "",
+            sector: c[5] || "",
 
-                lotsize: cols[4] || "",
+            assetclass: c[6] || "",
 
-                sector: cols[5] || "",
+            topbuy: c[7] || "",
 
-                assetclass: cols[6] || "",
-
-                topbuy: cols[7] || "",
-
-                netflow: cols[8] || ""
-
-            });
+            netflow: c[8] || ""
 
         });
 
-        renderTable(etfData);
+    });
 
-    }
-    catch (err) {
-
-        console.error(err);
-
-        const detail =
-            document.getElementById(
-                "detail-content"
-            );
-
-        if (detail) {
-
-            detail.innerHTML =
-                "ETF資料讀取失敗";
-        }
-    }
+    renderTable(etfData);
 }
 
-function renderTable(data) {
+async function loadHoldingData(){
+
+    const response =
+        await fetch("./data/ALL_HOLDING_DAILY.csv");
+
+    const text =
+        await response.text();
+
+    const rows =
+        text.trim().split("\n");
+
+    holdingData = [];
+
+    rows.slice(1).forEach(row => {
+
+        const c = row.split(",");
+
+        holdingData.push({
+
+            ETF_CODE: c[1],
+
+            STOCK_CODE: c[3],
+
+            STOCK_NAME: c[4],
+
+            SHARES_AMOUNT: Number(c[8]) || 0
+
+        });
+
+    });
+}
+
+function renderTable(data){
 
     const tbody =
         document.querySelector(
             "#etf-table tbody"
         );
-
-    if (!tbody) return;
 
     tbody.innerHTML = "";
 
@@ -115,72 +126,10 @@ function renderTable(data) {
 
         `;
 
-        tr.onclick = () => {
-
-            showETFDetail(etf);
-
-        };
-
         tbody.appendChild(tr);
 
     });
-}
 
-function showETFDetail(etf) {
-
-    const detail =
-        document.getElementById(
-            "detail-content"
-        );
-
-    if (!detail) return;
-
-    detail.innerHTML = `
-
-    <h2>${etf.code}</h2>
-
-    <h3>${etf.name}</h3>
-
-    <table class="detail-table">
-
-        <tr>
-            <td>ETF種類</td>
-            <td>${etf.type}</td>
-        </tr>
-
-        <tr>
-            <td>上場日</td>
-            <td>${etf.listdate}</td>
-        </tr>
-
-        <tr>
-            <td>売買單位</td>
-            <td>${etf.lotsize}</td>
-        </tr>
-
-        <tr>
-            <td>Sector</td>
-            <td>${etf.sector}</td>
-        </tr>
-
-        <tr>
-            <td>Asset Class</td>
-            <td>${etf.assetclass}</td>
-        </tr>
-
-        <tr>
-            <td>主力買進股票</td>
-            <td>${etf.topbuy}</td>
-        </tr>
-
-        <tr>
-            <td>Net Flow</td>
-            <td>${formatNumber(etf.netflow)}</td>
-        </tr>
-
-    </table>
-
-    `;
 }
 
 function toggleCompare(code){
@@ -190,10 +139,7 @@ function toggleCompare(code){
 
     if(idx >= 0){
 
-        selectedETFs.splice(
-            idx,
-            1
-        );
+        selectedETFs.splice(idx,1);
 
     }else{
 
@@ -202,25 +148,21 @@ function toggleCompare(code){
     }
 }
 
-function showCompare(){
+async function showCompare(){
 
     const detail =
         document.getElementById(
             "detail-content"
         );
 
-    if(
-        selectedETFs.length < 2
-    ){
+    if(selectedETFs.length !== 2){
 
         detail.innerHTML = `
 
         <h2>ETF Compare</h2>
 
         <p>
-
-        請至少選擇兩檔 ETF
-
+        請選擇兩檔 ETF
         </p>
 
         `;
@@ -228,123 +170,178 @@ function showCompare(){
         return;
     }
 
-    const compareList =
-        etfData.filter(
+    const etfA =
+        selectedETFs[0];
+
+    const etfB =
+        selectedETFs[1];
+
+    const a =
+        holdingData.filter(
             x =>
-                selectedETFs.includes(
-                    x.code
-                )
+                x.ETF_CODE === etfA
         );
+
+    const b =
+        holdingData.filter(
+            x =>
+                x.ETF_CODE === etfB
+        );
+
+    const mapA = {};
+
+    a.forEach(row => {
+
+        mapA[row.STOCK_CODE] =
+            row;
+    });
+
+    const common = [];
+
+    b.forEach(row => {
+
+        if(mapA[row.STOCK_CODE]){
+
+            common.push({
+
+                STOCK_CODE:
+                    row.STOCK_CODE,
+
+                STOCK_NAME:
+                    row.STOCK_NAME,
+
+                ETF_A_SHARES:
+                    mapA[
+                        row.STOCK_CODE
+                    ].SHARES_AMOUNT,
+
+                ETF_B_SHARES:
+                    row.SHARES_AMOUNT
+
+            });
+        }
+    });
+
+    const overlapPct =
+        (
+            common.length
+            /
+            Math.min(
+                a.length,
+                b.length
+            )
+        ) * 100;
 
     let html = `
 
     <h2>ETF Compare</h2>
 
+    <h3>
+
+    ${etfA}
+
+    VS
+
+    ${etfB}
+
+    </h3>
+
+    <p>
+    共同持股數：
+    ${common.length}
+    </p>
+
+    <p>
+    重疊率：
+    ${overlapPct.toFixed(2)}%
+    </p>
+
     <table class="detail-table">
 
     <tr>
 
-        <th>項目</th>
+        <th>股票</th>
 
-    `;
+        <th>${etfA}</th>
 
-    compareList.forEach(etf => {
+        <th>${etfB}</th>
 
-        html += `
-
-        <th>
-
-        ${etf.code}
-
-        </th>
-
-        `;
-    });
-
-    html += `
     </tr>
+
     `;
 
-    const fields = [
-
-        ["ETF名稱","name"],
-        ["ETF種類","type"],
-        ["上場日","listdate"],
-        ["売買單位","lotsize"],
-        ["Sector","sector"],
-        ["Asset Class","assetclass"],
-        ["主力買進股票","topbuy"],
-        ["Net Flow","netflow"]
-
-    ];
-
-    fields.forEach(field => {
-
-        html += `
-
-        <tr>
-
-            <td>${field[0]}</td>
-
-        `;
-
-        compareList.forEach(etf => {
+    common
+        .slice(0,50)
+        .forEach(row => {
 
             html += `
 
-            <td>
+            <tr>
 
-            ${etf[field[1]]}
+                <td>
 
-            </td>
+                ${row.STOCK_NAME}
+
+                </td>
+
+                <td>
+
+                ${formatNumber(
+                    row.ETF_A_SHARES
+                )}
+
+                </td>
+
+                <td>
+
+                ${formatNumber(
+                    row.ETF_B_SHARES
+                )}
+
+                </td>
+
+            </tr>
 
             `;
         });
-
-        html += `
-
-        </tr>
-
-        `;
-    });
 
     html += `
     </table>
     `;
 
-    detail.innerHTML = html;
+    detail.innerHTML =
+        html;
 }
 
-function filterETF(type) {
+function filterETF(type){
 
-    if (type === "ALL") {
+    if(type==="ALL"){
 
         renderTable(etfData);
+
         return;
     }
 
-    const filtered =
+    renderTable(
 
         etfData.filter(
-            etf =>
-
-                String(etf.type)
-                    .toUpperCase()
-                    .trim()
-
+            x =>
+                String(x.type)
+                .toUpperCase()
+                .trim()
                 ===
-
                 type
-        );
+        )
 
-    renderTable(filtered);
+    );
 }
 
-function formatNumber(value) {
+function formatNumber(value){
 
-    const num = Number(value);
+    const num =
+        Number(value);
 
-    if (isNaN(num))
+    if(isNaN(num))
         return value;
 
     return num.toLocaleString();
@@ -353,34 +350,35 @@ function formatNumber(value) {
 document
 .getElementById("searchInput")
 .addEventListener(
-    "keyup",
-    function () {
+"keyup",
+function(){
 
-        const keyword =
-            this.value.toLowerCase();
+    const keyword =
+        this.value.toLowerCase();
 
-        const filtered =
-            etfData.filter(etf =>
+    renderTable(
 
-                etf.code
-                    .toLowerCase()
-                    .includes(keyword)
+        etfData.filter(etf =>
 
-                ||
+            etf.code
+                .toLowerCase()
+                .includes(keyword)
 
-                etf.name
-                    .toLowerCase()
-                    .includes(keyword)
+            ||
 
-            );
+            etf.name
+                .toLowerCase()
+                .includes(keyword)
 
-        renderTable(filtered);
+        )
 
-    }
-);
+    );
+
+});
 
 loadETFList();
+loadHoldingData();
 
 window.filterETF = filterETF;
-window.showCompare = showCompare;
 window.toggleCompare = toggleCompare;
+window.showCompare = showCompare;
