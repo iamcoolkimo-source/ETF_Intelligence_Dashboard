@@ -1,200 +1,81 @@
-let etfData = [];
+function showYesterdayHot() {
 
-async function loadETFList() {
+    document.getElementById(
+        "detail-content"
+    ).innerHTML = `
 
-    const response =
-        await fetch("./data/WEB_ETF_MASTER_V5.csv");
+    <div class="hot-panel">
 
-    const text =
-        await response.text();
+        <div class="hot-title">
+            昨日熱門 ETF
+        </div>
 
-    const rows = text.split("\n");
+        <div class="hot-section">
 
-    etfData = [];
+            <h3>全部 ETF</h3>
 
-    rows.slice(1).forEach(row => {
+            <table class="hot-table">
 
-        if (!row.trim()) return;
+                <tr>
+                    <td>熱門股票</td>
+                    <td>日本製鉄</td>
+                </tr>
 
-        const cols = row.split(",");
+                <tr>
+                    <td>熱門產業</td>
+                    <td>鉄鋼</td>
+                </tr>
 
-        etfData.push({
+                <tr>
+                    <td>熱門類型</td>
+                    <td>市場型ETF</td>
+                </tr>
 
-            code: cols[0] || "",
+            </table>
 
-            name: cols[1] || "",
+        </div>
 
-            type: cols[2] || "",
+        <div class="hot-section">
 
-            provider: cols[3] || "",
+            <h3>主動 ETF</h3>
 
-            listdate: cols[4] || "",
+            <table class="hot-table">
 
-            lotsize: cols[5] || "",
+                <tr>
+                    <td>熱門股票</td>
+                    <td>いすゞ自動車</td>
+                </tr>
 
-            sector: cols[6] || "",
+                <tr>
+                    <td>熱門產業</td>
+                    <td>輸送用機器</td>
+                </tr>
 
-            assetclass: cols[7] || "",
+            </table>
 
-            topbuy: cols[8] || "",
+        </div>
 
-            netflow: cols[9] || ""
+        <div class="hot-section">
 
-        });
+            <h3>被動 ETF</h3>
 
-    });
+            <table class="hot-table">
 
-    renderTable(etfData);
+                <tr>
+                    <td>熱門股票</td>
+                    <td>日本製鉄</td>
+                </tr>
 
+                <tr>
+                    <td>熱門產業</td>
+                    <td>鉄鋼</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    `;
 }
-
-function renderTable(data) {
-
-    const tbody =
-        document.querySelector(
-            "#etf-table tbody"
-        );
-
-    tbody.innerHTML = "";
-
-    data.forEach(etf => {
-
-        const tr =
-            document.createElement("tr");
-
-        tr.innerHTML = `
-
-        <td>
-            <input type="checkbox">
-        </td>
-
-        <td>${etf.code}</td>
-
-        <td>${etf.name}</td>
-
-        <td>${etf.type}</td>
-
-        <td></td>
-
-        <td>${etf.listdate}</td>
-
-        <td>${etf.lotsize}</td>
-
-        <td>${etf.topbuy}</td>
-
-        <td>${Number(etf.netflow).toLocaleString()}</td>
-
-        `;
-
-        tr.onclick = () => {
-
-            document.getElementById(
-                "detail-box"
-            ).innerHTML = `
-
-                <h2>${etf.code}</h2>
-
-                <h3>${etf.name}</h3>
-
-                <hr>
-
-                <table border="1"
-                       width="100%"
-                       cellpadding="8">
-
-                    <tr>
-                        <td>ETF種類</td>
-                        <td>${etf.type}</td>
-                    </tr>
-
-                    <tr>
-                        <td>上場日</td>
-                        <td>${etf.listdate}</td>
-                    </tr>
-
-                    <tr>
-                        <td>売買単位</td>
-                        <td>${etf.lotsize}</td>
-                    </tr>
-
-                    <tr>
-                        <td>Sector</td>
-                        <td>${etf.sector}</td>
-                    </tr>
-
-                    <tr>
-                        <td>Asset Class</td>
-                        <td>${etf.assetclass}</td>
-                    </tr>
-
-                    <tr>
-                        <td>Net Flow</td>
-                        <td>${Number(etf.netflow).toLocaleString()}</td>
-                    </tr>
-
-                </table>
-
-                <br>
-
-                <h3>主力買進股票</h3>
-
-                <p>${etf.topbuy}</p>
-
-            `;
-        };
-
-        tbody.appendChild(tr);
-
-    });
-}
-
-function filterETF(type) {
-
-    if (type === "ALL") {
-
-        renderTable(etfData);
-        return;
-    }
-
-    const filtered = etfData.filter(
-        x =>
-            String(x.type)
-            .trim()
-            .toUpperCase()
-            ===
-            type
-    );
-
-    renderTable(filtered);
-}
-
-document
-.getElementById("searchInput")
-.addEventListener(
-    "keyup",
-    function () {
-
-        const keyword =
-            this.value.toLowerCase();
-
-        const filtered =
-            etfData.filter(etf =>
-
-                etf.code
-                    .toLowerCase()
-                    .includes(keyword)
-
-                ||
-
-                etf.name
-                    .toLowerCase()
-                    .includes(keyword)
-
-            );
-
-        renderTable(filtered);
-
-    }
-);
-
-loadETFList();
