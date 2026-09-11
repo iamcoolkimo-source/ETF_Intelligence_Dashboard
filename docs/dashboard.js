@@ -110,13 +110,19 @@ function filterETF(type) {
 
 function showYesterdayHot() {
 
-    document.getElementById(
-        "detail-content"
-    ).innerHTML = `
+    alert("昨日熱門ETF");
 
-        <h2>昨日熱門ETF</h2>
+    const detail =
+        document.getElementById(
+            "detail-content"
+        );
 
-        <table border="1">
+    if (!detail) return;
+
+    detail.innerHTML = `
+        <h2>昨日熱門 ETF</h2>
+
+        <table class="detail-table">
 
             <tr>
                 <th>分類</th>
@@ -143,8 +149,8 @@ function showYesterdayHot() {
             </tr>
 
         </table>
-
     `;
+}
 }
 
 const search =
@@ -183,3 +189,5 @@ if (search) {
 }
 
 loadETFList();
+window.filterETF = filterETF;
+window.showYesterdayHot = showYesterdayHot;
