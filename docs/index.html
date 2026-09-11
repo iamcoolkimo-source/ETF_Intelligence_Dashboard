@@ -1,5 +1,157 @@
-<button class="menu-btn"
-onclick="showCompare()">
-ETF Compare
-</button>
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>日本 ETF 分析網</title><link rel="stylesheet" href="style.css"></head><body><h1 class="title">日本 ETF 分析網</h1><div class="menu"><button onclick="filterETF('ACTIVE')">主動ETF</button><button onclick="filterETF('PASSIVE')">被動ETF</button><button onclick="filterETF('REIT')">REIT ETF</button><button onclick="filterETF('BOND')">債券 ETF</button><button onclick="filterETF('LEVERAGED_INVERSE')">レバインバ</button><button onclick="filterETF('ALL')">全部ETF</button></div><input id="searchInput" placeholder="搜尋 ETF"><table id="etf-table"><thead><tr><th>比較</th><th>CODE</th><th>ETF名稱</th><th>類型</th><th>股價</th><th>上場日</th><th>売買單位</th><th>主力買進股票</th><th>Net Flow</th></tr></thead><tbody></tbody></table><div class="detail-box"><h2>ETF Detail</h2><div id="detail-content">請選擇 ETF</div></div><script src="dashboard.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>日本 ETF 分析網</title>
+
+<link rel="stylesheet"
+      href="style.css">
+
+</head>
+
+<body>
+
+<h1 class="title">
+
+    日本 ETF 分析網
+
+</h1>
+
+<div class="menu">
+
+    <button
+        class="menu-btn"
+        onclick="filterETF('ACTIVE')">
+
+        主動ETF
+
+    </button>
+
+    <button
+        class="menu-btn"
+        onclick="filterETF('PASSIVE')">
+
+        被動ETF
+
+    </button>
+
+    <button
+        class="menu-btn"
+        onclick="filterETF('REIT')">
+
+        REIT ETF
+
+    </button>
+
+    <button
+        class="menu-btn"
+        onclick="filterETF('BOND')">
+
+        債券 ETF
+
+    </button>
+
+    <button
+        class="menu-btn"
+        onclick="filterETF('LEVERAGED_INVERSE')">
+
+        レバインバ
+
+    </button>
+
+    <button
+        class="menu-btn"
+        onclick="filterETF('ALL')">
+
+        全部ETF
+
+    </button>
+
+    <button
+        class="menu-btn"
+        onclick="showCompare()">
+
+        ETF Compare
+
+    </button>
+
+</div>
+
+<div class="search">
+
+    <input
+        id="searchInput"
+        type="text"
+        placeholder="搜尋 ETF Code 或 ETF 名稱">
+
+</div>
+
+<div class="container">
+
+    <div class="left">
+
+        <table id="etf-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>比較</th>
+
+                    <th>CODE</th>
+
+                    <th>ETF名稱</th>
+
+                    <th>類型</th>
+
+                    <th>股價</th>
+
+                    <th>上場日</th>
+
+                    <th>売買單位</th>
+
+                    <th>主力買進股票</th>
+
+                    <th>Net Flow</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="right">
+
+        <div class="detail-box">
+
+            <h2>ETF Detail</h2>
+
+            <div id="detail-content">
+
+                請選擇 ETF
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
