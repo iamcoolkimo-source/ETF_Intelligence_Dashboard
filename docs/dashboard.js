@@ -1,6 +1,3 @@
-
-alert("dashboard loaded");
-
 let etfData = [];
 
 async function loadETFList() {
@@ -58,10 +55,16 @@ async function loadETFList() {
 
         console.error(err);
 
-        document.getElementById(
-            "detail-content"
-        ).innerHTML =
-            "ETF資料讀取失敗";
+        const detail =
+            document.getElementById(
+                "detail-content"
+            );
+
+        if (detail) {
+
+            detail.innerHTML =
+                "ETF資料讀取失敗";
+        }
     }
 }
 
@@ -82,6 +85,7 @@ function renderTable(data) {
             document.createElement("tr");
 
         tr.innerHTML = `
+
             <td>
                 <input type="checkbox">
             </td>
@@ -101,6 +105,7 @@ function renderTable(data) {
             <td>${etf.topbuy}</td>
 
             <td>${formatNumber(etf.netflow)}</td>
+
         `;
 
         tr.onclick = () => {
@@ -112,13 +117,19 @@ function renderTable(data) {
         tbody.appendChild(tr);
 
     });
+
 }
 
 function showETFDetail(etf) {
 
-    document.getElementById(
-        "detail-content"
-    ).innerHTML = `
+    const detail =
+        document.getElementById(
+            "detail-content"
+        );
+
+    if (!detail) return;
+
+    detail.innerHTML = `
 
         <h2>${etf.code}</h2>
 
@@ -130,70 +141,49 @@ function showETFDetail(etf) {
                 <td class="detail-label">
                     ETF種類
                 </td>
-
-                <td>
-                    ${etf.type}
-                </td>
+                <td>${etf.type}</td>
             </tr>
 
             <tr>
                 <td class="detail-label">
                     上場日
                 </td>
-
-                <td>
-                    ${etf.listdate}
-                </td>
+                <td>${etf.listdate}</td>
             </tr>
 
             <tr>
                 <td class="detail-label">
                     売買単位
                 </td>
-
-                <td>
-                    ${etf.lotsize}
-                </td>
+                <td>${etf.lotsize}</td>
             </tr>
 
             <tr>
                 <td class="detail-label">
                     Sector
                 </td>
-
-                <td>
-                    ${etf.sector}
-                </td>
+                <td>${etf.sector}</td>
             </tr>
 
             <tr>
                 <td class="detail-label">
                     Asset Class
                 </td>
-
-                <td>
-                    ${etf.assetclass}
-                </td>
+                <td>${etf.assetclass}</td>
             </tr>
 
             <tr>
                 <td class="detail-label">
                     Net Flow
                 </td>
-
-                <td>
-                    ${formatNumber(etf.netflow)}
-                </td>
+                <td>${formatNumber(etf.netflow)}</td>
             </tr>
 
             <tr>
                 <td class="detail-label">
                     主力買進股票
                 </td>
-
-                <td>
-                    ${etf.topbuy}
-                </td>
+                <td>${etf.topbuy}</td>
             </tr>
 
         </table>
@@ -217,97 +207,4 @@ function filterETF(type) {
 
         renderTable(etfData);
 
-        return;
-    }
-
-    const filtered =
-        etfData.filter(
-            etf =>
-                String(etf.type)
-                    .trim()
-                    .toUpperCase()
-                ===
-                type
-        );
-
-    renderTable(filtered);
-}
-
-function showYesterdayHot() {
-
-    const detail =
-        document.getElementById(
-            "detail-content"
-        );
-
-    if (!detail) return;
-
-    detail.innerHTML = `
-
-    <h2>昨日熱門 ETF</h2>
-
-    <table border="1" width="100%">
-
-        <tr>
-
-            <th>分類</th>
-
-            <th>熱門股票</th>
-
-            <th>熱門產業</th>
-
-        </tr>
-
-        <tr>
-
-            <td>全部ETF</td>
-
-            <td>日本製鉄</td>
-
-            <td>鉄鋼</td>
-
-        </tr>
-
-        <tr>
-
-            <td>主動ETF</td>
-
-            <td>いすゞ自動車</td>
-
-            <td>輸送用機器</td>
-
-        </tr>
-
-        <tr>
-
-            <td>被動ETF</td>
-
-            <td>日本製鉄</td>
-
-            <td>鉄鋼</td>
-
-        </tr>
-
-    </table>
-
-    `;
-}
-
-
-loadETFList();
-function showYesterdayHot() {
-
-    console.log("showYesterdayHot");
-
-    document.getElementById(
-        "detail-content"
-    ).innerHTML = `
-
-        <h2>昨日熱門 ETF</h2>
-
-        <p>
-        昨日熱門 ETF 功能建置中
-        </p>
-
-    `;
-}
+        return
