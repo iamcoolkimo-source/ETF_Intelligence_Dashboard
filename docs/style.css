@@ -110,3 +110,44 @@ tr:hover {
 
     min-height: 220px;
 }
+
+.hot-panel {
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border: 2px solid #18384c;
+
+    background: white;
+}
+
+.hot-title {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.hot-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 10px;
+}
+
+.hot-table td {
+
+    border: 1px solid #dddddd;
+
+    padding: 10px;
+}
+
+.hot-section {
+
+    margin-bottom: 25px;
+}
