@@ -6,7 +6,7 @@ async function loadHistory() {
         );
 
     console.log(
-        "status:",
+        "Status:",
         response.status
     );
 
@@ -14,56 +14,72 @@ async function loadHistory() {
         await response.text();
 
     console.log(
-        "CSV Preview:"
-    );
-
-    console.log(
-        text.substring(0,500)
+        text.substring(0, 300)
     );
 
     const rows =
         text.trim().split("\n");
 
-    console.log(
-        "row0:",
-        rows[0]
-    );
+    if(rows.length < 2){
+
+        console.error(
+            "No history data"
+        );
+
+        return [];
+    }
+
+    const header = rows[0];
+
+    const delimiter =
+        header.includes("\t")
+        ? "\t"
+        : ",";
 
     console.log(
-        "row1:",
-        rows[1]
-    );
-
-    console.log(
-        "row2:",
-        rows[2]
+        "Delimiter:",
+        delimiter === "\t"
+        ? "TAB"
+        : "CSV"
     );
 
     const data = [];
 
     rows.slice(1).forEach(row => {
 
-        if (!row.trim()) {
+        if(!row.trim()){
             return;
         }
 
-        const c = row.split("\t");
+        const c =
+            row.split(delimiter);
+
+        if(c.length < 7){
+            return;
+        }
 
         data.push({
 
-            date: c[0]?.trim(),
+            date:
+                c[0]?.trim(),
 
-            group: c[1]?.trim(),
+            group:
+                c[1]?.trim(),
 
-            category: c[2]?.trim(),
+            category:
+                c[2]?.trim(),
 
-            rank: c[3]?.trim(),
+            rank:
+                c[3]?.trim(),
 
-            code: c[4]?.trim(),
+            code:
+                c[4]?.trim(),
 
-            name: c[5]?.trim(),
+            name:
+                c[5]?.trim(),
 
-            value: c[6]?.trim()
+            value:
+                c[6]?.trim()
 
         });
 
@@ -81,7 +97,11 @@ async function loadHistory() {
 
     return data;
 }
-function buildTable(rows, title) {
+
+function buildTable(
+    rows,
+    title
+){
 
     let html = `
 
@@ -111,7 +131,9 @@ function buildTable(rows, title) {
             <td>${row.name}</td>
 
             <td>
-                ${Number(row.value).toLocaleString()}
+                ${Number(
+                    row.value
+                ).toLocaleString()}
             </td>
 
         </tr>
@@ -127,7 +149,7 @@ function buildTable(rows, title) {
     return html;
 }
 
-async function showDaily() {
+async function showDaily(){
 
     try {
 
@@ -145,12 +167,8 @@ async function showDaily() {
         ]
         .sort()
         .reverse()
-        .slice(0, 5);
+        .slice(0,5);
 
-        console.log(data[0]);
-        console.log(dates);
-
-        
         console.log(
             "Dates:",
             dates
@@ -263,20 +281,23 @@ async function showDaily() {
         ).innerHTML = html;
 
     }
-
-    catch(error) {
+    catch(error){
 
         console.error(error);
 
         document.getElementById(
             "flow-content"
         ).innerHTML = `
-            <h3>Error</h3>
-            <pre>${error}</pre>
+
+        <h3>Error</h3>
+
+        <pre>${error}</pre>
+
         `;
+
     }
 }
 
-showDaily();
-
 window.showDaily = showDaily;
+
+showDaily();
