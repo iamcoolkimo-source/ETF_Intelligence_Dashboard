@@ -13,8 +13,31 @@ async function loadHistory() {
     const text =
         await response.text();
 
+    console.log(
+        "CSV Preview:"
+    );
+
+    console.log(
+        text.substring(0,500)
+    );
+
     const rows =
         text.trim().split("\n");
+
+    console.log(
+        "row0:",
+        rows[0]
+    );
+
+    console.log(
+        "row1:",
+        rows[1]
+    );
+
+    console.log(
+        "row2:",
+        rows[2]
+    );
 
     const data = [];
 
@@ -26,26 +49,23 @@ async function loadHistory() {
 
         const c = row.split(",");
 
-        // ETF_BUY_SELL_HISTORY.csv
-        // GROUP,CATEGORY,RANK,CODE,NAME,VALUE,SNAPSHOT_DATE
-
         data.push({
 
-          date: c[0],
+            date: c[0]?.trim(),
 
-          group: c[1],
+            group: c[1]?.trim(),
 
-          category: c[2],
+            category: c[2]?.trim(),
 
-          rank: c[3],
+            rank: c[3]?.trim(),
 
-          code: c[4],
+            code: c[4]?.trim(),
 
-          name: c[5],
+            name: c[5]?.trim(),
 
-          value: c[6]
+            value: c[6]?.trim()
 
-      });
+        });
 
     });
 
@@ -54,9 +74,13 @@ async function loadHistory() {
         data.length
     );
 
+    console.log(
+        "First Record:",
+        data[0]
+    );
+
     return data;
 }
-
 function buildTable(rows, title) {
 
     let html = `
