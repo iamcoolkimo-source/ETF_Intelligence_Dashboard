@@ -270,8 +270,28 @@ async function showCompare(){
 
     `;
 
-    common
-        .slice(0,50)
+
+
+    
+common
+.sort(
+    (a,b)=>
+    Math.abs(
+        b.ETF_A_SHARES -
+        b.ETF_B_SHARES
+    )
+    -
+    Math.abs(
+        a.ETF_A_SHARES -
+        a.ETF_B_SHARES
+    )
+)
+.slice(0,50)
+
+
+
+
+        
         .forEach(row => {
 
             html += `
