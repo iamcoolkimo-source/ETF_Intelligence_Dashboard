@@ -214,14 +214,22 @@ async function showCompare(){
 
     const common = [];
 
+
+
+    
+    
     b.forEach(row => {
 
-        if(mapA[row.STOCK_CODE]){
+      if(
+          !row.STOCK_CODE ||
+          !row.STOCK_NAME
+      ){
+          return;
+      }
 
+      if(mapA[row.STOCK_CODE]){
 
-
-            
-            common.push({
+          common.push({
 
               STOCK_CODE:
                   row.STOCK_CODE,
@@ -242,11 +250,14 @@ async function showCompare(){
 
             });
 
-
-            
         }
+
     });
 
+
+
+
+    
     const overlapPct =
         (
             common.length
