@@ -47,7 +47,7 @@ async function loadHistory() {
             return;
         }
 
-        const c = row.split(",");
+        const c = row.split("\t");
 
         data.push({
 
