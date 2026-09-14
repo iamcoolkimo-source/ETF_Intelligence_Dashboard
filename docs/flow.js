@@ -220,3 +220,15 @@ async function showDaily(){
 }
 
 showDaily();
+const dates = [
+
+    ...new Set(
+        data.map(x => x.date)
+    )
+
+]
+.sort()
+.reverse()
+.slice(0,5);
+
+console.log("dates", dates);
