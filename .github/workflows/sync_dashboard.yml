@@ -1,0 +1,45 @@
+name: Sync Dashboard Data
+
+on:
+  repository_dispatch:
+    types: [update-dashboard]
+
+jobs:
+
+  sync:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Dashboard
+        uses: actions/checkout@v4
+
+      - name: Checkout Data Repo
+        uses: actions/checkout@v4
+        with:
+          repository: iamcoolkimo-source/ETF_Intelligence
+          path: source
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Copy Data Files
+        run: |
+
+          mkdir -p docs/data
+
+          cp source/data/ETF_BUY_SELL_HISTORY.csv docs/data/ || true
+          cp source/data/ETF_BUY_SELL_RANKING.csv docs/data/ || true
+          cp source/docs/data/WEB_ETF_MASTER_V5.csv docs/data/ || true
+          cp source/data/ALL_HOLDING_DAILY.csv docs/data/ || true
+
+      - name: Commit
+        run: |
+
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add .
+
+          git commit -m "Sync Dashboard Data" || echo "No changes"
+
+          git push
