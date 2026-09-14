@@ -218,23 +218,32 @@ async function showCompare(){
 
         if(mapA[row.STOCK_CODE]){
 
+
+
+            
             common.push({
 
-                STOCK_CODE:
-                    row.STOCK_CODE,
+              STOCK_CODE:
+                  row.STOCK_CODE,
 
-                STOCK_NAME:
-                    row.STOCK_NAME,
+              STOCK_NAME:
+                  row.STOCK_NAME,
 
-                ETF_A_SHARES:
-                    mapA[
-                        row.STOCK_CODE
-                    ].SHARES_AMOUNT,
+              JP_STOCK_NAME:
+                  row.JP_STOCK_NAME,
 
-                ETF_B_SHARES:
-                    row.SHARES_AMOUNT
+              ETF_A_SHARES:
+                  mapA[
+                      row.STOCK_CODE
+                  ].SHARES_AMOUNT,
+
+              ETF_B_SHARES:
+                  row.SHARES_AMOUNT
 
             });
+
+
+            
         }
     });
 
