@@ -339,13 +339,16 @@ common
 
                <td>
 
-               <b>${row.STOCK_CODE}</b>
+               <b>
+               ${row.STOCK_CODE}
+               </b>
 
                <br>
 
                ${row.JP_STOCK_NAME || row.STOCK_NAME}
 
                </td>
+
 
 
 
