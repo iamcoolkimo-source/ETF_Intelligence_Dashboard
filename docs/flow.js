@@ -5,6 +5,11 @@ async function loadHistory() {
             "./data/ETF_BUY_SELL_HISTORY.csv"
         );
 
+    console.log(
+        "status:",
+        response.status
+    );
+
     const text =
         await response.text();
 
@@ -15,56 +20,64 @@ async function loadHistory() {
 
     rows.slice(1).forEach(row => {
 
-        if (!row.trim()) return;
+        if (!row.trim()) {
+            return;
+        }
 
         const c = row.split(",");
 
+        // ETF_BUY_SELL_HISTORY.csv
+        // GROUP,CATEGORY,RANK,CODE,NAME,VALUE,SNAPSHOT_DATE
+
         data.push({
 
-            date: c[0],
+            group: c[0],
 
-            group: c[1],
+            category: c[1],
 
-            category: c[2],
+            rank: c[2],
 
-            rank: c[3],
+            code: c[3],
 
-            code: c[4],
+            name: c[4],
 
-            name: c[5],
+            value: c[5],
 
-            value: c[6]
+            date: c[6]
 
         });
 
     });
 
+    console.log(
+        "Records:",
+        data.length
+    );
+
     return data;
 }
 
-function buildTable(rows,title){
+function buildTable(rows, title) {
 
     let html = `
+
     <h4>${title}</h4>
 
     <table class="detail-table">
 
-    <tr>
+        <tr>
+            <th>Rank</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
 
-        <th>Rank</th>
-
-        <th>Code</th>
-
-        <th>Name</th>
-
-        <th>Value</th>
-
-    </tr>
     `;
 
-    rows.forEach(row=>{
+    rows.forEach(row => {
 
         html += `
+
         <tr>
 
             <td>${row.rank}</td>
@@ -74,161 +87,168 @@ function buildTable(rows,title){
             <td>${row.name}</td>
 
             <td>
-            ${Number(row.value).toLocaleString()}
+                ${Number(row.value).toLocaleString()}
             </td>
 
         </tr>
+
         `;
 
     });
 
-    html += "</table>";
+    html += `
+    </table>
+    `;
 
     return html;
-
 }
 
-async function showDaily(){
+async function showDaily() {
 
-    const data =
-        await loadHistory();
+    try {
 
-    const dates = [
+        const data =
+            await loadHistory();
 
-        ...new Set(
-            data.map(x => x.date)
-        )
+        const dates = [
 
-    ]
-    .sort()
-    .reverse()
-    .slice(0,5);
+            ...new Set(
+                data.map(
+                    x => x.date
+                )
+            )
 
-    let html = "";
+        ]
+        .sort()
+        .reverse()
+        .slice(0, 5);
 
-    dates.forEach(date=>{
+        console.log(
+            "Dates:",
+            dates
+        );
 
-        html += `
-        <div class="date-block">
+        let html = "";
 
-        <h2>${date}</h2>
+        dates.forEach(date => {
 
-        <div class="flow-grid">
+            html += `
+
+            <div class="date-block">
+
+                <h2>${date}</h2>
+
+                <div class="flow-grid">
+
+            `;
+
+            html += buildTable(
+
+                data.filter(
+                    x =>
+                        x.date === date &&
+                        x.group === "ALL" &&
+                        x.category === "BUY_STOCK"
+                ),
+
+                "全ETF 買超TOP5"
+
+            );
+
+            html += buildTable(
+
+                data.filter(
+                    x =>
+                        x.date === date &&
+                        x.group === "ALL" &&
+                        x.category === "SELL_STOCK"
+                ),
+
+                "全ETF 賣超TOP5"
+
+            );
+
+            html += buildTable(
+
+                data.filter(
+                    x =>
+                        x.date === date &&
+                        x.group === "ACTIVE" &&
+                        x.category === "BUY_STOCK"
+                ),
+
+                "主動ETF 買超TOP5"
+
+            );
+
+            html += buildTable(
+
+                data.filter(
+                    x =>
+                        x.date === date &&
+                        x.group === "ACTIVE" &&
+                        x.category === "SELL_STOCK"
+                ),
+
+                "主動ETF 賣超TOP5"
+
+            );
+
+            html += buildTable(
+
+                data.filter(
+                    x =>
+                        x.date === date &&
+                        x.group === "PASSIVE" &&
+                        x.category === "BUY_STOCK"
+                ),
+
+                "被動ETF 買超TOP5"
+
+            );
+
+            html += buildTable(
+
+                data.filter(
+                    x =>
+                        x.date === date &&
+                        x.group === "PASSIVE" &&
+                        x.category === "SELL_STOCK"
+                ),
+
+                "被動ETF 賣超TOP5"
+
+            );
+
+            html += `
+
+                </div>
+
+            </div>
+
+            `;
+
+        });
+
+        document.getElementById(
+            "flow-content"
+        ).innerHTML = html;
+
+    }
+
+    catch(error) {
+
+        console.error(error);
+
+        document.getElementById(
+            "flow-content"
+        ).innerHTML = `
+            <h3>Error</h3>
+            <pre>${error}</pre>
         `;
-
-        html += buildTable(
-
-            data.filter(
-                x =>
-                x.date===date
-                &&
-                x.group==="ALL"
-                &&
-                x.category==="BUY_STOCK"
-            ),
-
-            "全ETF 買超TOP5"
-
-        );
-
-        html += buildTable(
-
-            data.filter(
-                x =>
-                x.date===date
-                &&
-                x.group==="ALL"
-                &&
-                x.category==="SELL_STOCK"
-            ),
-
-            "全ETF 賣超TOP5"
-
-        );
-
-        html += buildTable(
-
-            data.filter(
-                x =>
-                x.date===date
-                &&
-                x.group==="ACTIVE"
-                &&
-                x.category==="BUY_STOCK"
-            ),
-
-            "主動ETF 買超TOP5"
-
-        );
-
-        html += buildTable(
-
-            data.filter(
-                x =>
-                x.date===date
-                &&
-                x.group==="ACTIVE"
-                &&
-                x.category==="SELL_STOCK"
-            ),
-
-            "主動ETF 賣超TOP5"
-
-        );
-
-        html += buildTable(
-
-            data.filter(
-                x =>
-                x.date===date
-                &&
-                x.group==="PASSIVE"
-                &&
-                x.category==="BUY_STOCK"
-            ),
-
-            "被動ETF 買超TOP5"
-
-        );
-
-        html += buildTable(
-
-            data.filter(
-                x =>
-                x.date===date
-                &&
-                x.group==="PASSIVE"
-                &&
-                x.category==="SELL_STOCK"
-            ),
-
-            "被動ETF 賣超TOP5"
-
-        );
-
-        html += `
-        </div>
-        </div>
-        `;
-
-    });
-
-    document.getElementById(
-        "flow-content"
-    ).innerHTML = html;
-
+    }
 }
 
 showDaily();
-const dates = [
 
-    ...new Set(
-        data.map(x => x.date)
-    )
-
-]
-.sort()
-.reverse()
-.slice(0,5);
-
-console.log("dates", dates);
+window.showDaily = showDaily;
