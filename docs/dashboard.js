@@ -17,8 +17,19 @@ async function loadETFList() {
 
     etfData = [];
 
+
+
+
+    
     rows.slice(1).forEach(row => {
 
+    if(!row.trim()){
+        return;
+    }
+
+
+
+        
         const c = row.split(",");
 
         etfData.push({
@@ -303,13 +314,11 @@ common
 
                <td>
 
-               <b>
-               ${row.STOCK_CODE}
-               </b>
+               <b>${row.STOCK_CODE}</b>
 
                <br>
 
-               ${row.JP_STOCK_NAME}
+               ${row.JP_STOCK_NAME || row.STOCK_NAME || ""}
 
                </td>
 
