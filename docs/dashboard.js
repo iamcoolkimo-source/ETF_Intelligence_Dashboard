@@ -298,11 +298,25 @@ common
 
             <tr>
 
-                <td>
 
-                ${row.STOCK_NAME}
 
-                </td>
+
+               <td>
+
+               <b>
+               ${row.STOCK_CODE}
+               </b>
+
+               <br>
+
+               ${row.JP_STOCK_NAME}
+
+               </td>
+
+
+
+
+
 
                 <td>
 
