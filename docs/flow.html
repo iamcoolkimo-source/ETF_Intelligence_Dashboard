@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>ETF Flow Center</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.flow-header{
+
+    margin-bottom:20px;
+
+}
+
+.date-block{
+
+    margin-bottom:40px;
+
+    border-bottom:1px solid #ddd;
+
+    padding-bottom:20px;
+
+}
+
+.flow-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>ETF Flow Center</h1>
+
+<div class="flow-header">
+
+<button onclick="showDaily()">
+最近5日
+</button>
+
+<button disabled>
+最近5週(Coming Soon)
+</button>
+
+<button disabled>
+最近5月(Coming Soon)
+</button>
+
+</div>
+
+<div id="flow-content">
+
+Loading...
+
+</div>
+
+flow.jsscript>
+
+</body>
+
+</html>
