@@ -323,7 +323,7 @@ common
 
                <br>
 
-               ${row.JP_STOCK_NAME || row.STOCK_NAME || ""}
+               ${row.JP_STOCK_NAME || row.STOCK_NAME}
 
                </td>
 
