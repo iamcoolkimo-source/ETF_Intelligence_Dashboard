@@ -31,21 +31,21 @@ async function loadHistory() {
 
         data.push({
 
-            group: c[0],
+          date: c[0],
 
-            category: c[1],
+          group: c[1],
 
-            rank: c[2],
+          category: c[2],
 
-            code: c[3],
+          rank: c[3],
 
-            name: c[4],
+          code: c[4],
 
-            value: c[5],
+          name: c[5],
 
-            date: c[6]
+          value: c[6]
 
-        });
+      });
 
     });
 
@@ -123,6 +123,10 @@ async function showDaily() {
         .reverse()
         .slice(0, 5);
 
+        console.log(data[0]);
+        console.log(dates);
+
+        
         console.log(
             "Dates:",
             dates
