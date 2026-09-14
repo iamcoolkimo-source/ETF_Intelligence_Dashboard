@@ -453,3 +453,200 @@ loadHoldingData();
 window.filterETF = filterETF;
 window.toggleCompare = toggleCompare;
 window.showCompare = showCompare;
+window.showBuySellRanking = showBuySellRanking;
+
+
+
+async function showBuySellRanking(){
+
+    const detail =
+        document.getElementById(
+            "detail-content"
+        );
+
+    const response =
+        await fetch(
+            "./data/ETF_BUY_SELL_RANKING.csv"
+        );
+
+    const text =
+        await response.text();
+
+    const rows =
+        text.trim().split("\n");
+
+    const data = [];
+
+    rows.slice(1).forEach(row => {
+
+        if(!row.trim()){
+            return;
+        }
+
+        const c = row.split(",");
+
+        data.push({
+
+            group: c[0],
+
+            category: c[1],
+
+            rank: c[2],
+
+            code: c[3],
+
+            name: c[4],
+
+            value: c[5]
+
+        });
+
+    });
+
+    let html = `
+
+    <h2>ETF 買賣排行榜</h2>
+
+    `;
+
+    html += buildRankingSection(
+        data,
+        "ALL",
+        "全ETF"
+    );
+
+    html += buildRankingSection(
+        data,
+        "ACTIVE",
+        "主動ETF"
+    );
+
+    html += buildRankingSection(
+        data,
+        "PASSIVE",
+        "被動ETF"
+    );
+
+    detail.innerHTML = html;
+}
+
+function buildRankingSection(
+    data,
+    groupCode,
+    title
+){
+
+    let html = `
+
+    <hr>
+
+    <h3>${title}</h3>
+
+    `;
+
+    html += createRankingTable(
+        data,
+        groupCode,
+        "BUY_STOCK",
+        "📈 買超個股 TOP5"
+    );
+
+    html += createRankingTable(
+        data,
+        groupCode,
+        "SELL_STOCK",
+        "📉 賣超個股 TOP5"
+    );
+
+    html += createRankingTable(
+        data,
+        groupCode,
+        "BUY_SECTOR",
+        "📈 買超業種 TOP5"
+    );
+
+    html += createRankingTable(
+        data,
+        groupCode,
+        "SELL_SECTOR",
+        "📉 賣超業種 TOP5"
+    );
+
+    return html;
+}
+
+function createRankingTable(
+    data,
+    groupCode,
+    category,
+    title
+){
+
+    const rows = data.filter(
+        x =>
+
+            x.group === groupCode
+
+            &&
+
+            x.category === category
+    );
+
+    let html = `
+
+    <h4>${title}</h4>
+
+    <table class="detail-table">
+
+    <tr>
+
+        <th>排名</th>
+
+        <th>代號</th>
+
+        <th>名稱</th>
+
+        <th>數量</th>
+
+    </tr>
+
+    `;
+
+    rows.forEach(row => {
+
+        html += `
+
+        <tr>
+
+            <td>
+            ${row.rank}
+            </td>
+
+            <td>
+            ${row.code}
+            </td>
+
+            <td>
+            ${row.name}
+            </td>
+
+            <td>
+            ${formatNumber(row.value)}
+            </td>
+
+        </tr>
+
+        `;
+
+    });
+
+    html += `
+
+    </table>
+
+    <br>
+
+    `;
+
+    return html;
+}
