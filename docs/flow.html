@@ -12,28 +12,47 @@
 <style>
 
 .flow-header{
-
     margin-bottom:20px;
-
 }
 
-.date-block{
-
+.matrix-section{
     margin-bottom:40px;
+}
 
-    border-bottom:1px solid #ddd;
+.matrix-table{
 
-    padding-bottom:20px;
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-bottom:30px;
 
 }
 
-.flow-grid{
+.matrix-table th,
+.matrix-table td{
 
-    display:grid;
+    border:1px solid #ddd;
 
-    grid-template-columns:1fr 1fr;
+    padding:8px;
 
-    gap:20px;
+    text-align:center;
+
+}
+
+.matrix-table th{
+
+    background:#163b52;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+.matrix-table tr:nth-child(even){
+
+    background:#f6f6f6;
 
 }
 
