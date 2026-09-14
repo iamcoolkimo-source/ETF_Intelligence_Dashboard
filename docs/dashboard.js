@@ -76,17 +76,22 @@ async function loadHoldingData(){
 
         const c = row.split(",");
 
+
+
+        
         holdingData.push({
 
-            ETF_CODE: c[1],
+          ETF_CODE: c[1],
 
-            STOCK_CODE: c[3],
+          STOCK_CODE: c[3],
+ 
+          STOCK_NAME: c[4],
 
-            STOCK_NAME: c[4],
+          SHARES_AMOUNT: Number(c[8]) || 0,
 
-            SHARES_AMOUNT: Number(c[8]) || 0
+          JP_STOCK_NAME: c[11] || ""
 
-        });
+         });
 
     });
 }
