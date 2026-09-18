@@ -1,12 +1,13 @@
 let data = [];
 
 async function loadData() {
-
+    console.log("loadData start");
     data = await fetch(
         "data/ETF_ACCUMULATION_RANKING.csv"
     )
     .then(r => r.text())
     .then(text => {
+        console.log(data);
 
         const rows =
             text.trim().split("\n");
