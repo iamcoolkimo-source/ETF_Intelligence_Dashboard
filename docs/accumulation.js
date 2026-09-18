@@ -1,132 +1,164 @@
-let data = [];
+let allData = [];
 
 async function loadData() {
-    console.log("loadData start");
-    data = await fetch(
-        "data/ETF_ACCUMULATION_RANKING.csv"
-    )
-    .then(r => r.text())
-    .then(text => {
-        console.log(data);
 
-        const rows =
-            text.trim().split("\n");
+    console.log("Loading ETF_ACCUMULATION_RANKING.csv");
 
-        const header =
-            rows[0].split(",");
+    const response =
+        await fetch(
+            "data/ETF_ACCUMULATION_RANKING.csv"
+        );
 
-        return rows.slice(1).map(row => {
+    const csv =
+        await response.text();
 
-            const cols =
-                row.split(",");
+    const lines =
+        csv.trim().split("\n");
 
-            let obj = {};
+    const headers =
+        lines[0]
+            .replace(/\r/g, "")
+            .split(",");
 
-            header.forEach(
-                (h, i) => obj[h] = cols[i]
-            );
+    allData = lines.slice(1).map(line => {
 
-            return obj;
+        const cols =
+            line.replace(/\r/g, "")
+                .split(",");
+
+        let row = {};
+
+        headers.forEach((h, i) => {
+            row[h] = cols[i];
         });
+
+        return row;
     });
 
+    console.log(
+        "Rows Loaded:",
+        allData.length
+    );
+
     render();
+}
+
+function buildTable(rows) {
+
+    if (rows.length === 0) {
+
+        return `
+            <p>No Data</p>
+        `;
+    }
+
+    let html = `
+        <table border="1"
+               cellspacing="0"
+               cellpadding="5">
+
+            <tr>
+                <th>Rank</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+    `;
+
+    rows.forEach(row => {
+
+        html += `
+            <tr>
+                <td>${row.RANK}</td>
+                <td>${row.CODE}</td>
+                <td>${row.NAME}</td>
+                <td>
+                    ${Number(
+                        row.VALUE
+                    ).toLocaleString()}
+                </td>
+            </tr>
+        `;
+    });
+
+    html += "</table>";
+
+    return html;
 }
 
 function render() {
 
     const windowValue =
         document.getElementById(
-            "window"
+            "windowFilter"
         ).value;
 
     const groupValue =
         document.getElementById(
-            "group"
+            "groupFilter"
         ).value;
 
     const filtered =
-        data.filter(
-            x =>
-            x.WINDOW === windowValue &&
-            x.GROUP === groupValue
+        allData.filter(
+            row =>
+                row.WINDOW === windowValue &&
+                row.GROUP === groupValue
         );
 
-    showTable(
-        "buyStock",
+    document.getElementById(
+        "buyStock"
+    ).innerHTML = buildTable(
         filtered.filter(
-            x =>
-            x.CATEGORY === "BUY_STOCK"
+            row =>
+                row.CATEGORY ===
+                "BUY_STOCK"
         )
     );
 
-    showTable(
-        "sellStock",
+    document.getElementById(
+        "sellStock"
+    ).innerHTML = buildTable(
         filtered.filter(
-            x =>
-            x.CATEGORY === "SELL_STOCK"
+            row =>
+                row.CATEGORY ===
+                "SELL_STOCK"
         )
     );
 
-    showTable(
-        "buySector",
+    document.getElementById(
+        "buySector"
+    ).innerHTML = buildTable(
         filtered.filter(
-            x =>
-            x.CATEGORY === "BUY_SECTOR"
+            row =>
+                row.CATEGORY ===
+                "BUY_SECTOR"
         )
     );
 
-    showTable(
-        "sellSector",
+    document.getElementById(
+        "sellSector"
+    ).innerHTML = buildTable(
         filtered.filter(
-            x =>
-            x.CATEGORY === "SELL_SECTOR"
+            row =>
+                row.CATEGORY ===
+                "SELL_SECTOR"
         )
     );
-}
-
-function showTable(id, rows) {
-
-    let html =
-        "<table>";
-
-    html += `
-    <tr>
-        <th>Rank</th>
-        <th>Code</th>
-        <th>Name</th>
-        <th>Value</th>
-    </tr>
-    `;
-
-    rows.forEach(r => {
-
-        html += `
-        <tr>
-            <td>${r.RANK}</td>
-            <td>${r.CODE}</td>
-            <td>${r.NAME}</td>
-            <td>${Number(r.VALUE).toLocaleString()}</td>
-        </tr>
-        `;
-    });
-
-    html += "</table>";
-
-    document
-        .getElementById(id)
-        .innerHTML = html;
 }
 
 document
-.getElementById("window")
+.getElementById(
+    "windowFilter"
+)
 .addEventListener(
     "change",
     render
 );
 
 document
-.getElementById("group")
+.getElementById(
+    "groupFilter"
+)
 .addEventListener(
     "change",
     render
