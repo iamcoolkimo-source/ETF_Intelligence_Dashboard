@@ -39,17 +39,17 @@ jobs:
           cp source/docs/data/WEB_ETF_MASTER_V5.csv docs/data/ || true
 
           cp source/data/ALL_HOLDING_DAILY.csv docs/data/ || true
-
           cp source/data/ETF_BUY_SELL_RANKING.csv docs/data/ || true
-
           cp source/data/ETF_BUY_SELL_HISTORY.csv docs/data/ || true
 
+          cp source/data/ETF_NET_FLOW_RANKING.csv docs/data/ || true
+          cp source/data/ETF_NET_FLOW_TOP10.csv docs/data/ || true
+
+          cp source/data/ETF_ACCUMULATION_RANKING.csv docs/data/ || true
+
           cp source/data/SMART_MONEY.csv docs/data/ || true
-
           cp source/data/ACTIVE_ETF_FOCUS.csv docs/data/ || true
-
           cp source/data/ETF_DAILY_REPORT.csv docs/data/ || true
-
           cp source/data/HIGH_CONVICTION_STOCKS.csv docs/data/ || true
 
       - name: Commit Changes
