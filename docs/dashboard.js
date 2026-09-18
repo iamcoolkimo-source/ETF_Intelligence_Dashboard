@@ -650,3 +650,115 @@ function createRankingTable(
 
     return html;
 }
+
+
+
+
+
+async function loadAccumulationRanking() {
+
+    const data = await d3.csv(
+        "data/ETF_ACCUMULATION_RANKING.csv"
+    );
+
+    function render() {
+
+        const windowValue =
+            document.getElementById("accWindow").value;
+
+        const groupValue =
+            document.getElementById("accGroup").value;
+
+        const filtered =
+            data.filter(
+                d =>
+                    d.WINDOW === windowValue &&
+                    d.GROUP === groupValue
+            );
+
+        renderTable(
+            "buyStockTable",
+            filtered.filter(
+                d =>
+                    d.CATEGORY === "BUY_STOCK"
+            ),
+            "Top Buy Stocks"
+        );
+
+        renderTable(
+            "sellStockTable",
+            filtered.filter(
+                d =>
+                    d.CATEGORY === "SELL_STOCK"
+            ),
+            "Top Sell Stocks"
+        );
+
+        renderTable(
+            "buySectorTable",
+            filtered.filter(
+                d =>
+                    d.CATEGORY === "BUY_SECTOR"
+            ),
+            "Top Buy Sectors"
+        );
+
+        renderTable(
+            "sellSectorTable",
+            filtered.filter(
+                d =>
+                    d.CATEGORY === "SELL_SECTOR"
+            ),
+            "Top Sell Sectors"
+        );
+    }
+
+    document
+        .getElementById("accWindow")
+        .addEventListener("change", render);
+
+    document
+        .getElementById("accGroup")
+        .addEventListener("change", render);
+
+    render();
+}
+
+function renderTable(
+    targetId,
+    rows,
+    title
+) {
+
+    let html =
+        `<h3>${title}</h3>
+         <table>
+         <tr>
+            <th>Rank</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Value</th>
+         </tr>`;
+
+    rows.forEach(r => {
+
+        html += `
+            <tr>
+                <td>${r.RANK}</td>
+                <td>${r.CODE}</td>
+                <td>${r.NAME}</td>
+                <td>${Number(
+                    r.VALUE
+                ).toLocaleString()}</td>
+            </tr>
+        `;
+    });
+
+    html += "</table>";
+
+    document.getElementById(
+        targetId
+    ).innerHTML = html;
+}
+
+
