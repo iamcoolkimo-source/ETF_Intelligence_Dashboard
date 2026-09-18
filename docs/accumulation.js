@@ -2,37 +2,35 @@ let allData = [];
 
 async function loadData() {
 
-    console.log("Loading ETF_ACCUMULATION_RANKING.csv");
+    console.log("Loading CSV...");
 
-    const response =
-        await fetch(
-            "data/ETF_ACCUMULATION_RANKING.csv"
-        );
+    const response = await fetch(
+        "data/ETF_ACCUMULATION_RANKING.csv"
+    );
 
-    const csv =
-        await response.text();
+    const csv = await response.text();
 
-    const lines =
-        csv.trim().split("\n");
+    const rows = csv
+        .trim()
+        .split("\n");
 
-    const headers =
-        lines[0]
+    const headers = rows[0]
+        .replace(/\r/g, "")
+        .split(",");
+
+    allData = rows.slice(1).map(row => {
+
+        const cols = row
             .replace(/\r/g, "")
             .split(",");
 
-    allData = lines.slice(1).map(line => {
-
-        const cols =
-            line.replace(/\r/g, "")
-                .split(",");
-
-        let row = {};
+        let obj = {};
 
         headers.forEach((h, i) => {
-            row[h] = cols[i];
+            obj[h.trim()] = cols[i];
         });
 
-        return row;
+        return obj;
     });
 
     console.log(
@@ -45,24 +43,19 @@ async function loadData() {
 
 function buildTable(rows) {
 
-    if (rows.length === 0) {
-
-        return `
-            <p>No Data</p>
-        `;
+    if (!rows.length) {
+        return "<p>No Data</p>";
     }
 
     let html = `
         <table border="1"
-               cellspacing="0"
-               cellpadding="5">
-
-            <tr>
-                <th>Rank</th>
-                <th>Code</th>
-                <th>Name</th>
-                <th>Value</th>
-            </tr>
+               style="border-collapse:collapse;width:100%;">
+        <tr>
+            <th>Rank</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
     `;
 
     rows.forEach(row => {
@@ -70,13 +63,11 @@ function buildTable(rows) {
         html += `
             <tr>
                 <td>${row.RANK}</td>
-                <td>${row.CODE}</td>
-                <td>${row.NAME}</td>
-                <td>
-                    ${Number(
-                        row.VALUE
-                    ).toLocaleString()}
-                </td>
+                <td>${row.CODE || ""}</td>
+                <td>${row.NAME || ""}</td>
+                <td>${Number(
+                    row.VALUE || 0
+                ).toLocaleString()}</td>
             </tr>
         `;
     });
@@ -90,28 +81,26 @@ function render() {
 
     const windowValue =
         document.getElementById(
-            "windowFilter"
+            "window"
         ).value;
 
     const groupValue =
         document.getElementById(
-            "groupFilter"
+            "group"
         ).value;
 
-    const filtered =
-        allData.filter(
-            row =>
-                row.WINDOW === windowValue &&
-                row.GROUP === groupValue
-        );
+    const filtered = allData.filter(
+        row =>
+            row.WINDOW === windowValue &&
+            row.GROUP === groupValue
+    );
 
     document.getElementById(
         "buyStock"
     ).innerHTML = buildTable(
         filtered.filter(
             row =>
-                row.CATEGORY ===
-                "BUY_STOCK"
+                row.CATEGORY === "BUY_STOCK"
         )
     );
 
@@ -120,8 +109,7 @@ function render() {
     ).innerHTML = buildTable(
         filtered.filter(
             row =>
-                row.CATEGORY ===
-                "SELL_STOCK"
+                row.CATEGORY === "SELL_STOCK"
         )
     );
 
@@ -130,8 +118,7 @@ function render() {
     ).innerHTML = buildTable(
         filtered.filter(
             row =>
-                row.CATEGORY ===
-                "BUY_SECTOR"
+                row.CATEGORY === "BUY_SECTOR"
         )
     );
 
@@ -140,28 +127,29 @@ function render() {
     ).innerHTML = buildTable(
         filtered.filter(
             row =>
-                row.CATEGORY ===
-                "SELL_SECTOR"
+                row.CATEGORY === "SELL_SECTOR"
         )
     );
 }
 
-document
-.getElementById(
-    "windowFilter"
-)
-.addEventListener(
-    "change",
-    render
-);
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
 
-document
-.getElementById(
-    "groupFilter"
-)
-.addEventListener(
-    "change",
-    render
-);
+        document
+            .getElementById("window")
+            .addEventListener(
+                "change",
+                render
+            );
 
-loadData();
+        document
+            .getElementById("group")
+            .addEventListener(
+                "change",
+                render
+            );
+
+        loadData();
+    }
+);
